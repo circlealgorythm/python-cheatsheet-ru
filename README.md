@@ -1,57 +1,61 @@
-Comprehensive Python Cheatsheet
-===============================
-<sup>[Download text file](https://raw.githubusercontent.com/gto76/python-cheatsheet/main/README.md), [Fork me on GitHub](https://github.com/gto76/python-cheatsheet) or [Check out FAQ](https://github.com/gto76/python-cheatsheet/wiki/Frequently-Asked-Questions).
+Комплексная шпаргалка по Python (Comprehensive Python Cheatsheet)
+=================================================================
+> [!NOTE]
+> Это русскоязычная версия популярной шпаргалки по Python.
+> **Оригинальный репозиторий и автор:** [gto76/python-cheatsheet](https://github.com/gto76/python-cheatsheet) (Jure Šorn).
+
+<sup>[Скачать файл](https://raw.githubusercontent.com/circlealgorythm/python-cheatsheet-ru/main/README.md), [Форкнуть на GitHub](https://github.com/circlealgorythm/python-cheatsheet-ru) или [Оригинал gto76](https://github.com/gto76/python-cheatsheet).
 </sup>
 
 ![Monty Python](web/image_888.jpeg)
 
 
-Contents
---------
-**&nbsp;&nbsp;&nbsp;** **1. Collections:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** **[`List`](#list)**__,__ **[`Dictionary`](#dictionary)**__,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
-**&nbsp;&nbsp;&nbsp;** **2. Data Types:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Type`](#type)**__,__ **[`String`](#string)**__,__ **[`Regular_Exp`](#regex)**__,__ **[`Format`](#format)**__,__ **[`Numbers`](#numbers-1)**__,__ **[`Combinatorics`](#combinatorics)**__,__ **[`Datetime`](#datetime)**__.__  
-**&nbsp;&nbsp;&nbsp;** **3. Syntax Rules:** **&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Function`](#function)**__,__ **[`Inline`](#inline)**__,__ **[`Import`](#import)**__,__ **[`Decorator`](#decorator)**__,__ **[`Class`](#class)**__,__ **[`Duck_Type`](#duck-types)**__,__ **[`Enum`](#enum)**__,__ **[`Except`](#exceptions)**__.__  
-**&nbsp;&nbsp;&nbsp;** **4. System Calls:** **&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Exit`](#exit)**__,__ **[`Print`](#print)**__,__ **[`Input`](#input)**__,__ **[`Command_Line_Arguments`](#arguments)**__,__ **[`Open`](#open)**__,__ **[`Path`](#paths)**__,__ **[`OS_Commands`](#os-commands)**__.__  
-**&nbsp;&nbsp;&nbsp;** **5. Data Formats:** **&nbsp;&nbsp;&nbsp;**  **[`JSON`](#json)**__,__ **[`Pickle`](#pickle)**__,__ **[`CSV`](#csv)**__,__ **[`SQLite`](#sqlite)**__,__ **[`Bytes`](#bytes)**__,__ **[`Struct`](#struct)**__,__ **[`Array`](#array)**__,__ **[`Memory_View`](#memory-view)**__,__ **[`Deque`](#deque)**__.__  
-**&nbsp;&nbsp;&nbsp;** **6. Misc Topics:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Operator`](#operator)**__,__ **[`Match_Statement`](#match-statement)**__,__ **[`Logging`](#logging)**__,__ **[`Introspection`](#introspection)**__,__ **[`Threads`](#threading)**__,__ **[`Asyncio`](#asyncio)**__.__  
-**&nbsp;&nbsp;&nbsp;** **7. Pip Packages:** **&nbsp;&nbsp;&nbsp;**  **[`Progress_Bar`](#progress-bar)**__,__ **[`Plot`](#plot)**__,__ **[`Table`](#table)**__,__ **[`Console_App`](#console-app)**__,__ **[`GUI`](#gui-app)**__,__ **[`Scraping`](#scraping)**__,__ **[`Web`](#web-app)**__,__ **[`Profile`](#profiling)**__.__  
-**&nbsp;&nbsp;&nbsp;** **8. Multimedia:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`NumPy`](#numpy)**__,__ **[`Image`](#image)**__,__ **[`Animation`](#animation)**__,__ **[`Audio`](#audio)**__,__ **[`Synthesizer`](#synthesizer)**__,__ **[`Pygame`](#pygame)**__,__ **[`Pandas`](#pandas)**__,__ **[`Plotly`](#plotly)**__.__
+Содержание (Contents)
+---------------------
+**&nbsp;&nbsp;&nbsp;** **1. Коллекции:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;** **[`List`](#list)**__,__ **[`Dictionary`](#dictionary)**__,__ **[`Set`](#set)**__,__ **[`Tuple`](#tuple)**__,__ **[`Range`](#range)**__,__ **[`Enumerate`](#enumerate)**__,__ **[`Iterator`](#iterator)**__,__ **[`Generator`](#generator)**__.__  
+**&nbsp;&nbsp;&nbsp;** **2. Типы данных:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Type`](#type)**__,__ **[`String`](#string)**__,__ **[`Regular_Exp`](#regex)**__,__ **[`Format`](#format)**__,__ **[`Numbers`](#numbers-1)**__,__ **[`Combinatorics`](#combinatorics)**__,__ **[`Datetime`](#datetime)**__.__  
+**&nbsp;&nbsp;&nbsp;** **3. Синтаксис:** **&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Function`](#function)**__,__ **[`Inline`](#inline)**__,__ **[`Import`](#import)**__,__ **[`Decorator`](#decorator)**__,__ **[`Class`](#class)**__,__ **[`Duck_Type`](#duck-types)**__,__ **[`Enum`](#enum)**__,__ **[`Except`](#exceptions)**__.__  
+**&nbsp;&nbsp;&nbsp;** **4. Системные вызовы:** **&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Exit`](#exit)**__,__ **[`Print`](#print)**__,__ **[`Input`](#input)**__,__ **[`Command_Line_Arguments`](#arguments)**__,__ **[`Open`](#open)**__,__ **[`Path`](#paths)**__,__ **[`OS_Commands`](#os-commands)**__.__  
+**&nbsp;&nbsp;&nbsp;** **5. Форматы данных:** **&nbsp;&nbsp;&nbsp;**  **[`JSON`](#json)**__,__ **[`Pickle`](#pickle)**__,__ **[`CSV`](#csv)**__,__ **[`SQLite`](#sqlite)**__,__ **[`Bytes`](#bytes)**__,__ **[`Struct`](#struct)**__,__ **[`Array`](#array)**__,__ **[`Memory_View`](#memory-view)**__,__ **[`Deque`](#deque)**__.__  
+**&nbsp;&nbsp;&nbsp;** **6. Разное:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`Operator`](#operator)**__,__ **[`Match_Statement`](#match-statement)**__,__ **[`Logging`](#logging)**__,__ **[`Introspection`](#introspection)**__,__ **[`Threads`](#threading)**__,__ **[`Asyncio`](#asyncio)**__.__  
+**&nbsp;&nbsp;&nbsp;** **7. Pip-пакеты:** **&nbsp;&nbsp;&nbsp;**  **[`Progress_Bar`](#progress-bar)**__,__ **[`Plot`](#plot)**__,__ **[`Table`](#table)**__,__ **[`Console_App`](#console-app)**__,__ **[`GUI`](#gui-app)**__,__ **[`Scraping`](#scraping)**__,__ **[`Web`](#web-app)**__,__ **[`Profile`](#profiling)**__.__  
+**&nbsp;&nbsp;&nbsp;** **8. Мультимедиа:** **&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**  **[`NumPy`](#numpy)**__,__ **[`Image`](#image)**__,__ **[`Animation`](#animation)**__,__ **[`Audio`](#audio)**__,__ **[`Synthesizer`](#synthesizer)**__,__ **[`Pygame`](#pygame)**__,__ **[`Pandas`](#pandas)**__,__ **[`Plotly`](#plotly)**__.__
 
 
 Main
 ----
 ```python
-if __name__ == '__main__':      # Skips indented lines of code if file was imported.
-    main()                      # Executes user-defined `def main(): ...` function.
+if __name__ == '__main__':      # Пропускает блок кода с отступом, если файл был импортирован как модуль.
+    main()                      # Выполняет пользовательскую функцию `def main(): ...`.
 ```
 
 
 List
 ----
 ```python
-<list> = [<el>, <el>, ...]      # Creates new list object. E.g. `list_a = [1, 2, 3]`.
+<list> = [<el>, <el>, ...]      # Создаёт новый объект списка. Например: `list_a = [1, 2, 3]`.
 ```
 
 ```python
-<el>   = <list>[index]          # First index is 0, last -1. Also `<list>[i] = <el>`.
-<list> = <list>[<slice>]        # Also <list>[from_inclusive : to_exclusive : ±step].
+<el>   = <list>[index]          # Первый индекс 0, последний -1. Также `<list>[i] = <el>`.
+<list> = <list>[<slice>]        # Также <list>[от_включ : до_исключ : ±шаг].
 ```
 
 ```python
-<list>.append(<el>)             # Appends element to the end. Or `<list> += [<el>]`.
-<list>.extend(<coll>)           # Appends collection's items. Or `<list> += <coll>`.
+<list>.append(<el>)             # Добавляет элемент в конец. Или `<list> += [<el>]`.
+<list>.extend(<coll>)           # Добавляет элементы коллекции в конец. Или `<list> += <coll>`.
 ```
 
 ```python
-<list>.sort()                   # Sorts in ascending order. Accepts `reverse=True`.
-<list>.reverse()                # Reverses the order of elements. Takes linear time.
-<list> = sorted(<coll>)         # Returns a new sorted list. Accepts `reverse=True`.
-<iter> = reversed(<list>)       # Returns reversed iterator. Also list(<iterator>).
+<list>.sort()                   # Сортирует по возрастанию на месте. Принимает `reverse=True`.
+<list>.reverse()                # Разворачивает порядок элементов на месте. Сложность O(N).
+<list> = sorted(<coll>)         # Возвращает новый отсортированный список. Принимает `reverse=True`.
+<iter> = reversed(<list>)       # Возвращает обратный итератор. Также list(<iterator>).
 ```
 
 ```python
-<el>  = max(<coll>)             # Returns the largest element. Also min(<el>, <el>).
-<num> = sum(<coll>)             # Returns a sum of elements. Also math.prod(<coll>).
+<el>  = max(<coll>)             # Возвращает наибольший элемент. Также min(<el>, <el>).
+<num> = sum(<coll>)             # Возвращает сумму элементов. Также math.prod(<coll>).
 ```
 
 ```python
@@ -60,50 +64,50 @@ sorted_by_second = sorted(<coll>, key=lambda pair: pair[1])
 sorted_by_both   = sorted(<coll>, key=lambda p: (p[1], p[0]))
 flatter_list     = list(itertools.chain.from_iterable(<list>))
 ```
-* **For details about sort(), sorted(), max() and min() see [Sortable](#sortable).**
-* **Module [operator](#operator) has function itemgetter() that can replace listed [lambdas](#lambda).**
-* **This text uses the term collection instead of [iterable](#abstract-base-classes). For rationale see [duck types](#iterable-duck-types).**
+* **Подробнее о sort(), sorted(), max() и min() см. раздел [Sortable](#sortable).**
+* **Модуль [operator](#operator) содержит функцию itemgetter(), которая может заменить приведённые [лямбды](#lambda).**
+* **В этом тексте используется термин «коллекция» вместо [iterable](#abstract-base-classes). Обоснование см. в [утиных типах](#iterable-duck-types).**
 
 ```python
-<int> = len(<list/dict/set/…>)  # Returns number of items. Doesn't accept iterators.
-<int> = <list>.count(<el>)      # Counts occurrences. Also `if <el> in <coll>: ...`.
-<int> = <list>.index(<el>)      # Returns index of first occ. or raises ValueError.
-<el>  = <list>.pop()            # Removes item from the end (or at index if passed).
-<list>.insert(<int>, <el>)      # Inserts item at index and shifts remaining items.
-<list>.remove(<el>)             # Removes the first occurrence or raises ValueError.
-<list>.clear()                  # Removes all items. Also provided by dict and set.
+<int> = len(<list/dict/set/…>)  # Возвращает количество элементов. Не принимает итераторы.
+<int> = <list>.count(<el>)      # Считает количество вхождений. Также `if <el> in <coll>: ...`.
+<int> = <list>.index(<el>)      # Возвращает индекс первого вхождения или вызывает ValueError.
+<el>  = <list>.pop()            # Удаляет элемент с конца (или по указанному индексу).
+<list>.insert(<int>, <el>)      # Вставляет элемент по индексу со сдвигом остальных элементов.
+<list>.remove(<el>)             # Удаляет первое вхождение или вызывает ValueError.
+<list>.clear()                  # Удаляет все элементы. Также доступно для dict и set.
 ```
 
 
 Dictionary
 ----------
 ```python
-<dict> = {key: val, key: val, ...}            # Use `<dict>[key]` to get or assign the value.
+<dict> = {key: val, key: val, ...}            # Используйте `<dict>[key]` для получения или присвоения значения.
 ```
 
 ```python
-<view> = <dict>.keys()                        # A collection of keys reflecting all changes.
-<view> = <dict>.values()                      # A collection of values that reflects changes.
-<view> = <dict>.items()                       # Coll. of tuples. Each contains key and value.
+<view> = <dict>.keys()                        # Представление (view) ключей, отражающее все изменения словаря.
+<view> = <dict>.values()                      # Представление значений, отражающее все изменения словаря.
+<view> = <dict>.items()                       # Представление пар (кортежей). Каждый содержит ключ и значение.
 ```
 
 ```python
-value  = <dict>.get(key, default=None)        # Returns 'default' argument if key is missing.
-value  = <dict>.setdefault(key, default)      # Returns/writes 'default' when key is missing.
-<dict> = collections.defaultdict(<type>)      # Dict with automatic default value `<type>()`.
+value  = <dict>.get(key, default=None)        # Возвращает аргумент 'default', если ключ отсутствует.
+value  = <dict>.setdefault(key, default)      # Возвращает/записывает 'default', когда ключ отсутствует.
+<dict> = collections.defaultdict(<type>)      # Словарь со значением по умолчанию `<type>()`.
 ```
 
 ```python
-<dict> = dict(<collection>)                   # Creates a dict from coll. of key-value pairs.
-<dict> = dict(zip(keys, values))              # Creates key-value pairs from two collections.
-<dict> = dict.fromkeys(keys [, value])        # Items get value None if only keys are passed.
+<dict> = dict(<collection>)                   # Создаёт словарь из коллекции пар ключ-значение.
+<dict> = dict(zip(keys, values))              # Создаёт пары ключ-значение из двух коллекций.
+<dict> = dict.fromkeys(keys [, value])        # Элементы получают значение None, если переданы только ключи.
 ```
 
 ```python
-<dict>.update(<dict>)                         # Adds items to dict. Passed dict has priority.
-value = <dict>.pop(key)                       # Removes item or raises KeyError when missing.
-{k for k, v in <dict>.items() if v == 123}    # Returns a set of keys whose value equals 123.
-{k: v for k, v in <dict>.items() if k in ks}  # Returns a dict of items with specified keys.
+<dict>.update(<dict>)                         # Добавляет элементы в словарь. Переданный словарь имеет приоритет.
+value = <dict>.pop(key)                       # Удаляет элемент или вызывает KeyError, если ключ не найден.
+{k for k, v in <dict>.items() if v == 123}    # Возвращает множество ключей, значение которых равно 123.
+{k: v for k, v in <dict>.items() if k in ks}  # Возвращает словарь элементов с указанными ключами.
 ```
 
 ### Counter
@@ -119,34 +123,34 @@ value = <dict>.pop(key)                       # Removes item or raises KeyError 
 Set
 ---
 ```python
-<set> = {<el>, <el>, ...}           # Coll. of unique items. Also set(), set(<coll>).
+<set> = {<el>, <el>, ...}           # Коллекция уникальных элементов. Также set(), set(<coll>).
 ```
 
 ```python
-<set>.add(<el>)                     # Adds item to the set. Same as `<set> |= {<el>}`.
-<set>.update(<coll> [, ...])        # Adds items to the set. Same as `<set> |= <set>`.
+<set>.add(<el>)                     # Добавляет элемент во множество. То же, что `<set> |= {<el>}`.
+<set>.update(<coll> [, ...])        # Добавляет элементы во множество. То же, что `<set> |= <set>`.
 ```
 
 ```python
-<set> = <set>.union(<coll>)         # Returns a set of all items. Also <set> | <set>.
-<set> = <set>.intersection(<coll>)  # Returns every shared item. Also <set> & <set>.
-<set> = <set>.difference(<coll>)    # Returns set's unique items. Also <set> - <set>.
+<set> = <set>.union(<coll>)         # Возвращает объединение множеств. Также `<set> | <set>`.
+<set> = <set>.intersection(<coll>)  # Возвращает пересечение элементов. Также `<set> & <set>`.
+<set> = <set>.difference(<coll>)    # Возвращает разность множеств. Также `<set> - <set>`.
 ```
 
 ```python
-<bool> = <set>.issuperset(<coll>)   # Returns False when collection has unique items.
-<bool> = <set>.issubset(<coll>)     # Is collection a superset? Also <set> <= <set>.
+<bool> = <set>.issuperset(<coll>)   # Возвращает False, если в коллекции есть уникальные элементы.
+<bool> = <set>.issubset(<coll>)     # Является ли коллекция подмножеством? Также `<set> <= <set>`.
 ```
 
 ```python
-<el> = <set>.pop()                  # Removes one of items. Raises KeyError if empty.
-<set>.remove(<el>)                  # Removes the item or raises KeyError if missing.
-<set>.discard(<el>)                 # Same as remove() but it doesn't raise an error.
+<el> = <set>.pop()                  # Удаляет и возвращает случайный элемент. Вызывает KeyError, если пусто.
+<set>.remove(<el>)                  # Удаляет элемент или вызывает KeyError, если он отсутствует.
+<set>.discard(<el>)                 # То же, что remove(), но не вызывает ошибку при отсутствии элемента.
 ```
 
 ### Frozen Set
-* **Frozenset is immutable and hashable version of the normal set.**
-* **That means it can be used as a key in a dict or as an item in a set.**
+* **Frozenset — это неизменяемая (immutable) и хешируемая (hashable) версия обычного множества set.**
+* **Это означает, что его можно использовать как ключ в dict или как элемент в set.**
 ```python
 <frozenset> = frozenset(<collection>)
 ```
@@ -154,15 +158,15 @@ Set
 
 Tuple
 -----
-**Tuple is an immutable and hashable list.**
+**Кортеж (Tuple) — это неизменяемый и хешируемый список.**
 ```python
-<tuple> = ()                        # Returns an empty tuple. Also tuple(), tuple(<coll>).
-<tuple> = (<el>,)                   # Returns tuple with one element. Or `<tup.> = <el>,`.
-<tuple> = (<el>, <el> [, ...])      # Returns a tuple. Or `<tuple> = <el>, <el> [, ...]`.
+<tuple> = ()                        # Возвращает пустой кортеж. Также tuple(), tuple(<coll>).
+<tuple> = (<el>,)                   # Возвращает кортеж из одного элемента. Или `<tup.> = <el>,`.
+<tuple> = (<el>, <el> [, ...])      # Возвращает кортеж. Или `<tuple> = <el>, <el> [, ...]`.
 ```
 
 ### Named Tuple
-**Tuple's subclass with named elements.**
+**Подкласс кортежа с именованными элементами (полями).**
 ```python
 >>> import collections as co
 >>> Point = co.namedtuple('Point', 'x y')
@@ -176,11 +180,11 @@ Point(x=1, y=2)
 
 Range
 -----
-**A sequence of evenly spaced integers.**
+**Последовательность равномерно распределённых целых чисел.**
 ```python
-<range> = range(stop)                # I.e. range(to_exclusive). Ints from 0 to `stop-1`.
-<range> = range(start, stop)         # I.e. range(from, to_exc). From start to `stop-1`.
-<range> = range(start, stop, step)   # I.e. range(from_inclusive, to_exclusive, ±step).
+<range> = range(stop)                # То есть range(до_исключ). Числа от 0 до `stop-1`.
+<range> = range(start, stop)         # То есть range(от, до_исключ). От start до `stop-1`.
+<range> = range(start, stop, step)   # То есть range(от_включ, до_исключ, ±шаг).
 ```
 
 ```python
@@ -189,7 +193,7 @@ Range
 ```
 
 ### Enumerate
-**Iterator that zips collection with range.**
+**Итератор, связывающий элементы коллекции с их числовыми индексами.**
 ```python
 for i, el in enumerate(<coll>):
     print(f'Element {el} has index {i}.')
@@ -198,39 +202,39 @@ for i, el in enumerate(<coll>):
 
 Iterator
 --------
-**Potentially endless stream of elements.**
+**Потенциально бесконечный поток элементов.**
 
 ```python
 import itertools as it
 ```
 
 ```python
-<iter> = iter(<coll>)                    # Iterator that returns passed elements one by one.
-<iter> = iter(<func>, to_exc)            # Calls `<func>()` until it receives 'to_exc' value.
-<iter> = (<expr> for <name> in <coll>)   # E.g. `(i+1 for i in range(3))`. Evaluates lazily.
-<el>   = next(<iter> [, default])        # Raises StopIteration or returns 'default' on end.
-<list> = list(<iter>)                    # Returns a list of iterator's remaining elements.
+<iter> = iter(<coll>)                    # Итератор, возвращающий элементы переданной коллекции по одному.
+<iter> = iter(<func>, to_exc)            # Вызывает `<func>()`, пока не вернётся значение 'to_exc'.
+<iter> = (<expr> for <name> in <coll>)   # Например: `(i+1 for i in range(3))`. Вычисляется лениво.
+<el>   = next(<iter> [, default])        # Вызывает StopIteration или возвращает 'default' в конце.
+<list> = list(<iter>)                    # Возвращает список оставшихся элементов итератора.
 ```
 
 ```python
-<iter> = it.count(start=0, step=1)       # Returns updated 'start' endlessly. Accepts floats.
-<iter> = it.repeat(<obj> [, times])      # Returns passed element endlessly or 'times' times.
-<iter> = it.cycle(<coll>)                # Repeats the sequence endlessly. Accepts iterators.
+<iter> = it.count(start=0, step=1)       # Бесконечно возвращает обновлённый 'start'. Принимает float.
+<iter> = it.repeat(<obj> [, times])      # Бесконечно повторяет элемент или 'times' раз.
+<iter> = it.cycle(<coll>)                # Бесконечно циклически перебирает элементы. Принимает итераторы.
 ```
 
 ```python
-<iter> = it.chain(<coll>, <coll>, ...)   # Returns each element of each collection in order.
-<iter> = it.chain.from_iterable(<coll>)  # Accepts collection (i.e. iterable) of collections.
-<iter> = it.islice(<coll>, stop)         # Also accepts 'start' and 'step'. Args can be None.
-<iter> = it.product(<coll>, <coll>)      # Same as `((a, b) for a in arg_1 for b in arg_2)`.
+<iter> = it.chain(<coll>, <coll>, ...)   # Возвращает по порядку каждый элемент каждой коллекции.
+<iter> = it.chain.from_iterable(<coll>)  # Принимает коллекцию (итерируемый объект) коллекций.
+<iter> = it.islice(<coll>, stop)         # Также принимает 'start' и 'step'. Аргументы могут быть None.
+<iter> = it.product(<coll>, <coll>)      # То же, что и `((a, b) for a in arg_1 for b in arg_2)`.
 ```
-* **For loops call `'iter(<coll/iter>)'`, latter returning unmodified iterator.**
+* **Циклы for вызывают `'iter(<coll/iter>)'`, при этом для итератора возвращается он сам без изменений.**
 
 
 Generator
 ---------
-* **Any function that contains a yield statement returns a generator.**
-* **Generators and iterators are interchangeable (see [Iterator](#iterator-1) duck type).**
+* **Любая функция, содержащая оператор yield, возвращает генератор.**
+* **Генераторы и итераторы взаимозаменяемы (см. утиный тип [Iterator](#iterator-1)).**
 
 ```python
 def count(start, step):
@@ -248,13 +252,13 @@ def count(start, step):
 
 Type
 ----
-* **All values in Python are objects.**
-* **Every object has a certain type.**
-* **Type and class are synonymous.**
+* **Все значения в Python являются объектами.**
+* **Каждый объект принадлежит определённому типу.**
+* **Термины «тип» (type) и «класс» (class) синонимичны.**
 
 ```python
-<type> = type(<obj>)                   # Object's type. Also `<obj>.__class__`.
-<bool> = isinstance(<obj>, <type>)     # Also `issubclass(type(<obj>), <type>)`.
+<type> = type(<obj>)                   # Тип объекта. Также `<obj>.__class__`.
+<bool> = isinstance(<obj>, <type>)     # Также `issubclass(type(<obj>), <type>)`.
 ```
 
 ```python
@@ -262,13 +266,13 @@ Type
 (<class 'str'>, <class 'str'>, <class 'str'>)
 ```
 
-#### Some types do not have built-in names, so they must be imported:
+#### Некоторые типы не имеют встроенных имён, поэтому их нужно импортировать:
 ```python
 from types import FunctionType, MethodType, LambdaType, GeneratorType
 ```
 
 ### Abstract Base Classes
-**Each abstract base class specifies a set of virtual subclasses. These classes are then recognized by isinstance() and issubclass() as [subclasses](#subclass) of the ABC, although they are really not. An ABC can also manually decide whether or not a specific class is its virtual subclass, usually based on which methods that class has implemented. For instance, Iterable ABC looks for method iter(), while Collection ABC looks for iter(), contains() and len().**
+**Каждый абстрактный базовый класс (ABC) определяет набор виртуальных подклассов. Эти классы затем распознаются функциями isinstance() и issubclass() как [подклассы](#subclass) этого ABC, даже если они явно от него не наследовались. ABC также может динамически определять принадлежность класса (обычно проверяя наличие нужных методов). Например, ABC Iterable проверяет метод iter(), а Collection — методы iter(), contains() и len().**
 
 ```python
 >>> from collections.abc import Iterable, Collection, Sequence
@@ -280,9 +284,9 @@ True
 +------------------+------------+------------+------------+
 |                  |  Iterable  | Collection |  Sequence  |
 +------------------+------------+------------+------------+
-| list, range, str |    yes     |    yes     |    yes     |
-| dict, set        |    yes     |    yes     |            |
-| iter             |    yes     |            |            |
+| list, range, str |    да      |    да      |    да      |
+| dict, set        |    да      |    да      |            |
+| iter             |    да      |            |            |
 +------------------+------------+------------+------------+
 ```
 
@@ -296,111 +300,111 @@ True
 +--------------------+---------+---------+--------+----------+----------+
 |                    |  Number | Complex |  Real  | Rational | Integral |
 +--------------------+---------+---------+--------+----------+----------+
-| int                |   yes   |   yes   |  yes   |   yes    |   yes    |
-| fractions.Fraction |   yes   |   yes   |  yes   |   yes    |          |
-| float              |   yes   |   yes   |  yes   |          |          |
-| complex            |   yes   |   yes   |        |          |          |
-| decimal.Decimal    |   yes   |         |        |          |          |
+| int                |   да    |   да    |   да   |   да     |   да     |
+| fractions.Fraction |   да    |   да    |   да   |   да     |          |
+| float              |   да    |   да    |   да   |          |          |
+| complex            |   да    |   да    |        |          |          |
+| decimal.Decimal    |   да    |         |        |          |          |
 +--------------------+---------+---------+--------+----------+----------+
 ```
 
 
 String
 ------
-**Immutable sequence of characters.**
+**Неизменяемая последовательность символов.**
 ```python
-<str>  = 'abc'                       # Also "abc". Interprets \n, \t, \x00-\xff, etc.
+<str>  = 'abc'                       # Также "abc". Интерпретирует \n, \t, \x00-\xff и т.д.
 ```
 
 ```python
-<str>  = <str>.strip()               # Strips all whitespace characters from both ends.
-<str>  = <str>.strip('<chars>')      # Strips passed characters. Also lstrip/rstrip().
+<str>  = <str>.strip()               # Удаляет пробельные символы с обоих концов строки.
+<str>  = <str>.strip('<chars>')      # Удаляет указанные символы. Также lstrip/rstrip().
 ```
 
 ```python
-<list> = <str>.split()               # Splits it on one or more whitespace characters.
-<list> = <str>.split(<str>)          # Splits on passed string. Also `maxsplit=<int>`.
-<list> = <str>.splitlines()          # On [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] and \r\n.
-<str>  = <str>.join(<coll_of_str>)   # Joins items by using the string as a separator.
+<list> = <str>.split()               # Разбивает строку по одному или нескольким пробельным символам.
+<list> = <str>.split(<str>)          # Разбивает по указанной строке. Также `maxsplit=<int>`.
+<list> = <str>.splitlines()          # По [\n\r\f\v\x1c-\x1e\x85\u2028\u2029] и \r\n.
+<str>  = <str>.join(<coll_of_str>)   # Объединяет элементы, используя строку в качестве разделителя.
 ```
 
 ```python
-<bool> = <str> in <str>              # Returns True if string contains the substring.
-<bool> = <str>.startswith(<str>)     # Pass tuple of strings to give multiple options.
-<int>  = <str>.find(<str>)           # Returns start index of the first match or `-1`.
+<bool> = <str> in <str>              # Возвращает True, если строка содержит подстроку.
+<bool> = <str>.startswith(<str>)     # Принимает кортеж строк для проверки вариантов.
+<int>  = <str>.find(<str>)           # Возвращает индекс первого совпадения или `-1`.
 ```
 
 ```python
-<str>  = <str>.lower()               # Lowers the case. Also upper/capitalize/title().
-<str>  = <str>.casefold()            # Lower() that converts ẞ/ß to ss, Σ/ς to σ, etc.
-<str>  = <str>.replace(old, new)     # Removes occurrences of string old if new is ''.
-<str>  = <str>.translate(table)      # Get table via str.maketrans(<chr_to_str_dict>).
+<str>  = <str>.lower()               # Переводит в нижний регистр. Также upper/capitalize/title().
+<str>  = <str>.casefold()            # Агрессивный lower(): переводит ẞ/ß в ss, Σ/ς в σ и т.д.
+<str>  = <str>.replace(old, new)     # Заменяет вхождения old; удаляет old, если new равен ''.
+<str>  = <str>.translate(table)      # Таблица создаётся через str.maketrans(<chr_to_str_dict>).
 ```
 
 ```python
-<str>  = chr(<int>)                  # Converts passed integer into Unicode character.
-<int>  = ord(<str>)                  # Converts passed Unicode character into integer.
+<str>  = chr(<int>)                  # Преобразует целое число в соответствующий символ Unicode.
+<int>  = ord(<str>)                  # Преобразует символ Unicode в его целочисленный код.
 ```
-* **Use `'unicodedata.normalize("NFC", <str>)'` on strings like `'Motörhead'` before comparing them to other strings, because `'ö'` can be stored as one or two characters.**
-* **`'NFC'` converts such characters to a single character, while `'NFD'` converts them to two.**
+* **Используйте `'unicodedata.normalize("NFC", <str>)'` для строк вида `'Motörhead'` перед их сравнением, поскольку `'ö'` может храниться как один символ или как два.**
+* **`'NFC'` преобразует составные символы в один символ, а `'NFD'` раскладывает их на два.**
 
 ```python
-<bool> = <str>.isdecimal()           # Checks all chars for [0-9]. Also [०-९], [٠-٩].
-<bool> = <str>.isdigit()             # Checks for [²³¹…] and isdecimal(). Also [፩-፱].
-<bool> = <str>.isnumeric()           # Checks for [¼½¾…] and isdigit(). Also [零〇一…].
-<bool> = <str>.isalnum()             # Checks for [ABC…] and isnumeric(). Also [ªµº…].
-<bool> = <str>.isprintable()         # Checks for [ !"#…], basic emojis and isalnum().
-<bool> = <str>.isspace()             # Checks for [ \t\n\r\f\v\x1c\x1d\x1e\x1f\x85…].
+<bool> = <str>.isdecimal()           # Проверяет, что все символы [0-9]. Также [०-९], [٠-٩].
+<bool> = <str>.isdigit()             # Проверяет на [²³¹…] и isdecimal(). Также [፩-፱].
+<bool> = <str>.isnumeric()           # Проверяет на [¼½¾…] и isdigit(). Также [零〇一…].
+<bool> = <str>.isalnum()             # Проверяет на [ABC…] и isnumeric(). Также [ªµº…].
+<bool> = <str>.isprintable()         # Проверяет на [ !"#…], базовые эмодзи и isalnum().
+<bool> = <str>.isspace()             # Проверяет на пробельные символы [ \t\n\r\f\v\x1c\x1d\x1e\x1f\x85…].
 ```
 
 
 Regex
 -----
-**Functions for regular expression matching.**
+**Функции для работы с регулярными выражениями.**
 
 ```python
 import re
-<str>   = re.sub(r'<regex>', new, text)  # Substitutes occurrences with string 'new'.
-<list>  = re.findall(r'<regex>', text)   # Returns all occurrences as string objects.
-<list>  = re.split(r'<regex>', text)     # Add brackets around regex to keep matches.
-<Match> = re.search(r'<regex>', text)    # Returns first occ. of the pattern or None.
-<Match> = re.match(r'<regex>', text)     # Only searches at the start of the 'text'.
-<iter>  = re.finditer(r'<regex>', text)  # Returns all occurrences as Match objects.
+<str>   = re.sub(r'<regex>', new, text)  # Заменяет совпадения строкой 'new'.
+<list>  = re.findall(r'<regex>', text)   # Возвращает все совпадения в виде списка строк.
+<list>  = re.split(r'<regex>', text)     # Добавьте скобки вокруг regex, чтобы сохранить совпадения.
+<Match> = re.search(r'<regex>', text)    # Находит первое совпадение с шаблоном или возвращает None.
+<Match> = re.match(r'<regex>', text)     # Ищет совпадение только в начале строки 'text'.
+<iter>  = re.finditer(r'<regex>', text)  # Возвращает все совпадения в виде объектов Match.
 ```
 
-* **Raw string literals do not interpret escape sequences, thus enabling us to use the regex-specific escape sequences that cause SyntaxWarning in normal string literals (since 3.12).**
-* **Argument `'new'` can also be a function that accepts a Match object and returns a string.**
-* **Argument `'flags=re.IGNORECASE'` can be used with all functions that are listed above.**
-* **Argument `'flags=re.MULTILINE'` makes `'^'` and `'$'` match the start/end of each line.**
-* **Argument `'flags=re.DOTALL'` makes `'.'` also accept the `'\n'` (besides all other chars).**
-* **`'re.compile(r"<regex>")'` returns a Pattern object with methods sub(), findall(), etc.**
+* **«Сырые» строки (raw string literals, `r'...'`) не интерпретируют escape-последовательности, позволяя использовать спецсимволы regex, вызывающие SyntaxWarning в обычных строках (начиная с 3.12).**
+* **Аргумент `'new'` может быть функцией, принимающей объект Match и возвращающей строку.**
+* **Параметр `'flags=re.IGNORECASE'` применим во всех перечисленных функциях.**
+* **Параметр `'flags=re.MULTILINE'` заставляет `'^'` и `'$'` соответствовать началу/концу каждой строки текста.**
+* **Параметр `'flags=re.DOTALL'` заставляет символ `'.'` соответствовать в том числе и `'\n'`.**
+* **`'re.compile(r"<regex>")'` компилирует regex в объект Pattern с методами sub(), findall() и т.д.**
 
 ### Match Object
 ```python
-<str>   = <Match>.group()                # Returns the whole match. Also group(0).
-<str>   = <Match>.group(1)               # Returns part inside the first brackets.
-<tuple> = <Match>.groups()               # Returns all bracketed parts as strings.
-<int>   = <Match>.start()                # Returns start index of the whole match.
-<int>   = <Match>.end()                  # Returns the match's end index plus one.
+<str>   = <Match>.group()                # Возвращает совпадение целиком. Также group(0).
+<str>   = <Match>.group(1)               # Возвращает часть внутри первых круглых скобок.
+<tuple> = <Match>.groups()               # Возвращает все группы в скобках как кортеж строк.
+<int>   = <Match>.start()                # Возвращает начальный индекс всего совпадения.
+<int>   = <Match>.end()                  # Возвращает конечный индекс совпадения плюс один.
 ```
 
 ### Special Sequences
 ```python
-'\d' == '[0-9]'                          # Also [०-९…]. Matches decimal character.
-'\w' == '[a-zA-Z0-9_]'                   # Also [ª²³…]. Matches alphanumeric or _.
-'\s' == '[ \t\n\r\f\v]'                  # Also [\x1c-\x1f…]. Matches whitespace.
+'\d' == '[0-9]'                          # Также [०-९…]. Соответствует десятичной цифре.
+'\w' == '[a-zA-Z0-9_]'                   # Также [ª²³…]. Соответствует букве, цифре или знаку _.
+'\s' == '[ \t\n\r\f\v]'                  # Также [\x1c-\x1f…]. Соответствует пробельным символам.
 ```
-* **By default, decimal characters and alphanumerics from all alphabets are matched unless `'flags=re.ASCII'` is used. It restricts special sequence matches to the first 128 Unicode characters and also prevents `'\s'` from accepting `'\x1c'`, `'\x1d'`, `'\x1e'` and `'\x1f'` (non-printable characters that divide text into files, tables, rows and fields, respectively).**
-* **Use a capital letter, i.e. `'\D'`, `'\W'` or `'\S'`, for negation. All non-ASCII characters are matched if ASCII flag is used in conjunction with a capital letter.**
+* **По умолчанию сопоставляются цифры и буквы из всех алфавитов, если не указан `'flags=re.ASCII'`. Этот флаг ограничивает совпадения первыми 128 символами Unicode (ASCII) и запрещает `'\s'` принимать управляющие символы `'\x1c'`, `'\x1d'`, `'\x1e'` и `'\x1f'`.**
+* **Используйте заглавные буквы (`'\D'`, `'\W'`, `'\S'`) для отрицания.**
 
 
 Format
 ------
-**String formatting mechanisms.**
+**Механизмы форматирования строк.**
 ```perl
-<str> = f'{<obj>}, {<obj>}'             # Braces can also contain expressions.
-<str> = '{}, {}'.format(<obj>, <obj>)   # Or '{0}, {a}'.format(<obj>, a=<obj>).
-<str> = '%s, %s' % (<obj>, <obj>)       # Old and redundant formatting method.
+<str> = f'{<obj>}, {<obj>}'             # Внутри фигурных скобок можно писать выражения.
+<str> = '{}, {}'.format(<obj>, <obj>)   # Или '{0}, {a}'.format(<obj>, a=<obj>).
+<str> = '%s, %s' % (<obj>, <obj>)       # Устаревший метод (printf-стиль).
 ```
 
 ### Example
@@ -419,10 +423,10 @@ Format
 {<obj>:.<10}                            # '<obj>.....'.
 {<obj>:0}                               # '<obj>'.
 ```
-* **Objects are converted to strings with format() function, e.g. `'format(<obj>, "<10")'`.**
-* **Options can be generated dynamically via nested braces: `f'{<obj>:{<str/int>}[…]}'`.**
-* **Adding `'='` to the expression prepends it to its result, e.g. `f'{1+1=}'` returns `'1+1=2'`.**
-* **Adding `'!r'` to the expression first calls result's [repr()](#class) method and only then format().**
+* **Объекты преобразуются в строки функцией format(), например `'format(<obj>, "<10")'`.**
+* **Параметры можно формировать динамически во вложенных скобках: `f'{<obj>:{<str/int>}[…]}'`.**
+* **Добавление `'='` к выражению выводит само выражение перед результатом: `f'{1+1=}'` вернёт `'1+1=2'`.**
+* **Добавление `'!r'` к выражению сначала вызывает [repr()](#class) объекта и лишь затем format().**
 
 ### Strings
 ```python
@@ -449,7 +453,8 @@ Format
 {1.23456:10.3%}                         # '  123.456%'.
 ```
 
-#### Comparison of presentation types:
+
+#### Сравнение типов представления чисел (Comparison of presentation types):
 ```text
 +---------------+---------------+---------------+---------------+---------------+
 |               |  {<number>}   |   {<num>:f}   |   {<num>:e}   |   {<num>:%}   |
@@ -477,83 +482,83 @@ Format
 |  56.789       |    5.7e+01    |     56.79     |    5.68e+01   |   5678.90%    |
 +---------------+---------------+---------------+---------------+---------------+
 ```
-* **`'{<num>:g}'` is `'{<float>:.6}'` that strips `'.0'` and has exponent starting at `'1e+06'`.**
-* **When both rounding up and rounding down are possible, the one that returns result with even last digit is chosen. Hence `'{6.5:.0f}'` becomes a `'6'`, while `'{7.5:.0f}'` an `'8'`.**
-* **The last rule only effects numbers that can be represented exactly by a float (`.5`, `.25`, …).**
+* **`'{<num>:g}'` эквивалентно `'{<float>:.6}'`, но убирает `'.0'` и переключается на экспоненциальную запись, начиная с `'1e+06'`.**
+* **При округлении половины (round half to even) выбирается значение с чётной последней цифрой: поэтому `'{6.5:.0f}'` даёт `'6'`, а `'{7.5:.0f}'` даёт `'8'`.**
+* **Это правило действует только на числа, которые могут быть точно представлены типом float (`.5`, `.25`, …).**
 
 ### Ints
 ```python
-{90:x}                                  # Converts 90 to hexadecimal number '5a'.
-{90:b}                                  # Converts 90 to binary number '1011010'.
-{90:c}                                  # Converts 90 to Unicode character 'Z'.
+{90:x}                                  # Преобразует 90 в шестнадцатеричное число '5a'.
+{90:b}                                  # Преобразует 90 в двоичное число '1011010'.
+{90:c}                                  # Преобразует 90 в символ Unicode 'Z'.
 ```
 
 
 Numbers
 -------
 ```python
-<integer> = int(<float/str/bool>)             # A whole number. Truncates floats.
-<float>   = float(<integer/str/bool>)         # 8-byte decimal. Also <fl>e±<int>.
-<complex> = complex(real=0, imag=0)           # Complex number. Also <fl> ± <fl>j.
+<integer> = int(<float/str/bool>)             # Целое число. Отсекает дробную часть у float.
+<float>   = float(<integer/str/bool>)         # 8-байтовое число с плавающей точкой. Также <fl>e±<int>.
+<complex> = complex(real=0, imag=0)           # Комплексное число. Также <fl> ± <fl>j.
 <Fract>   = fractions.Fraction(numr, denom)   # `<Fraction> = <Fraction> / <int>`.
 <Decimal> = decimal.Decimal(<str/int/tup>)    # `Decimal((1, (2,), 3)) == -2000`.
 ```
-* **`'int(<str>)'` and `'float(<str>)'` raise ValueError exception if string is malformed.**
-* **Decimal objects store numbers exactly, unlike most floats where `'1.1 + 2.2 != 3.3'`.**
-* **Floats can be compared with: `'math.isclose(<float>, <float>, rel_tol=1e-9)'`.**
-* **Precision of decimal operations is set with: `'decimal.getcontext().prec = <int>'`.**
-* **Bools can be used anywhere ints can, since bool is a subclass of int: `'True + 1 == 2'`.**
+* **`'int(<str>)'` и `'float(<str>)'` вызывают исключение ValueError, если строка некорректна.**
+* **Объекты Decimal хранят числа абсолютно точно, в отличие от большинства float, где `'1.1 + 2.2 != 3.3'`.**
+* **Числа с плавающей точкой следует сравнивать через: `'math.isclose(<float>, <float>, rel_tol=1e-9)'`.**
+* **Точность операций Decimal задаётся через: `'decimal.getcontext().prec = <int>'`.**
+* **Булевы значения bool можно использовать везде, где допустимы int, так как bool — подкласс int: `'True + 1 == 2'`.**
 
 ### Built-in
 ```python
-<num> = abs(<num>)                            # E.g. `abs(-50) == abs(50) == 50`.
-<num> = pow(<num>, <num>)                     # E.g. `pow(3, 4) == 3 ** 4 == 81`.
-<num> = round(<num> [, ndigits])              # E.g. `round(123.45, -1) == 120`.
-<num> = min(<coll_of_nums>)                   # Also `max(<num>, <num> [, ...])`.
-<num> = sum(<coll_of_nums>)                   # Also `math.prod(<coll_of_nums>)`.
+<num> = abs(<num>)                            # Модуль числа: `abs(-50) == abs(50) == 50`.
+<num> = pow(<num>, <num>)                     # Возведение в степень: `pow(3, 4) == 3 ** 4 == 81`.
+<num> = round(<num> [, ndigits])              # Округление: `round(123.45, -1) == 120`.
+<num> = min(<coll_of_nums>)                   # Минимум. Также `max(<num>, <num> [, ...])`.
+<num> = sum(<coll_of_nums>)                   # Сумма элементов. Также `math.prod(<coll_of_nums>)`.
 ```
 
 ### Math
 ```python
 import math as mt
-<num> = mt.pi/inf/nan                         # `inf*0` and `nan+1` return `nan`.
-<num> = mt.sqrt/factorial(<num>)              # `sqrt(-1)` will raise ValueError.
-<num> = mt.sin/cos/tan(<num>)                 # Also degrees, radians, asin, etc.
-<num> = mt.log/log10/log2(<num>)              # Log() can accept 'base' argument.
+<num> = mt.pi/inf/nan                         # `inf*0` и `nan+1` возвращают `nan`.
+<num> = mt.sqrt/factorial(<num>)              # `sqrt(-1)` вызовет исключение ValueError.
+<num> = mt.sin/cos/tan(<num>)                 # Также degrees, radians, asin и др.
+<num> = mt.log/log10/log2(<num>)              # Log() может принимать аргумент 'base'.
 ```
 
 ### Statistics
 ```python
 import statistics as st
-<obj>  = st.mean/median(<coll>)               # Mode returns most common element.
-<num>  = st.variance/stdev(<coll>)            # Estimates values from the sample.
-<list> = st.quantiles(<coll>, n=4)            # Estimates cut points from sample.
+<obj>  = st.mean/median(<coll>)               # Mode возвращает наиболее часто встречающийся элемент.
+<num>  = st.variance/stdev(<coll>)            # Оценивает дисперсию / станд. отклонение по выборке.
+<list> = st.quantiles(<coll>, n=4)            # Оценивает квартили (точки разбиения) по выборке.
 ```
 
 ### Random
 ```python
 import random as rd
-<num> = rd.random()                           # Selects random float from [0, 1).
-<num> = rd.randint/uniform(a, b)              # Selects an int/float from [a, b].
-<num> = rd.gauss(mean, stdev)                 # Also triangular(low, high, mode).
-<obj> = rd.choice(<sequence>)                 # Doesn't mutate. Also sample(p, n).
-rd.shuffle(<list>)                            # Works with all mutable sequences.
+<num> = rd.random()                           # Случайное число float из полуинтервала [0, 1).
+<num> = rd.randint/uniform(a, b)              # Случайное int/float из отрезка [a, b].
+<num> = rd.gauss(mean, stdev)                 # Нормальное распределение. Также triangular(low, high, mode).
+<obj> = rd.choice(<sequence>)                 # Случайный выбор без изменений. Также sample(p, n).
+rd.shuffle(<list>)                            # Перемешивает на месте. Работает с любыми изменяемыми seq.
 ```
 
 ### Hex, Bin
 ```python
-<int> = 0x<hex>                               # E.g. `0xFf == 255`. Also 0b<bin>.
-<int> = int('±<hex>', 16)                     # Also int('±0x<hex>/±0b<bin>', 0).
-<str> = hex(<int>)                            # Returns '[-]0x<hex>'. Also bin().
+<int> = 0x<hex>                               # Например: `0xFf == 255`. Также 0b<bin>.
+<int> = int('±<hex>', 16)                     # Также int('±0x<hex>/±0b<bin>', 0).
+<str> = hex(<int>)                            # Возвращает '[-]0x<hex>'. Также bin().
 ```
 
 ### Bitwise
 ```python
-<int> = <int> & <int>                         # E.g. `0b1100 & 0b1010 == 0b1000`.
-<int> = <int> | <int>                         # E.g. `0b1100 | 0b1010 == 0b1110`.
-<int> = <int> ^ <int>                         # E.g. `0b1100 ^ 0b1010 == 0b0110`.
-<int> = <int> << n_bits                       # E.g. `0b1111 << 4 == 0b11110000`.
-<int> = ~<int>                                # E.g. `~100 == -(100+1) == -101`.
+<int> = <int> & <int>                         # Побитовое И: `0b1100 & 0b1010 == 0b1000`.
+<int> = <int> | <int>                         # Побитовое ИЛИ: `0b1100 | 0b1010 == 0b1110`.
+<int> = <int> ^ <int>                         # Побитовое исключающее ИЛИ (XOR): `0b1100 ^ 0b1010 == 0b0110`.
+<int> = <int> << n_bits                       # Битовый сдвиг влево: `0b1111 << 4 == 0b11110000`.
+<int> = ~<int>                                # Побитовое НЕ (инверсия): `~100 == -(100+1) == -101`.
 ```
 
 
@@ -587,7 +592,7 @@ import itertools as it
 
 Datetime
 --------
-**Module that provides date, time and datetime objects.**
+**Модуль для работы с объектами даты, времени и даты/времени.**
 
 ```python
 # $ pip3 install python-dateutil
@@ -596,53 +601,53 @@ import zoneinfo, dateutil.tz
 ```
 
 ```python
-<D>  = date(year, month, day)               # Only accepts valid dates between AD 1 and 9999.
-<T>  = time(hour=0, minute=0, second=0)     # Accepts `microsecond=0, tzinfo=None, fold=0`.
-<DT> = datetime(year, month, day, hour=0)   # Accepts `minute=0, second=0, microsecond=0, …`.
-<TD> = timedelta(weeks=0, days=0, hours=0)  # Accepts `minutes=0, seconds=0, microseconds=0`.
+<D>  = date(year, month, day)               # Принимает корректные даты от 1 до 9999 года н.э.
+<T>  = time(hour=0, minute=0, second=0)     # Принимает `microsecond=0, tzinfo=None, fold=0`.
+<DT> = datetime(year, month, day, hour=0)   # Принимает `minute=0, second=0, microsecond=0, …`.
+<TD> = timedelta(weeks=0, days=0, hours=0)  # Принимает `minutes=0, seconds=0, microseconds=0`.
 ```
-* **Times and datetimes that have defined timezone are called _aware_ and ones that don't, _naive_. If time or datetime object is naive, it is presumed to be in the system's timezone.**
-* **`'fold=1'` means the second pass in case of time jumping back (usually for one hour).**
-* **Timedelta normalizes arguments to ±days, seconds (< 86 400) and microseconds (< 1M). Its str() method returns `'[±D, ]H:MM:SS[.…]'` and total_seconds() a float of seconds.**
-* **Use `'<D/DT>.weekday()'` to get the day of the week as an int, with Monday being 0.**
+* **Объекты времени и даты с заданной таймзоной называются осведомлёнными (_aware_), а без неё — наивными (_naive_). Наивные объекты считаются находящимися в системном часовом поясе.**
+* **`'fold=1'` обозначает второй проход при переводе стрелок часов назад (обычно на 1 час).**
+* **Timedelta нормализует аргументы к ±дням, секундам (< 86 400) и микросекундам (< 1M). Метод str() возвращает `'[±D, ]H:MM:SS[.…]'`, а total_seconds() — количество секунд числом float.**
+* **Используйте `'<D/DT>.weekday()'` для получения дня недели числом (понедельник — 0).**
 
 ### Now
 ```python
-<D/DTn> = D/DT.today()                      # Current local date or naive DT. Also DT.now().
-<DTa>   = DT.now(<tzinfo>)                  # Aware DT from current time in passed timezone.
+<D/DTn> = D/DT.today()                      # Текущая локальная дата или наивный DT. Также DT.now().
+<DTa>   = DT.now(<tzinfo>)                  # Осведомлённый DT для текущего времени в переданной зоне.
 ```
-* **To extract time use `'<DTn>.time()'`, `'<DTa>.time()'` or `'<DTa>.timetz()'`.**
+* **Для извлечения времени используйте `'<DTn>.time()'`, `'<DTa>.time()'` или `'<DTa>.timetz()'`.**
 
 ### Timezone
 ```python
-<tzinfo> = timezone.utc                     # Coordinated universal time. London without DST.
-<tzinfo> = timezone(<timedelta>)            # Timezone with fixed offset from universal time.
-<tzinfo> = dateutil.tz.tzlocal()            # Local timezone with dynamic offset from the UTC.
-<tzinfo> = zoneinfo.ZoneInfo('<iana_key>')  # 'Continent/City_Name' zone with dynamic offset.
-<DTa>    = <DT>.astimezone(<tzinfo>)        # Converts to the passed or local fixed timezone.
-<Ta/DTa> = <T/DT>.replace(tzinfo=<tzinfo>)  # Changes the timezone object without conversion.
+<tzinfo> = timezone.utc                     # Всемирное координированное время (UTC). Лондон без DST.
+<tzinfo> = timezone(<timedelta>)            # Часовой пояс с фиксированным смещением от UTC.
+<tzinfo> = dateutil.tz.tzlocal()            # Локальный часовой пояс с динамическим смещением от UTC.
+<tzinfo> = zoneinfo.ZoneInfo('<iana_key>')  # Зона 'Континент/Город' с динамическим смещением (IANA).
+<DTa>    = <DT>.astimezone(<tzinfo>)        # Преобразует в переданный или локальный часовой пояс.
+<Ta/DTa> = <T/DT>.replace(tzinfo=<tzinfo>)  # Заменяет объект таймзоны без конвертации времени.
 ```
-* **Timezones returned by tzlocal(), ZoneInfo(), and implicit local timezone of naive objects have offsets that vary through time due to DST and historical changes of the base offset.**
-* **To get ZoneInfo() to work on Windows run `'> pip3 install tzdata'`.**
+* **Таймзоны, возвращаемые tzlocal(), ZoneInfo() и системная таймзона наивных объектов имеют смещение, изменяющееся во времени из-за перехода на летнее время (DST).**
+* **Чтобы ZoneInfo() работал на Windows, выполните `'> pip3 install tzdata'`.**
 
 ### Encode
 ```python
-<D/T/DT> = D/T/DT.fromisoformat(<str>)      # Object from the ISO string. Raises ValueError.
-<DT>     = DT.strptime(<str>, '<format>')   # Naive or aware datetime from the custom string.
-<D/DTn>  = D/DT.fromordinal(<int>)          # Date or DT from days since the Gregorian NYE 1.
-<DTn>    = DT.fromtimestamp(<float>)        # A local naive DT from seconds since the epoch.
-<DTa>    = DT.fromtimestamp(<float>, <tz>)  # An aware datetime from seconds since the epoch.
+<D/T/DT> = D/T/DT.fromisoformat(<str>)      # Создаёт объект из ISO-строки. Вызывает ValueError при ошибке.
+<DT>     = DT.strptime(<str>, '<format>')   # Наивный или осведомлённый datetime из строки по формату.
+<D/DTn>  = D/DT.fromordinal(<int>)          # Дата или DT по количеству дней с 1 января 1 года н.э.
+<DTn>    = DT.fromtimestamp(<float>)        # Локальный наивный DT из секунд с начала эпохи Unix.
+<DTa>    = DT.fromtimestamp(<float>, <tz>)  # Осведомлённый datetime из секунд с начала эпохи Unix.
 ```
-* **ISO strings come in following forms: `'YYYY-MM-DD'`, `'HH:MM:SS.mmmuuu[±HH:MM]'`, or both separated by an arbitrary character. All parts following the hours are optional.**
-* **Python uses the Unix epoch: `'1970-01-01 00:00 UTC'`, `'1970-01-01 01:00 CET'`, ...**
+* **ISO-строки имеют вид: `'YYYY-MM-DD'`, `'HH:MM:SS.mmmuuu[±HH:MM]'` или оба вместе через произвольный символ. Все части после часов опциональны.**
+* **Python использует эпоху Unix: `'1970-01-01 00:00 UTC'`, `'1970-01-01 01:00 CET'`, ...**
 
 ### Decode
 ```python
-<str>    = <D/T/DT>.isoformat(sep='T')      # Also `timespec='auto/hours/minutes/seconds/…'`.
-<str>    = <D/T/DT>.strftime('<format>')    # Returns custom string representation of object.
-<int>    = <D/DT>.toordinal()               # Days since NYE 1, ignoring DT's time and zone.
-<float>  = <DTn>.timestamp()                # Seconds since the epoch from a local naive DT.
-<float>  = <DTa>.timestamp()                # Seconds since the epoch from an aware datetime.
+<str>    = <D/T/DT>.isoformat(sep='T')      # Также `timespec='auto/hours/minutes/seconds/…'`.
+<str>    = <D/T/DT>.strftime('<format>')    # Возвращает строковое представление по заданному формату.
+<int>    = <D/DT>.toordinal()               # Количество дней с 1 января 1 года, без учёта времени и зоны.
+<float>  = <DTn>.timestamp()                # Секунды с начала эпохи Unix для наивного DT.
+<float>  = <DTa>.timestamp()                # Секунды с начала эпохи Unix для осведомлённого DT.
 ```
 
 ### Format
@@ -651,58 +656,58 @@ import zoneinfo, dateutil.tz
 >>> dta.strftime("%dth of %B '%y (%a), %I:%M %p %Z")
 "14th of August '25 (Thu), 11:39 PM UTC+02:00"
 ```
-* **`'%z'` accepts `'±HH[:]MM'` and returns `'±HHMM'` or empty string if object is naive.**
-* **`'%Z'` accepts `'UTC'`, `'GMT'` or local timezone's code and returns timezone's name, `'UTC[±HH:MM]'` if timezone is nameless, or an empty string if object is naive.**
+* **`'%z'` принимает `'±HH[:]MM'` и возвращает `'±HHMM'` или пустую строку, если объект наивный.**
+* **`'%Z'` принимает `'UTC'`, `'GMT'` или локальный код зоны и возвращает название таймзоны, `'UTC[±HH:MM]'` (если безымянная) или пустую строку, если объект наивный.**
 
 ### Arithmetics
 ```python
-<bool>  =  <D/DTn>  >  <D/DTn>              # Ignores time jumps (fold attribute). Also `==`.
-<bool>  =  <DTa>    >  <DTa>                # Ignores time jumps if they share tzinfo object.
-<TD>    =  <D/DTn>  -  <D/DTn>              # Ignores jumps. Convert to UTC for actual delta.
-<TD>    =  <DTa>    -  <DTa>                # Ignores jumps if they share the tzinfo object.
-<D/DT>  =  <D/DT>   ±  <TD>                 # Returned datetime can fall into a missing hour.
-<TD>    =  <TD>     ±  <TD>                 # Also `<TD> = abs(<TD>)`, `<num> = <TD> / <TD>`.
+<bool>  =  <D/DTn>  >  <D/DTn>              # Игнорирует скачки времени (атрибут fold). Также `==`.
+<bool>  =  <DTa>    >  <DTa>                # Игнорирует скачки, если объекты разделяют один tzinfo.
+<TD>    =  <D/DTn>  -  <D/DTn>              # Игнорирует скачки. Для точной дельты переведите в UTC.
+<TD>    =  <DTa>    -  <DTa>                # Игнорирует скачки, если разделяют один объект tzinfo.
+<D/DT>  =  <D/DT>   ±  <TD>                 # Полученный datetime может попасть в несуществующий час.
+<TD>    =  <TD>     ±  <TD>                 # Также `<TD> = abs(<TD>)`, `<num> = <TD> / <TD>`.
 ```
 
 
 Function
 --------
-**Independent block of code that returns a value when called.**
+**Независимый блок кода, возвращающий значение при вызове.**
 
 ```python
-def my_func(<nondefault_args>): ...                   # E.g. `my_func(x, y):`.
-def my_func(<default_args>): ...                      # E.g. `my_func(x=0, y=0):`.
-def my_func(<nondef_args>, <def_args>): ...           # E.g. `my_func(x, y=0):`.
+def my_func(<nondefault_args>): ...                   # Например: `my_func(x, y):`.
+def my_func(<default_args>): ...                      # Например: `my_func(x=0, y=0):`.
+def my_func(<nondef_args>, <def_args>): ...           # Например: `my_func(x, y=0):`.
 ```
-* **Function returns None if it doesn't encounter the `'return <object/expr>'` statement.**
-* **Run `'global <var_name>'` inside the function before assigning to the global variable.**
-* **Value of a default argument is evaluated when function is first encountered in the scope.**
-* **Any mutation of a default argument value will persist between function invocations!**
+* **Функция возвращает None, если не встречает оператор `'return <object/expr>'`.**
+* **Вызовите `'global <var_name>'` внутри функции перед присваиванием глобальной переменной.**
+* **Значение аргумента по умолчанию вычисляется один раз при первом разборе функции.**
+* **Любая модификация изменяемого аргумента по умолчанию сохраняется между вызовами функции!**
 
 ### Function Call
 
 ```python
-<obj> = <func>(<positional_args>)                     # E.g. `my_func(0, 0)`.
-<obj> = <func>(<keyword_args>)                        # E.g. `my_func(x=0, y=0)`.
-<obj> = <func>(<pos_args>, <key_args>)                # E.g. `my_func(0, y=0)`.
+<obj> = <func>(<positional_args>)                     # Например: `my_func(0, 0)`.
+<obj> = <func>(<keyword_args>)                        # Например: `my_func(x=0, y=0)`.
+<obj> = <func>(<pos_args>, <key_args>)                # Например: `my_func(0, y=0)`.
 ```
 
 
 Splat
 -----
-**Splat operator, i.e. `'*'`, expands collection into positional arguments, while splatty-splat, i.e. `'**'`, expands a dictionary into keyword arguments.**
+**Оператор splat, т.е. `'*'`, распаковывает коллекцию в позиционные аргументы, а splatty-splat, т.е. `'**'`, распаковывает словарь в именованные (keyword) аргументы.**
 ```python
 args, kwargs = (1, 2), {'z': 3}
 func(*args, **kwargs)
 ```
 
-#### Is the same as:
+#### Эквивалентно:
 ```python
 func(1, 2, z=3)
 ```
 
 ### Inside Function Def
-**Splat combines zero or more positional arguments into a tuple, while splatty-splat combines zero or more keyword arguments into a dictionary.**
+**Оператор `*` упаковывает ноль или более позиционных аргументов в кортеж, а `**` — именованные аргументы в словарь.**
 ```python
 def add(*args):
     return sum(args)
@@ -717,23 +722,23 @@ def add(*args):
 +-------------------------+--------------+--------------+------------+
 |                         | fn(x=1, y=2) |  fn(1, y=2)  |  fn(1, 2)  |
 +-------------------------+--------------+--------------+------------+
-| fn(x, *args, **kwargs): |     yes      |     yes      |    yes     |
-| fn(*args, y, **kwargs): |     yes      |     yes      |            |
-| fn(*, x, **kwargs):     |     yes      |              |            |
+| fn(x, *args, **kwargs): |     да       |     да       |    да      |
+| fn(*args, y, **kwargs): |     да       |     да       |            |
+| fn(*, x, **kwargs):     |     да       |              |            |
 +-------------------------+--------------+--------------+------------+
 ```
 
 ### Collection Unpacking
 ```python
-head, *body, tail = <collection>    # Head or tail can be omitted.
+head, *body, tail = <collection>    # head или tail можно опустить.
 ```
 
 ### Inside Coll Literals
 ```python
-<list>  = [*<coll> [, ...]]         # Same as `list(<coll>) [+ ...]`.
-<tuple> = (*<coll>, [...])          # Same as `tuple(<coll>) [+ ...]`.
-<set>   = {*<coll> [, ...]}         # Same as `set(<coll>) [| ...]`.
-<dict>  = {**<dict> [, ...]}        # Last dict has priority. Also |.
+<list>  = [*<coll> [, ...]]         # То же, что и `list(<coll>) [+ ...]`.
+<tuple> = (*<coll>, [...])          # То же, что и `tuple(<coll>) [+ ...]`.
+<set>   = {*<coll> [, ...]}         # То же, что и `set(<coll>) [| ...]`.
+<dict>  = {**<dict> [, ...]}        # Последний словарь имеет приоритет. Также `|`.
 ```
 
 
@@ -741,20 +746,20 @@ Inline
 ------
 ### Lambda
 ```python
-<func> = lambda: <return_val>                     # A single statement function.
-<func> = lambda <arg> [, ...]: <return_val>       # Also allows default arguments.
+<func> = lambda: <return_val>                     # Однострочная анонимная функция.
+<func> = lambda <arg> [, ...]: <return_val>       # Также допускает аргументы по умолчанию.
 ```
 
 ### Comprehensions
 ```python
-<list> = [i+1 for i in range(5)]                  # Returns `[1, 2, 3, 4, 5]`.
-<iter> = (i for i in range(10) if i > 5)          # Returns `iter([6, 7, 8, 9])`.
-<set>  = {i+5 for i in range(5)}                  # Returns `{5, 6, 7, 8, 9}`.
-<dict> = {i: i**2 for i in range(1, 4)}           # Returns `{1: 1, 2: 4, 3: 9}`.
+<list> = [i+1 for i in range(5)]                  # Возвращает `[1, 2, 3, 4, 5]`.
+<iter> = (i for i in range(10) if i > 5)          # Возвращает `iter([6, 7, 8, 9])`.
+<set>  = {i+5 for i in range(5)}                  # Возвращает `{5, 6, 7, 8, 9}`.
+<dict> = {i: i**2 for i in range(1, 4)}           # Возвращает `{1: 1, 2: 4, 3: 9}`.
 ```
 
 ```python
->>> [l+r for l in 'abc' for r in '123']           # Inner loop is on right side.
+>>> [l+r for l in 'abc' for r in '123']           # Вложенный цикл указывается справа.
 ['a1', 'a2', 'a3', ..., 'c3']
 ```
 
@@ -764,74 +769,74 @@ from functools import reduce
 ```
 
 ```python
-<iter> = map(lambda x: x + 1, range(5))           # Returns `iter([1, 2, 3, 4, 5])`.
-<iter> = filter(lambda x: x > 5, range(10))       # Returns `iter([6, 7, 8, 9])`.
-<obj>  = reduce(lambda out, x: out+x, range(5))   # Returns 10. Accepts 'initial'.
+<iter> = map(lambda x: x + 1, range(5))           # Возвращает `iter([1, 2, 3, 4, 5])`.
+<iter> = filter(lambda x: x > 5, range(10))       # Возвращает `iter([6, 7, 8, 9])`.
+<obj>  = reduce(lambda out, x: out+x, range(5))   # Возвращает 10. Принимает 'initial'.
 ```
 
 ### Any, All
 ```python
-<bool> = any(<collection>)                        # Is bool(<el>) True for any el?
-<bool> = all(<collection>)                        # Is it True for all (or empty)?
+<bool> = any(<collection>)                        # Истинен ли bool(<el>) хотя бы для одного элемента?
+<bool> = all(<collection>)                        # Истинен ли для всех элементов (или если пусто)?
 ```
 
 ### Conditional Exp
 ```python
-<obj> = <exp> if <condition> else <exp>           # Evaluates only one expression.
+<obj> = <exp> if <condition> else <exp>           # Вычисляет только одно из выражений.
 ```
 
 ```python
->>> [i if i else 'zero' for i in (0, 1, 2)]       # `any(['', [], None])` is False.
+>>> [i if i else 'zero' for i in (0, 1, 2)]       # `any(['', [], None])` возвращает False.
 ['zero', 1, 2]
 ```
 
 ### And, Or
 ```python
-<obj> = <exp> and <exp> [and ...]                 # Returns first false or last obj.
-<obj> = <exp> or <exp> [or ...]                   # Returns first true or last obj.
+<obj> = <exp> and <exp> [and ...]                 # Возвращает первый ложный или последний объект.
+<obj> = <exp> or <exp> [or ...]                   # Возвращает первый истинный или последний объект.
 ```
 
 ### Walrus Operator
 ```python
->>> [i for ch in '0123' if (i := int(ch))]        # Assigns to var in mid-sentence.
+>>> [i for ch in '0123' if (i := int(ch))]        # Присваивает значение переменной прямо в выражении.
 [1, 2, 3]
 ```
 
 ### Named Tuple, Enum, Dataclass
 ```python
 from collections import namedtuple
-Point = namedtuple('Point', 'x y')                # Creates tuple's subclass.
-point = Point(0, 0)                               # Returns its instance.
+Point = namedtuple('Point', 'x y')                # Создаёт подкласс кортежа.
+point = Point(0, 0)                               # Возвращает экземпляр.
 
 from enum import Enum
-Direction = Enum('Direction', 'N E S W')          # Creates an enumeration.
-direction = Direction.N                           # Returns its member.
+Direction = Enum('Direction', 'N E S W')          # Создаёт перечисление.
+direction = Direction.N                           # Возвращает его элемент.
 
 from dataclasses import make_dataclass
-Player = make_dataclass('Player', ['p', 'd'])     # Creates a normal class.
-player = Player(point, direction)                 # Returns its instance.
+Player = make_dataclass('Player', ['p', 'd'])     # Создаёт обычный класс.
+player = Player(point, direction)                 # Возвращает его экземпляр.
 ```
 
 
 Import
 ------
-**Mechanism that makes code in one file available to another file.**
+**Механизм, делающий код из одного файла доступным в другом файле.**
 
 ```python
-import <module>                      # Imports a built-in module or `<module>.py`.
-import <package>                     # Built-in package or `<package>/__init__.py`.
-import <package>.<module>            # Package's module or `<package>/<module>.py`.
-from <pkg/mod>[.…] import <obj>      # Imports a module, class, func or variable.
+import <module>                      # Импортирует встроенный модуль или `<module>.py`.
+import <package>                     # Встроенный пакет или `<package>/__init__.py`.
+import <package>.<module>            # Модуль пакета или `<package>/<module>.py`.
+from <pkg/mod>[.…] import <obj>      # Импортирует модуль, класс, функцию или переменную.
 ```
-* **Package is a collection of modules, but it can also define its own functions, variables, etc. On a filesystem this corresponds to a directory of Python files with an optional init script.**
-* **`'import <package>'` only exposes modules that are imported inside `'__init__.py'`.**
-* **Directory of the file that is passed to python command serves as the root of local imports.**
-* **Use relative imports, i.e. `'from .[…][<pkg/mod>[.…]] import <obj>'`, if project has scattered entry points. Another option is to install the whole project by moving its code into 'src' dir, adding ['pyproject.toml'](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#basic-information) to its root, and running `'$ pip3 install -e .'`.**
+* **Пакет — это набор модулей, но он также может определять собственные функции, переменные и т.д. В файловой системе это папка со скриптами Python и опциональным файлом `__init__.py`.**
+* **`'import <package>'` открывает доступ только к тем модулям, которые явно импортированы в `'__init__.py'`.**
+* **Директория файла, переданного команде `python`, служит корнем для локальных импортов.**
+* **Используйте относительные импорты `'from .[…][<pkg/mod>[.…]] import <obj>'`, если проект имеет разрозненные точки входа. Другой вариант — перенести код в папку `src`, добавить [`pyproject.toml`](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#basic-information) в корень и выполнить `'$ pip3 install -e .'`.**
 
 
 Closure
 -------
-**We have/get a closure in Python when a nested function references a value of its enclosing function and then the enclosing function returns its nested function (any value that is ref&shy;erenced from within multiple nested functions gets shared).**
+**Замыкание (closure) в Python возникает, когда вложенная функция обращается к значениям внешней функции, и внешняя функция возвращает эту вложенную функцию (любое значение, используемое в нескольких вложенных функциях, становится общим).**
 
 ```python
 def get_multiplier(a):
@@ -847,7 +852,7 @@ def get_multiplier(a):
 ```
 
 ### Partial
-**Partial transforms a function by storing some (or all) of its arguments. It is useful when a function needs to be passed as an argument, e.g. `'collections.defaultdict(<func>)'`, `'iter(<func>, to_exc)'` and `'dataclasses.field(default_factory=<func>)'`.**
+**Partial трансформирует функцию, фиксируя часть (или все) её аргументов. Это полезно, когда функцию нужно передать в качестве аргумента, например `'collections.defaultdict(<func>)'`, `'iter(<func>, to_exc)'` и `'dataclasses.field(default_factory=<func>)'`.**
 
 ```python
 def mul(a, b):
@@ -862,7 +867,7 @@ def mul(a, b):
 ```
 
 ### Non-Local
-**If variable is being assigned to anywhere in the scope (i.e., body of a function), it is treated as&nbsp;a local variable unless it is declared `'global'` or `'nonlocal'` before its first usage.**
+**Если переменной присваивается значение внутри тела функции, она считается локальной переменной, если только не объявлена как `'global'` или `'nonlocal'` перед первым использованием.**
 
 ```python
 def get_counter():
@@ -883,7 +888,7 @@ def get_counter():
 
 Decorator
 ---------
-**A decorator takes a function, adds some functionality and returns it. It can be any [callable](#callable), but is usually implemented as a function that returns a [closure](#closure).**
+**Декоратор принимает функцию, расширяет её поведение и возвращает результат. Им может быть любой вызываемый объект ([callable](#callable)), но обычно это функция, возвращающая [замыкание](#closure).**
 
 ```python
 @decorator_name
@@ -892,7 +897,7 @@ def func_that_is_passed_to_dec():
 ```
 
 ### Debugger
-**Prints function's name every time function is called. It uses `'@wraps'` decorator to move the&nbsp;metadata from func() into out(). Without it, `'add.__name__'` would return `'out'`.**
+**Печатает имя функции при каждом её вызове. Использует декоратор `'@wraps'` для переноса метаданных из func() в out(). Без него `'add.__name__'` вернуло бы `'out'`.**
 
 ```python
 from functools import wraps
@@ -910,7 +915,7 @@ def add(x, y):
 ```
 
 ### Cache
-**Stores function's return values and reuses them later. To clear stored return values run `'<func>.cache_clear()'`, or use `'@lru_cache(maxsize=<int>)'` decorator instead.**
+**Кэширует результаты выполнения функции для повторного использования. Для очистки вызовите `'<func>.cache_clear()'`, либо используйте `'@lru_cache(maxsize=<int>)'`.**
 
 ```python
 from functools import cache
@@ -919,11 +924,11 @@ from functools import cache
 def fibonacci(n):
     return n if n < 2 else fibonacci(n-2) + fibonacci(n-1)
 ```
-* **CPython interpreter limits recursion depth to 3000 by default.**
-* **To increase this limit run `'sys.setrecursionlimit(<int>)'`.**
+* **Интерпретатор CPython по умолчанию ограничивает глубину рекурсии числом 3000.**
+* **Чтобы увеличить этот лимит, выполните `'sys.setrecursionlimit(<int>)'`.**
 
 ### Debug with Args
-**Decorator that prints function's name and optionally also it's result.**
+**Декоратор, который выводит имя функции и опционально её результат.**
 ```python
 from functools import wraps
 
@@ -943,12 +948,12 @@ def debug(print_result=False):
 def add(x, y):
     return x + y
 ```
-* **Using `'@debug'` without arguments won't work here because add() is then passed via&nbsp;'print_result' argument. To fix this issue use `'def debug(fn=None, *, ...)'` in&nbsp;def&nbsp;and `'return decorator(fn) if fn else decorator'` as the last line.**
+* **Использование `'@debug'` без аргументов здесь не сработает, так как add() передастся в аргумент 'print_result'. Чтобы исправить это, укажите `'def debug(fn=None, *, ...)'` и `'return decorator(fn) if fn else decorator'` в конце.**
 
 
 Class
 -----
-**A template for creating user-defined objects.**
+**Шаблон для создания пользовательских объектов.**
 
 ```python
 class MyClass:
@@ -970,20 +975,20 @@ class MyClass:
 >>> obj.a, str(obj), repr(obj)
 (1, '1', 'MyClass(1)')
 ```
-* **Methods whose names start and end with two underscores are called special methods.**
-* **They are executed when object is passed to a built-in function or used as an operand. For&nbsp;example, `'print(a)'` calls `'a.__str__()'` and `'a + b'` calls `'a.__add__(b)'`.**
-* **See module [operator](#operator) to get names of all special methods that are called by operators.**
-* **Methods that are decorated with `'@staticmethod'` receive neither 'self' nor 'cls' arg.**
-* **Return value of str() special method should be readable and of repr() unambiguous.<br>All calls to str() special method are dispatched to repr() when only repr() is provided.**
+* **Методы, имена которых начинаются и заканчиваются двумя подчёркиваниями, называются специальными (магическими) методами (dunder methods).**
+* **Они вызываются при передаче объекта во встроенные функции или при использовании операторов. Например, `'print(a)'` вызывает `'a.__str__()'`, а `'a + b'` вызывает `'a.__add__(b)'`.**
+* **Имена всех специальных методов, вызываемых операторами, см. в модуле [operator](#operator).**
+* **Методы с декоратором `'@staticmethod'` не получают ни 'self', ни 'cls'.**
+* **Результат метода str() должен быть понятным человеку, а repr() — однозначным.<br>Все вызовы str() перенаправляются в repr(), если определён только repr().**
 
-#### Expressions that call str() special method:
+#### Выражения, вызывающие метод str():
 ```python
 f'{obj}'
 str(obj)
 print(obj)
 ```
 
-#### Expressions that call repr() special method:
+#### Выражения, вызывающие метод repr():
 ```python
 f'{obj!r}'
 str/repr/print([obj])
@@ -992,8 +997,8 @@ str/repr/print(MyDataClass(obj))
 ```
 
 ### Subclass
-* **Inheritance is a mechanism that enables a class to extend some other class (i.e. sub&shy;class&nbsp;to extend its parent) and by doing so inherit all of its methods and attributes.**
-* **Subclass can then add its own methods and attributes or override inherited ones by reusing their names.**
+* **Наследование позволяет классу расширять другой класс (подклассу расширять родителя) и наследовать все его методы и атрибуты.**
+* **Подкласс может добавлять собственные методы и атрибуты или переопределять унаследованные.**
 
 ```python
 class Person:
@@ -1019,7 +1024,7 @@ class Employee(Person):
 ```
 
 ### Type Annotations
-**They are used by type checkers like [mypy](https://pypi.org/project/mypy/) and [Pydantic](https://pypi.org/project/pydantic/), however they are not enforced by CPython interpreter. To annotate a function use `'def f(a: int = 0) -> int: ...'`.**
+**Используются статическими анализаторами типов, такими как [mypy](https://pypi.org/project/mypy/) и библиотеками вроде [Pydantic](https://pypi.org/project/pydantic/), однако они не форсируются интерпретатором CPython в рантайме. Для аннотации функции: `'def f(a: int = 0) -> int: ...'`.**
 ```python
 from collections.abc import *
 
@@ -1029,7 +1034,7 @@ from collections.abc import *
 ```
 
 ### Dataclass
-**It uses class variables to generate init(), repr() and eq() special methods.**
+**Использует переменные класса для автоматической генерации специальных методов init(), repr() и eq().**
 ```python
 import dataclasses as dc
 ```
@@ -1041,12 +1046,12 @@ class MyClass:
     <attr_name>: <type> = <obj>
     <attr_name>: list = dc.field(default_factory=list)
 ```
-* **Objects can be made [sortable](#sortable) with `'order=True'` and immutable with `'frozen=True'`.**
-* **For object to be [hashable](#hashable), all attributes must be hashable and `'frozen'` must be `'True'`.**
-* **Function field() is needed because `'<attr_name>: list = []'` would make a list that is&nbsp;shared among all instances. Its 'default_factory' argument accepts any [callable](#callable) object.**
-* **For attributes and arguments of arbitrary type use `'<attr_name>: typing.Any'`.**
+* **Объекты можно сделать [сортируемыми](#sortable) с `'order=True'` и неизменяемыми с `'frozen=True'`.**
+* **Чтобы объект был [хешируемым](#hashable), все его атрибуты должны быть хешируемыми, а `'frozen'` должен быть установлен в `'True'`.**
+* **Функция field() необходима, так как `'<attr_name>: list = []'` создала бы единый список, разделяемый всеми экземплярами. Аргумент 'default_factory' принимает любой вызываемый объект ([callable](#callable)).**
+* **Для атрибутов и аргументов произвольного типа используйте `'<attr_name>: typing.Any'`.**
 
-#### Inline:
+#### В одну строку (Inline):
 ```python
 P = dc.make_dataclass('P', ['x', 'y'])
 P = dc.make_dataclass('P', [('x', float), ('y', float)])
@@ -1054,7 +1059,7 @@ P = dc.make_dataclass('P', [('x', float, 0), ('y', float, 0)])
 ```
 
 ### Property
-**Pythonic way of implementing getters and setters.**
+**Идиоматичный (pythonic) способ реализации геттеров и сеттеров.**
 ```python
 class Person:
     @property
@@ -1074,7 +1079,7 @@ class Person:
 ```
 
 ### Slots
-**Mechanism restricting objects to listed attributes.**
+**Механизм, ограничивающий атрибуты объекта строго заданным кортежем (экономит память и ускоряет доступ).**
 
 ```python
 class Point:
@@ -1090,12 +1095,12 @@ from copy import copy, deepcopy
 
 Duck Types
 ----------
-**A duck type is an implicit type that prescribes a set of special methods. Any object that pos&shy;sesses all of the duck type's prescribed methods is considered a member of that duck type.**
+**Утиный тип (duck type) — это неявный интерфейс, определяемый набором специальных методов. Любой объект, обладающий всеми предписанными методами, считается представителем этого утиного типа («если нечто выглядит как утка и крякает как утка, то это утка»).**
 
 ### Comparable
-* **If eq() method is not overridden, it returns `'id(self) == id(other)'`, which is the same as `'self is other'`. That means all user-defined objects compare not equal by default (because id() returns object's memory address that is guaranteed to be unique).**
-* **Only the left side object has eq() method called, unless it returns NotImplemented, in which case the right object is consulted. Result is False if both return NotImplemented.**
-* **Method ne() (called by `'!='`) automatically works on any object that has eq() defined.**
+* **Если метод eq() не переопределён, он возвращает `'id(self) == id(other)'`, что эквивалентно `'self is other'`. Это значит, что все пользовательские объекты по умолчанию сравниваются как неравные (поскольку id() возвращает уникальный адрес объекта в памяти).**
+* **Метод eq() вызывается только у левого операнда, если только он не вернёт NotImplemented — в таком случае опрашивается правый объект. Если оба вернули NotImplemented, результат равен False.**
+* **Метод ne() (вызываемый оператором `'!='`) автоматически работает для любого объекта, у которого определён eq().**
 
 ```python
 class MyComparable:
@@ -1108,8 +1113,8 @@ class MyComparable:
 ```
 
 ### Hashable
-* **Hashable object needs hash() and eq() methods and its hash value must never change.**
-* **Hashable objects that compare equal must have the same hash value, meaning default hash() that returns `'id(self)'` will not do. That is why Python automatically makes classes unhashable if you only implement the eq() method.**
+* **Хешируемому объекту требуются методы hash() и eq(), при этом его хеш-значение никогда не должно меняться во времени.**
+* **Хешируемые объекты, которые сравниваются как равные, обязаны иметь одинаковое хеш-значение, поэтому дефолтный hash(), возвращающий `'id(self)'`, не подходит. Вот почему Python автоматически делает класс нехешируемым, если реализован только метод eq().**
 
 ```python
 class MyHashable:
@@ -1127,10 +1132,10 @@ class MyHashable:
 ```
 
 ### Sortable
-* **With 'total_ordering' decorator, you only need to provide eq() and one of lt(), gt(), le() or ge() special methods (called by <, >, <=, >=) and the rest will be automatically generated.**
-* **Built-in functions sorted() and min() only require lt() method, while max() only requires gt(). However, it's best to define them all so that confusion doesn't arise in other context.**
-* **When two lists, strings, or data classes are compared, their values get compared one by one until a pair of unequal values is found. The comparison of this two values is then re&shy;turned. The shorter sequence is considered smaller in case of all their values being equal.**
-* **To sort collection of strings in proper alphabetical order pass `'key=locale.strxfrm'` to sorted() after running `'locale.setlocale(locale.LC_COLLATE, "en_US.UTF-8")'`.**
+* **С декоратором 'total_ordering' достаточно определить eq() и один из методов lt(), gt(), le() или ge() (операторы <, >, <=, >=), а остальные будут сгенерированы автоматически.**
+* **Встроенные функции sorted() и min() требуют только метод lt(), а max() — только gt(). Однако рекомендуется определять их все во избежание неожиданного поведения в других контекстах.**
+* **При сравнении двух списков, строк или датаклассов их элементы сравниваются поочерёдно, пока не встретится пара неравных значений. Если все элементы равны, более короткая последовательность считается меньшей.**
+* **Для сортировки строк в правильном алфавитном порядке используйте `'key=locale.strxfrm'` в sorted() после вызова `'locale.setlocale(locale.LC_COLLATE, "ru_RU.UTF-8")'` (или `"en_US.UTF-8"`).**
 
 ```python
 from functools import total_ordering
@@ -1150,10 +1155,10 @@ class MySortable:
 ```
 
 ### Iterator
-* **Any object that has special methods next() and iter() is an iterator.**
-* **Next() should return the next item or raise StopIteration exception.**
-* **Iter() should return an unmodified iterator, i.e. the 'self' argument.**
-* **Any object that has iter() special method can be used in a for loop.**
+* **Любой объект со специальными методами next() и iter() является итератором.**
+* **Next() должен возвращать следующий элемент или вызывать исключение StopIteration.**
+* **Iter() должен возвращать сам итератор без изменений, т.е. аргумент 'self'.**
+* **Любой объект с методом iter() может использоваться в цикле for.**
 ```python
 class Counter:
     def __init__(self):
@@ -1171,16 +1176,16 @@ class Counter:
 (1, 2, 3)
 ```
 
-#### Python has many different iterator objects:
-* **Sequence iterators returned by the [iter()](#iterator) function, such as 'list\_iterator'.**
-* **Objects returned by the [itertools](#iterator) module, such as count, repeat and cycle.**
-* **Generator objects returned by the generator [functions](#generator) and [expressions](#comprehensions).**
-* **File objects returned by the [open()](#open) function, [SQLite](#sqlite) cursor objects, etc.**
+#### В Python существует множество различных объектов-итераторов:
+* **Итераторы последовательностей, возвращаемые функцией [iter()](#iterator), такие как 'list\_iterator'.**
+* **Объекты, возвращаемые модулем [itertools](#iterator), такие как count, repeat и cycle.**
+* **Генераторы, возвращаемые функциями-генераторами ([functions](#generator)) и генераторными выражениями ([expressions](#comprehensions)).**
+* **Файловые объекты, возвращаемые функцией [open()](#open), курсоры [SQLite](#sqlite) и др.**
 
 ### Callable
-* **All functions and classes have a call() method that is executed when they are called.**
-* **Use `'callable(<obj>)'` or `'isinstance(<obj>, collections.abc.Callable)'` to&nbsp;check if object is callable and `'inspect.signature(<obj>)'` for info about args.**
-* **When this text uses `'<function>'` as an argument, it actually means `'<callable>'`.**
+* **Все функции и классы имеют специальный метод call(), выполняемый при их вызове.**
+* **Используйте `'callable(<obj>)'` или `'isinstance(<obj>, collections.abc.Callable)'` для проверки вызываемости и `'inspect.signature(<obj>)'` для получения сигнатуры аргументов.**
+* **Когда в данном тексте в качестве аргумента указано `'<function>'`, на самом деле подразумевается `'<callable>'`.**
 ```python
 class Counter:
     def __init__(self):
@@ -1197,10 +1202,10 @@ class Counter:
 ```
 
 ### Context Manager
-* **With statements only work on objects that have enter() and exit() special methods.**
-* **Enter() should lock the resources and optionally return an object (file, socket, etc.).**
-* **Exit() should release the resources (for example close the file, release the lock, etc.).**
-* **Any exception that happens inside the with block is passed to exit() method. Exit() can&nbsp;then suppress this exception by returning a true value (not None, False, 0, etc.).**
+* **Конструкция with работает только с объектами, имеющими специальные методы enter() и exit().**
+* **Enter() захватывает ресурс и опционально возвращает объект (файл, сокет, блокировку и т.д.).**
+* **Exit() освобождает ресурс (закрывает файл, снимает блокировку и т.д.).**
+* **Любое исключение внутри блока with передаётся в метод exit(). Exit() может подавить исключение, вернув истинное значение (True).**
 ```python
 class MyOpen:
     def __init__(self, filename):
@@ -1224,8 +1229,8 @@ Hello World!
 Iterable Duck Types
 -------------------
 ### Iterable
-* **Only required special method is iter(). It should return an iterator of object's items.**
-* **Special method contains() automatically works on any object that has iter() defined.**
+* **Единственный обязательный метод — iter(). Он должен возвращать итератор по элементам объекта.**
+* **Специальный метод contains() автоматически работает для любого объекта с определённым iter().**
 ```python
 class MyIterable:
     def __init__(self, a):
@@ -1245,8 +1250,8 @@ True
 ```
 
 ### Collection
-* **Only required methods are iter() and len(). Len() should return the length of collection.**
-* **This text refers to all iterable objects as collections, which is technically incorrect. The term _iterable_ was avoided because it sounds scarier and more vague than _collection_. The main drawback of this decision is that the reader could think a certain function doesn't accept iterators when it actually does, since iterators are the only built-in objects that are&nbsp;iterable but are not collections.**
+* **Обязательные методы: iter() и len(). Len() возвращает длину коллекции.**
+* **В данном тексте все итерируемые объекты называются «коллекциями», что терминологически упрощено. Термин _iterable_ звучит более абстрактно, чем _collection_. Единственный нюанс: читатель может подумать, что функция не принимает итераторы, хотя на самом деле итераторы — единственные встроенные объекты, которые являются итерируемыми (iterable), но не являются коллекциями (collection).**
 ```python
 class MyCollection:
     def __init__(self, a):
@@ -1260,9 +1265,9 @@ class MyCollection:
 ```
 
 ### Sequence
-* **Only required methods are len() and getitem(). Getitem() should return an item at the passed index or raise IndexError (it may also support negative indices and/or slices).**
-* **Iter() and contains() automatically work on any object with defined getitem() method.**
-* **Reversed() automatically works on any object that has len() and getitem() defined. It returns reversed iterator of object's items.**
+* **Обязательные методы: len() и getitem(). Getitem() должен возвращать элемент по переданному индексу или вызывать IndexError (может также поддерживать отрицательные индексы и срезы).**
+* **Iter() и contains() автоматически работают на любом объекте с определённым методом getitem().**
+* **Reversed() автоматически работает на объектах с len() и getitem(). Возвращает обратный итератор.**
 ```python
 class MySequence:
     def __init__(self, a):
@@ -1279,14 +1284,14 @@ class MySequence:
         return reversed(self.a)
 ```
 
-#### Discrepancies between glossary definitions and abstract base classes:
-* **Python's [glossary](https://docs.python.org/3/glossary.html) defines iterable as any object with special methods iter() or getitem(), and sequence as any object with getitem() and len(). It doesn't define the term _collection_.**
-* **Using [ABC](#abstract-base-classes) Iterable with isinstance() or issubclass() only checks whether object/class has special method iter(), while ABC Collection checks for iter(), contains() and len().**
+#### Различия между глоссарием Python и абстрактными базовыми классами (ABC):
+* **В [глоссарии](https://docs.python.org/3/glossary.html) Python итерируемый объект (iterable) определяется как любой объект с методами iter() или getitem(), а последовательность (sequence) — как любой объект с getitem() и len(). Термин _collection_ в глоссарии не определяется.**
+* **Проверка через [ABC](#abstract-base-classes) `isinstance(..., Iterable)` проверяет наличие только iter(), а ABC Collection требует наличия iter(), contains() и len().**
 
 ### ABC Sequence
-* **It's a richer interface than the basic sequence that also requires just len() and getitem().**
-* **Extending it generates iter(), contains(), reversed(), index() and count() special methods.**
-* **Unlike `'abc.Iterable'` and `'abc.Collection'`, it is not a duck type. That is why exp. `'issubclass(MySequence, abc.Sequence)'` would return False even if MySequence had all methods defined. It however recognizes list, tuple, range, string, bytes, bytearray, array, memoryview and deque, since they are registered as Sequence's virtual subclasses.**
+* **Более богатый интерфейс, чем базовая последовательность (которой нужны только len и getitem).**
+* **Наследование от него автоматически генерирует методы iter(), contains(), reversed(), index() и count().**
+* **В отличие от `'abc.Iterable'` и `'abc.Collection'`, он не является утиным типом (duck type). Выражение `'issubclass(MySequence, abc.Sequence)'` вернёт False, даже если у MySequence реализованы все методы, пока класс явно не унаследован. Однако он распознаёт list, tuple, range, str, bytes, bytearray, array, memoryview и deque как свои виртуальные подклассы.**
 ```python
 from collections import abc
 
@@ -1299,7 +1304,7 @@ class MyAbcSequence(abc.Sequence):
         return self.a[i]
 ```
 
-#### Required and automatically available methods:
+#### Обязательные (REQ) и автоматически доступные (Yes) методы:
 ```text
 +--------------+------------+------------+------------+--------------+
 |              |  Iterable  | Collection |  Sequence  | abc.Sequence |
@@ -1313,13 +1318,13 @@ class MyAbcSequence(abc.Sequence):
 | count        |            |            |            |     Yes      |
 +--------------+------------+------------+------------+--------------+
 ```
-* **Method iter() is required for `'isinstance(<obj>, abc.Iterable)'` to return True, however any object with getitem() method works with any code expecting an iterable.**
-* **MutableSequence, Set, MutableSet, Mapping and MutableMapping ABCs are also ex&shy;tendable. Use `'<abc>.__abstractmethods__'` to get names of required methods.**
+* **Метод iter() обязателен, чтобы `'isinstance(<obj>, abc.Iterable)'` вернул True, однако любой объект с методом getitem() работает в любом месте, ожидающем iterable.**
+* **Классы MutableSequence, Set, MutableSet, Mapping и MutableMapping также расширяемы. Используйте `'<abc>.__abstractmethods__'` для получения списка необходимых методов.**
 
 
 Enum
 ----
-**Class of named constants called members.**
+**Класс именованных констант (элементов перечисления).**
 
 ```python
 from enum import Enum, auto
@@ -1327,31 +1332,31 @@ from enum import Enum, auto
 
 ```python
 class MyEnum(Enum):
-    <member_name> = auto()             # An increment of last numeric value or 1.
-    <member_name> = <value>            # Values don't have to be hashable/unique.
-    <member_name> = <el>, <el>, ...    # Value can be a collection, e.g. a tuple.
+    <member_name> = auto()             # Инкремент последнего числового значения или 1.
+    <member_name> = <value>            # Значения не обязаны быть уникальными/хешируемыми.
+    <member_name> = <el>, <el>, ...    # Значение может быть коллекцией, например кортежем.
 ```
-* **Methods receive the member they were called on as the 'self' argument.**
-* **Accessing a member named after a reserved keyword raises SyntaxError.**
+* **Методы получают элемент, у которого они были вызваны, в качестве аргумента 'self'.**
+* **Попытка объявить элемент с именем зарезервированного ключевого слова вызовет SyntaxError.**
 
 ```python
-<memb> = <enum>.<member_name>          # Accesses a member via enum's attribute.
-<memb> = <enum>['<member_name>']       # Returns the member or raises KeyError.
-<memb> = <enum>(<value>)               # Returns the member or raises ValueError.
-<str>  = <member>.name                 # Returns the member's name as a string.
-<obj>  = <member>.value                # Value can't be a user-defined function.
-```
-
-```python
-<list> = list(<enum>)                  # Returns a list containing every member.
-<list> = <enum>._member_names_         # Returns a list containing member names.
-<list> = [m.value for m in <enum>]     # Returns a list containing member values.
+<memb> = <enum>.<member_name>          # Доступ к элементу через атрибут перечисления.
+<memb> = <enum>['<member_name>']       # Возвращает элемент или вызывает KeyError.
+<memb> = <enum>(<value>)               # Возвращает элемент или вызывает ValueError.
+<str>  = <member>.name                 # Возвращает имя элемента в виде строки.
+<obj>  = <member>.value                # Значение не может быть пользовательской функцией.
 ```
 
 ```python
-<enum> = type(<member>)                # Returns an enum. Also <memb>.__class__.
-<iter> = itertools.cycle(<enum>)       # Returns an endless iterator of members.
-<memb> = random.choice(list(<enum>))   # Randomly selects one of enum's members.
+<list> = list(<enum>)                  # Возвращает список всех элементов перечисления.
+<list> = <enum>._member_names_         # Возвращает список имён элементов.
+<list> = [m.value for m in <enum>]     # Возвращает список значений элементов.
+```
+
+```python
+<enum> = type(<member>)                # Возвращает тип enum. Также <memb>.__class__.
+<iter> = itertools.cycle(<enum>)       # Бесконечный итератор по элементам перечисления.
+<memb> = random.choice(list(<enum>))   # Случайный выбор одного из элементов enum.
 ```
 
 ### Inline
@@ -1361,7 +1366,7 @@ Cutlery = Enum('Cutlery', ['FORK', 'KNIFE', 'SPOON'])
 Cutlery = Enum('Cutlery', {'FORK': 1, 'KNIFE': 2, 'SPOON': 3})
 ```
 
-#### User-defined functions cannot be values, so they must be wrapped:
+#### Пользовательские функции не могут быть значениями напрямую, их нужно обернуть:
 ```python
 import functools as ft
 and_ = ft.partial(lambda l, r: l and r)
@@ -1392,10 +1397,10 @@ else:
 finally:
     <code_3>
 ```
-* **Code inside the `'else'` block will only be executed if `'try'` block had no exceptions.**
-* **Code inside the `'finally'` block will always be executed (unless a signal is received).**
-* **All variables that are initialized in executed blocks are also visible in all subsequent blocks, as well as outside the try statement (only the function block delimits scope).**
-* **To catch signals use `'signal.signal(signal_number, my_handler_function)'`.**
+* **Код в блоке `'else'` выполняется только в том случае, если в блоке `'try'` не возникло исключений.**
+* **Код в блоке `'finally'` выполняется всегда (за исключением аварийного прерывания сигналами).**
+* **Все переменные, инициализированные в выполненных блоках, видны в последующих блоках и вне инструкции try (только функции и классы изолируют локальную область видимости).**
+* **Для перехвата сигналов ОС используйте `'signal.signal(signal_number, my_handler_function)'`.**
 
 ### Catching Exceptions
 ```python
@@ -1403,11 +1408,11 @@ except <exception>: ...
 except <exception> as <name>: ...
 except (<exception>, ...) [as <name>]: ...
 ```
-* **Except clause catches all subclasses, e.g. `'OSError'` is caught by `'except Exception:'`.**
-* **Use `'traceback.print_exc()'` to print the full error message to standard error stream.**
-* **Use `'print(<name>)'` to print just the cause of the exception (its arguments) to stdout.**
-* **Use `'logging.exception(<str>)'` to log the passed message followed by the full error message of the caught exception. For details about how to set up the logger see [Logging](#logging).**
-* **`'sys.exc_info()'` returns type, object and traceback of the caught exception as a tuple.**
+* **Блок except перехватывает все подклассы: например, `'OSError'` перехватывается через `'except Exception:'`.**
+* **Используйте `'traceback.print_exc()'` для вывода полного стектрейса ошибки в поток stderr.**
+* **Используйте `'print(<name>)'` для вывода сообщения об ошибке (её аргументов) в stdout.**
+* **Используйте `'logging.exception(<str>)'` для логирования сообщения вместе со стектрейсом. Подробнее о настройке см. раздел [Logging](#logging).**
+* **`'sys.exc_info()'` возвращает тип, объект и traceback перехваченного исключения в виде кортежа.**
 
 ### Raising Exceptions
 ```python
@@ -1416,7 +1421,7 @@ raise <exception>()
 raise <exception>(<obj> [, ...])
 ```
 
-#### Re-raising caught exception:
+#### Повторный выброс перехваченного исключения (Re-raising):
 ```python
 except <exception> [as <name>]:
     ...
@@ -1437,30 +1442,30 @@ error_msg = ''.join(traceback.format_exception(*sys.exc_info()))
 ### Built-in Exceptions
 ```text
 BaseException
- +- SystemExit                  # Raised when `sys.exit()` is called. See #Exit for details.
- +- KeyboardInterrupt           # Raised when the user hits the interrupt key, i.e. `ctrl-c`.
- +- Exception                   # User-defined exceptions should be derived from this class.
-      +- ArithmeticError        # Base class for arithmetic errors such as ZeroDivisionError.
-      +- AssertionError         # Raised by `assert <exp>` if expression returns false value.
-      +- AttributeError         # Raised when object doesn't have requested attribute/method.
-      +- EOFError               # Raised by `input()` when it hits an end-of-file condition.
-      +- LookupError            # Base class for errors when a collection can't find an item.
-      |   +- IndexError         # Raised when index of a sequence (list/str) is out of range.
-      |   +- KeyError           # Raised when a dictionary's key or a set element is missing.
-      +- MemoryError            # Out of memory. May be too late to start deleting variables.
-      +- NameError              # Raised when nonexistent name (variable/func/class) is used.
-      |   +- UnboundLocalError  # Raised when a local name is used before it's being defined.
-      +- OSError                # Errors such as FileExistsError and TimeoutError. See #Open.
-      |   +- ConnectionError    # Errors such as BrokenPipeError and ConnectionAbortedError.
-      +- RuntimeError           # Is raised by errors that do not fit into other categories.
-      |   +- NotImplementedEr…  # Can be raised by abstract methods or by an unfinished code.
-      |   +- RecursionError     # Raised if max recursion depth is exceeded (3k by default).
-      +- StopIteration          # Raised when exhausted (empty) iterator is passed to next().
-      +- TypeError              # Raised when argument of wrong type is passed to a function.
-      +- ValueError             # Raised when it has the right type but inappropriate value.
+ +- SystemExit                  # Вызывается при вызове `sys.exit()`. См. раздел #Exit.
+ +- KeyboardInterrupt           # Вызывается при нажатии клавиш прерывания (Ctrl+C).
+ +- Exception                   # Базовый класс для всех пользовательских исключений.
+      +- ArithmeticError        # Базовый класс для арифметических ошибок (ZeroDivisionError и др.).
+      +- AssertionError         # Вызывается инструкцией `assert <exp>`, если выражение ложно.
+      +- AttributeError         # Вызывается, если у объекта нет запрошенного атрибута или метода.
+      +- EOFError               # Вызывается `input()`, если достигнут конец файла (EOF).
+      +- LookupError            # Базовый класс для ошибок поиска элементов в коллекциях.
+      |   +- IndexError         # Индекс последовательности (list/str) вышел за границы.
+      |   +- KeyError           # Ключ словаря или элемент множества не найден.
+      +- MemoryError            # Нехватка оперативной памяти (OOM).
+      +- NameError              # Использовано несуществующее имя (переменная, функция, класс).
+      |   +- UnboundLocalError  # Локальная переменная использована до её инициализации.
+      +- OSError                # Системные ошибки (FileExistsError, TimeoutError). См. #Open.
+      |   +- ConnectionError    # Ошибки сети/соединения (BrokenPipeError, ConnectionAbortedError).
+      +- RuntimeError           # Ошибки времени выполнения, не подходящие под другие категории.
+      |   +- NotImplementedEr…  # Вызывается в абстрактных методах или незавершённом коде.
+      |   +- RecursionError     # Превышена максимальная глубина рекурсии (3000 по умолчанию).
+      +- StopIteration          # Сигнализирует об окончании элементов итератора в next().
+      +- TypeError              # Функция получила аргумент неподходящего типа.
+      +- ValueError             # Аргумент верного типа, но содержит некорректное значение.
 ```
 
-#### Exceptions raised by collections:
+#### Исключения, вызываемые коллекциями:
 ```text
 +-----------+------------+------------+------------+
 |           |   <list>   |   <set>    |   <dict>   |
@@ -1472,7 +1477,7 @@ BaseException
 +-----------+------------+------------+------------+
 ```
 
-#### Useful built-in exceptions:
+#### Полезные встроенные исключения:
 ```python
 raise TypeError('Function received argument of the wrong type!')
 raise ValueError('Argument has right type but its value is off!')
@@ -1488,12 +1493,12 @@ class MyInputError(MyError): pass
 
 Exit
 ----
-**Exits the interpreter by raising SystemExit exception.**
+**Завершает работу интерпретатора, вызывая исключение SystemExit.**
 ```python
 import sys
-sys.exit()                     # Exits with exit code 0 (success).
-sys.exit(<int>)                # Exits with the passed exit code.
-sys.exit(<obj>)                # Prints to stderr and exits with 1.
+sys.exit()                     # Завершает процесс с кодом возврата 0 (успех).
+sys.exit(<int>)                # Завершает с переданным числовым кодом возврата.
+sys.exit(<obj>)                # Выводит объект в stderr и завершает с кодом 1.
 ```
 
 
@@ -1502,16 +1507,16 @@ Print
 ```python
 print(<obj>, ..., sep=' ', end='\n', file=sys.stdout, flush=False)
 ```
-* **Use `'file=sys.stderr'` or `'sys.stderr.write(<str>)'` for messages about errors.**
-* **Stdout and stderr streams hold output in a buffer until they receive a string containing '\n' or '\r', buffer reaches 4096 characters, `'flush=True'` is used, or the program exits.**
+* **Используйте `'file=sys.stderr'` или `'sys.stderr.write(<str>)'` для сообщений об ошибках.**
+* **Потоки stdout и stderr буферизуют вывод до тех пор, пока не встретится символ `'\n'` или `'\r'`, буфер не достигнет 4096 символов, не будет передан `'flush=True'`, или программа не завершится.**
 
 ### Pretty Print
 ```python
 from pprint import pprint
 pprint(<collection>, width=80, depth=None, compact=False)
 ```
-* **Each item is printed on its own line if collection exceeds 'width' characters.**
-* **Nested collections that are `'depth=<int>'` levels deep get printed as `'...'`.**
+* **Каждый элемент выводится на отдельной строке, если длина коллекции превышает 'width' символов.**
+* **Вложенные коллекции глубже `'depth=<int>'` отображаются как `'...'`.**
 
 
 Input
@@ -1519,9 +1524,9 @@ Input
 ```python
 <str> = input()
 ```
-* **Reads a line from the user input or pipe if present (trailing newline gets stripped).**
-* **If argument is passed, it gets printed to the standard output before input is read.**
-* **EOFError is raised if user hits EOF (ctrl-d/ctrl-z⏎) or stream is already exhausted.**
+* **Считывает строку из пользовательского ввода или пайпа (завершающий символ перевода строки отсекается).**
+* **Если передан строковый аргумент-подсказка, он выводится в stdout перед чтением ввода.**
+* **Вызывает EOFError, если пользователь передал сигнал EOF (`Ctrl+D` в Linux/macOS, `Ctrl+Z`+`Enter` в Windows) или поток исчерпан.**
 
 
 Arguments
@@ -1535,69 +1540,69 @@ arguments    = sys.argv[1:]
 ### Argument Parser
 ```python
 from argparse import ArgumentParser
-p = ArgumentParser(description=<str>)                      # Also accepts 'usage' str.
-p.add_argument('-<chr>', '--<name>', action='store_true')  # Flag (defaults to False).
-p.add_argument('-<chr>', '--<name>', type=<type>)          # Option (defaults to None).
-p.add_argument('<name>', type=<type>, nargs=1)             # Mandatory first argument.
-p.add_argument('<name>', type=<type>, nargs='+')           # Mandatory remaining args.
-p.add_argument('<name>', type=<type>, nargs='?')           # Optional argument. Also *.
-args  = p.parse_args()                                     # Exits on a parsing error.
-<obj> = args.<name>                                        # Returns `<type>(<arg>)`.
+p = ArgumentParser(description=<str>)                      # Также принимает строку 'usage'.
+p.add_argument('-<chr>', '--<name>', action='store_true')  # Флаг-переключатель (по умолчанию False).
+p.add_argument('-<chr>', '--<name>', type=<type>)          # Опция со значением (по умолчанию None).
+p.add_argument('<name>', type=<type>, nargs=1)             # Обязательный первый позиционный аргумент.
+p.add_argument('<name>', type=<type>, nargs='+')           # Обязательные остальные аргументы (1+).
+p.add_argument('<name>', type=<type>, nargs='?')           # Необязательный аргумент (0 или 1). Также *.
+args  = p.parse_args()                                     # Завершает процесс при ошибке парсинга.
+<obj> = args.<name>                                        # Возвращает `<type>(<arg>)`.
 ```
-* **Use `'help=<str>'` to set argument description that is used by `'-h'`.**
-* **Use `'default=<obj>'` to set option's or argument's default value.**
+* **Используйте `'help=<str>'` для описания аргумента в справке, вызываемой по `'-h'`.**
+* **Используйте `'default=<obj>'` для установки значения по умолчанию.**
 
 
 Open
 ----
-**Opens a file and returns the corresponding file object.**
+**Открывает файл и возвращает соответствующий файловый объект.**
 
 ```python
 <file> = open(<path>, mode='r', encoding=None, newline=None)
 ```
-* **`'encoding=None'` means that a default encoding is used, which is platform dependent. Best practice is to use `'encoding="utf-8"'` until it becomes the default (Python 3.15).**
-* **`'newline=None'` means that all different end of line combinations are converted to '\n' on read, while on write all '\n' characters are converted to the system's default separator.**
-* **`'newline=""'` means no conversions take place, but input is still broken into chunks by readline() on every '\n', '\r' and '\r\n'. Passing `'newline="\n"'` breaks input only on '\n'.**
-* **`'newline="\r\n"'` breaks input only on '\r\n' and converts every '\n' to '\r\n' on write.**
+* **`'encoding=None'` означает платформозависимую системную кодировку. Рекомендуется всегда явно указывать `'encoding="utf-8"'`.**
+* **`'newline=None'` преобразует любые окончания строк в `'\n'` при чтении, а при записи заменяет `'\n'` на системный разделитель ОС.**
+* **`'newline=""'` отключает автоконвертацию, но разбивает строки по `'\n'`, `'\r'` и `'\r\n'`.**
+* **`'newline="\r\n"'` разбивает ввод только по `'\r\n'` и преобразует все `'\n'` в `'\r\n'` при записи.**
 
 ### Modes
-* **`'r'`  - Reads text from the file (the default option).**
-* **`'w'`  - Writes to the file. Deletes existing contents.**
-* **`'x'`  - Writes or raises FileExistsError if file exists.**
-* **`'a'`  - Appends. Creates new file if it doesn't exist.**
-* **`'w+'` - Reads and writes. Deletes existing contents.**
-* **`'r+'` - Reads and writes from the start of the file.**
-* **`'a+'` - Reads and writes from the end of the file.**
-* **`'rb'` - Reads [bytes objects](#bytes). Also `'wb'`, `'xb'`, etc.**
+* **`'r'`  - Чтение текста из файла (по умолчанию).**
+* **`'w'`  - Запись текста. Перезаписывает существующий файл.**
+* **`'x'`  - Создание. Вызывает FileExistsError, если файл уже существует.**
+* **`'a'`  - Дозапись в конец. Создаёт файл, если он не существует.**
+* **`'w+'` - Чтение и запись с предварительной очисткой содержимого.**
+* **`'r+'` - Чтение и запись с начала файла без удаления содержимого.**
+* **`'a+'` - Чтение и дозапись в конец файла.**
+* **`'rb'` - Чтение в виде [байтов](#bytes). Также `'wb'`, `'xb'` и т.д.**
 
 ### Exceptions
-* **`'FileNotFoundError'` can be raised when reading with `'r'` or `'r+'`.**
-* **`'FileExistsError'` exception can be raised when writing with `'x'`.**
-* **`'IsADirectoryError'`, `'PermissionError'` can be raised by any.**
-* **`'except OSError [as <name>]: …'` catches all listed exceptions.**
+* **`'FileNotFoundError'` может возникнуть при открытии на чтение с `'r'` или `'r+'`.**
+* **`'FileExistsError'` возникает при попытке записи в режиме `'x'`.**
+* **`'IsADirectoryError'`, `'PermissionError'` могут возникнуть в любых режимах.**
+* **Конструкция `'except OSError [as <name>]: …'` перехватывает все перечисленные исключения.**
 
 ### File Object
 ```python
-<file>.seek(0)                    # Moves current position to the file's start.
-<file>.seek(offset)               # Moves 'offset' chars/bytes from the start.
-<file>.seek(0, 2)                 # Moves current position to the end of file.
-<b_file>.seek(±offset, origin)    # Origin: 0 start, 1 current position, 2 end.
+<file>.seek(0)                    # Перемещает указатель в самое начало файла.
+<file>.seek(offset)               # Смещает на 'offset' символов/байтов от начала.
+<file>.seek(0, 2)                 # Перемещает текущую позицию в конец файла.
+<b_file>.seek(±offset, origin)    # origin: 0 — начало, 1 — текущая позиция, 2 — конец.
 ```
 
 ```python
-<obj>  = <file>.read(size=-1)     # Reads 'size' chars/bytes or until the EOF.
-<obj>  = <file>.readline()        # Returns a line or empty string/bytes on EOF.
-<list> = <file>.readlines()       # Returns remaining lines. Also list(<file>).
-<obj>  = next(<file>)             # Returns a line using the read-ahead buffer.
+<obj>  = <file>.read(size=-1)     # Читает 'size' символов/байтов или всё до конца (EOF).
+<obj>  = <file>.readline()        # Возвращает одну строку или пустую строку/байты на EOF.
+<list> = <file>.readlines()       # Возвращает оставшиеся строки списком. Также list(<file>).
+<obj>  = next(<file>)             # Возвращает строку с упреждающим чтением из буфера.
 ```
 
 ```python
-<file>.write(<obj>)               # Writes str or bytes object to write buffer.
-<file>.writelines(<coll>)         # Writes a coll. of strings or bytes objects.
-<file>.flush()                    # Flushes write buff. Runs every 4096/8192 B.
-<file>.close()                    # Closes a file after flushing write buffer.
+<file>.write(<obj>)               # Записывает str или bytes в буфер записи.
+<file>.writelines(<coll>)         # Записывает коллекцию строк или байтовых объектов.
+<file>.flush()                    # Сбрасывает буфер записи на диск (каждые 4096/8192 байт).
+<file>.close()                    # Закрывает файл со сбросом буфера.
 ```
-* **Methods do not add or strip trailing newlines, not even writelines().**
+* **Методы не добавляют и не удаляют завершающие переносы строк (включая writelines()).**
 
 ### Read Text from File
 ```python
@@ -1622,73 +1627,73 @@ from pathlib import Path
 ```
 
 ```python
-<str>  = os.getcwd()                # Returns working dir. Starts as shell's `$PWD`.
-<str>  = os.path.join(<path>, ...)  # Uses `os.sep` to join strings or Path objects.
-<str>  = os.path.realpath(<path>)   # Resolves symlinks and calls os.path.abspath().
+<str>  = os.getcwd()                # Возвращает текущую рабочую директорию (CWD).
+<str>  = os.path.join(<path>, ...)  # Объединяет пути с разделителем `os.sep`.
+<str>  = os.path.realpath(<path>)   # Разрешает симлинки и вызывает `os.path.abspath()`.
 ```
 
 ```python
-<str>  = os.path.basename(<path>)   # Returns final component (filename or dirname).
-<str>  = os.path.dirname(<path>)    # Returns the path without its final component.
-<tup.> = os.path.splitext(<path>)   # Splits on last period of the final component.
+<str>  = os.path.basename(<path>)   # Возвращает имя файла или папки (последний компонент пути).
+<str>  = os.path.dirname(<path>)    # Возвращает путь без его последнего компонента.
+<tup.> = os.path.splitext(<path>)   # Отделяет расширение файла (по последней точке).
 ```
 
 ```python
-<list> = os.listdir(path='.')       # Returns all file/dir names located at 'path'.
-<list> = glob.glob('<pattern>')     # Returns paths matching the wildcard pattern.
+<list> = os.listdir(path='.')       # Возвращает список имён файлов и папок в директории 'path'.
+<list> = glob.glob('<pattern>')     # Находит пути, соответствующие шаблону поиска (wildcard).
 ```
 
 ```python
-<bool> = os.path.exists(<path>)     # Checks if path exists. Also <Path>.exists().
-<bool> = os.path.isfile(<path>)     # Also <Path>.is_file(), <DirEntry>.is_file().
-<bool> = os.path.isdir(<path>)      # Also <Path>.is_dir() and <DirEntry>.is_dir().
+<bool> = os.path.exists(<path>)     # Проверяет существование пути. Также `<Path>.exists()`.
+<bool> = os.path.isfile(<path>)     # Проверяет, является ли путь файлом. Также `<Path>.is_file()`.
+<bool> = os.path.isdir(<path>)      # Проверяет, является ли путь папкой. Также `<Path>.is_dir()`.
 ```
 
 ```python
-<stat> = os.stat(<path>)            # A status object. Also <Path/DirEntry>.stat().
-<num>  = <stat>.st_size/st_mtime/…  # Returns size in bytes, modification time, ...
+<stat> = os.stat(<path>)            # Объект метаданных. Также `<Path/DirEntry>.stat()`.
+<num>  = <stat>.st_size/st_mtime/…  # Размер в байтах, время изменения и т.д.
 ```
 
 ### DirEntry
-**Unlike listdir(), scandir() returns DirEntry objects that cache isfile, isdir, and on Windows also stat information, thus significantly increasing the performance of code that requires it.**
+**В отличие от listdir(), функция scandir() возвращает объекты DirEntry, которые кэшируют вызовы isfile, isdir и (на Windows) stat, существенно ускоряя работу файловых операций.**
 
 ```python
-<iter> = os.scandir(path='.')       # Returns DirEntry objects located at the path.
-<str>  = <DirEntry>.path            # Is absolute if 'path' argument was absolute.
-<str>  = <DirEntry>.name            # Returns the path's final component as string.
-<file> = open(<DirEntry>)           # Opens the file and returns its file object.
+<iter> = os.scandir(path='.')       # Возвращает итератор объектов DirEntry в директории.
+<str>  = <DirEntry>.path            # Абсолютный путь, если аргумент 'path' был абсолютным.
+<str>  = <DirEntry>.name            # Возвращает имя файла/папки в виде строки.
+<file> = open(<DirEntry>)           # Открывает файл и возвращает файловый объект.
 ```
 
 ### Path Object
 ```python
-<Path> = Path(<path> [, ...])       # Accepts strings, Paths, and DirEntry objects.
-<Path> = <path> / <path> [/ ...]    # First or second object must be a Path object.
-<Path> = <Path>.resolve()           # Returns absolute path with resolved symlinks.
+<Path> = Path(<path> [, ...])       # Принимает строки, объекты Path и DirEntry.
+<Path> = <path> / <path> [/ ...]    # Первый или второй аргумент должен быть Path.
+<Path> = <Path>.resolve()           # Возвращает абсолютный путь с разрешением симлинков.
 ```
 
 ```python
-<Path> = Path()                     # Returns current working dir. Also Path('.').
-<Path> = Path.cwd()                 # Returns absolute CWD. Also Path().resolve().
-<Path> = Path.home()                # Returns the user's absolute home directory.
-<Path> = Path(__file__)             # Use resolve() to get module's absolute path.
+<Path> = Path()                     # Текущая рабочая директория. Также `Path('.')`.
+<Path> = Path.cwd()                 # Абсолютный CWD. Также `Path().resolve()`.
+<Path> = Path.home()                # Абсолютный путь к домашней директории пользователя.
+<Path> = Path(__file__)             # Используйте resolve() для абсолютного пути модуля.
 ```
 
 ```python
-<Path> = <Path>.parent              # Returns the path without its final component.
-<str>  = <Path>.name                # Returns final component (i.e. file/dirname).
-<str>  = <Path>.suffix              # Returns the name's last extension with a dot.
-<str>  = <Path>.stem                # Returns the name without its last extension.
-<tup.> = <Path>.parts               # Starts with '/' or 'C:\' if path is absolute.
+<Path> = <Path>.parent              # Возвращает путь без последнего компонента.
+<str>  = <Path>.name                # Имя файла или папки.
+<str>  = <Path>.suffix              # Расширение файла с точкой (например: .py).
+<str>  = <Path>.stem                # Имя файла без расширения.
+<tup.> = <Path>.parts               # Кортеж частей пути (начинается с '/' или 'C:\').
 ```
 
 ```python
-<iter> = <Path>.iterdir()           # Returns directory contents as Path objects.
-<iter> = <Path>.glob('<patt>')      # Returns Paths matching the wildcard pattern.
+<iter> = <Path>.iterdir()           # Возвращает содержимое папки в виде объектов Path.
+<iter> = <Path>.glob('<patt>')      # Возвращает объекты Path, совпадающие с шаблоном.
 ```
 
 ```python
-<str>  = str(<Path>)                # Returns path as string. Also <Path>.as_uri().
-<file> = open(<Path>)               # Also <Path>.read_text/write_bytes/…(<args>).
+<str>  = str(<Path>)                # Возвращает путь в виде строки. Также `<Path>.as_uri()`.
+<file> = open(<Path>)               # Также `<Path>.read_text/write_bytes/…(<args>)`.
 ```
 
 
@@ -1699,30 +1704,30 @@ import os, shutil as sh
 ```
 
 ```python
-os.chdir(<path>)               # Changes the current working directory (or CWD).
-os.mkdir(<path>)               # Creates dir. Set permissions with `mode=0o777`.
-os.makedirs(<path>)            # Creates all path's dirs. Also `exist_ok=False`.
+os.chdir(<path>)               # Сменяет текущую рабочую директорию (CWD).
+os.mkdir(<path>)               # Создаёт папку. Права доступа: `mode=0o777`.
+os.makedirs(<path>)            # Создаёт всю цепочку папок пути. Также `exist_ok=False`.
 ```
 
 ```python
-sh.copy(from, to)              # Copies file (arg. 'to' can exist or be a dir).
-sh.copy2(from, to)             # Also copies the creation and modification time.
-sh.copytree(from, to)          # Copies directory (arg. 'to' should not exist).
+sh.copy(from, to)              # Копирует файл (аргумент 'to' может быть файлом или папкой).
+sh.copy2(from, to)             # Копирует файл с сохранением времени создания и изменения.
+sh.copytree(from, to)          # Рекурсивно копирует папку (аргумент 'to' не должен существовать).
 ```
 
 ```python
-os.rename(from, to)            # Renames or moves the file or directory 'from'.
-os.replace(from, to)           # Same, but overwrites file 'to' even on Windows.
-sh.move(from, to)              # `rename()` that moves into 'to' if it's a dir.
+os.rename(from, to)            # Переименовывает или перемещает файл/папку 'from'.
+os.replace(from, to)           # То же самое, но перезаписывает 'to' даже в Windows.
+sh.move(from, to)              # `rename()`, перемещающий внутрь 'to', если 'to' — папка.
 ```
 
 ```python
-os.remove(<path>)              # Deletes file. Also `$ pip3 install send2trash`.
-os.rmdir(<path>)               # Deletes empty dir. Raises OSError if it's not.
-sh.rmtree(<path>)              # Deletes the directory and all of its contents.
+os.remove(<path>)              # Удаляет файл. В корзину: `$ pip3 install send2trash`.
+os.rmdir(<path>)               # Удаляет пустую папку. Вызывает OSError, если она не пуста.
+sh.rmtree(<path>)              # Рекурсивно удаляет папку со всем её содержимым.
 ```
-* **Passed paths can be either strings, Path objects, or DirEntry objects.**
-* **Functions report errors by raising OSError or one of its [subclasses](#exceptions-1).**
+* **В качестве путей можно передавать строки, объекты Path или объекты DirEntry.**
+* **Функции сообщают об ошибках через исключение OSError или его [подклассы](#exceptions-1).**
 
 
 Shell Commands
@@ -1732,20 +1737,20 @@ import os, subprocess as sp
 ```
 
 ```python
-<int>  = os.system('<cmds>')    # Runs commands in sh/cmd shell. Prints results.
-<proc> = sp.run(<str/list>)     # For parameters see examples. Prints by default.
-<pipe> = os.popen('<cmds>')     # Prints only stderr. Soft deprecated since 3.14.
-<str>  = <pipe>.read()          # Returns combined stdout. Provides readline/s().
-<int>  = <pipe>.close()         # Returns None if last command had returncode 0.
+<int>  = os.system('<cmds>')    # Запускает команду в sh/cmd. Выводит результат в консоль.
+<proc> = sp.run(<str/list>)     # Запуск подпроцесса. Параметры см. ниже в примерах.
+<pipe> = os.popen('<cmds>')     # Выводит только stderr. Устаревает, начиная с 3.14.
+<str>  = <pipe>.read()          # Возвращает объединённый stdout. Есть readline/s().
+<int>  = <pipe>.close()         # Возвращает None, если код возврата команды был 0.
 ```
 
-#### Sends "1+1" to the basic calculator and captures its stdout and stderr streams:
+#### Отправляет "1+1" в калькулятор bc и перехватывает потоки stdout и stderr:
 ```python
 >>> sp.run('bc', input='1+1\n', capture_output=True, text=True)
 CompletedProcess(args='bc', returncode=0, stdout='2\n', stderr='')
 ```
 
-#### Sends test.in to \`bc\` running in standard mode and saves its stdout to test.out:
+#### Отправляет test.in в \`bc\` в стандартном режиме и сохраняет stdout в test.out:
 ```python
 >>> if os.system('echo 1+1 > test.in') == 0:
 ...     with open('test.in') as in_, open('test.out', 'w') as out:
@@ -1759,8 +1764,8 @@ JSON
 ----
 ```python
 import json
-<str>  = json.dumps(<list/dict>)  # Converts collection to JSON string.
-<coll> = json.loads(<str>)        # Converts JSON string to collection.
+<str>  = json.dumps(<list/dict>)  # Преобразует коллекцию Python в JSON-строку.
+<coll> = json.loads(<str>)        # Преобразует JSON-строку в коллекцию Python.
 ```
 
 ### Read Collection from JSON File
@@ -1782,8 +1787,8 @@ Pickle
 ------
 ```python
 import pickle
-<bytes>  = pickle.dumps(<object>)  # Converts object to bytes object.
-<object> = pickle.loads(<bytes>)   # Converts bytes object to object.
+<bytes>  = pickle.dumps(<object>)  # Сериализует объект Python в бинарный объект bytes.
+<object> = pickle.loads(<bytes>)   # Десериализует объект bytes обратно в объект Python.
 ```
 
 ### Read Object from Pickle File
@@ -1803,41 +1808,41 @@ def write_to_pickle_file(filename, an_object):
 
 CSV
 ---
-**Text file format for storing spreadsheets.**
+**Текстовый формат для хранения табличных данных.**
 
 ```python
 import csv
 ```
 
 ```python
-<file> = open(<path>, newline='')              # Opens the text file for reading.
-<read> = csv.reader(<file>, 'excel')           # Also `delimiter=','`. See Params.
-<list> = next(<read>)                          # Returns a row as list of strings.
-<list> = list(<read>)                          # Returns list of remaining rows.
+<file> = open(<path>, newline='')              # Открывает файл для чтения.
+<read> = csv.reader(<file>, 'excel')           # Также `delimiter=','`. См. параметры.
+<list> = next(<read>)                          # Возвращает строку как список строк.
+<list> = list(<read>)                          # Возвращает список всех оставшихся строк.
 ```
-* **For XML and binary Excel files (with extensions xlsx, xlsm and xlsb) use [Pandas](#file-formats) library.**
-* **To nicely print the spreadsheet to the console use either [Tabulate](#table) or PrettyTable library.**
-* **Reader can consume any iterator or collection of strings, not just text files.**
+* **Для XML и бинарных файлов Excel (.xlsx, .xlsm, .xlsb) используйте библиотеку [Pandas](#file-formats).**
+* **Для красивого вывода таблиц в консоль используйте библиотеки [Tabulate](#table) или PrettyTable.**
+* **Reader может читать любой итератор или коллекцию строк, не только файлы.**
 
 ### Write
 ```python
-<file>  = open(<path>, 'a', newline='')        # Opens the text file for writing.
-<write> = csv.writer(<file>, 'excel')          # Also `delimiter=','`. See Params.
-<write>.writerow(<collection>)                 # Encodes objects using str(<obj>).
-<write>.writerows(<coll_of_coll>)              # Appends rows to the opened file.
+<file>  = open(<path>, 'a', newline='')        # Открывает файл для записи.
+<write> = csv.writer(<file>, 'excel')          # Также `delimiter=','`. См. параметры.
+<write>.writerow(<collection>)                 # Кодирует объекты через `str(<obj>)`.
+<write>.writerows(<coll_of_coll>)              # Дописывает строки в открытый файл.
 ```
-* **Always pass `'newline=""'` argument to open(), or newlines embedded inside quoted fields will flip between '\n' and '\r\n' (in some cases '\r\n' may even change to '\r\r\n'). Also&nbsp;rows won't be terminated with passed or dialect's `'lineterminator'` parameter.**
-* **Open existing file with `'mode="a"'` to append to it or `'mode="w"'` to overwrite it.**
+* **Всегда передавайте `'newline=""'` в функцию open(), иначе переносы строк внутри закавыченных полей будут некорректно дублироваться (`\r\r\n`).**
+* **Открывайте существующий файл с `'mode="a"'` для добавления записей или `'mode="w"'` для перезаписи.**
 
 ### Params
-* **`'dialect'` - Master parameter that sets the default values. String or a _csv.Dialect_ object.**
-* **`'delimiter'` - A one-character string that separates fields. Comma, tab, semicolon, etc.**
-* **`'lineterminator'` - Sets how writer terminates rows. Reader looks for '\n', '\r' and '\r\n'.**
-* **`'quotechar'` - Character for quoting fields containing delimiters, quotechars, '\n' or '\r'.**
-* **`'escapechar'` - Character for escaping quotechars. Can be None if doublequote is True.**
-* **`'doublequote'` - Whether quotechars inside fields are/get doubled (instead of escaped).**
-* **`'quoting'` - 0: As necessary, 1: All, 2: All but numbers which are read as floats, 3: None.**
-* **`'skipinitialspace'` - Is space character at the start of the field stripped by the reader.**
+* **`'dialect'` - Базовый диалект со стандартными настройками. Строка или объект csv.Dialect.**
+* **`'delimiter'` - Символ-разделитель колонок. Запятая, табуляция, точка с запятой и т.д.**
+* **`'lineterminator'` - Символ окончания строки при записи. Reader распознаёт `'\n'`, `'\r'` и `'\r\n'`.**
+* **`'quotechar'` - Символ кавычек для экранирования полей.**
+* **`'escapechar'` - Символ экранирования кавычек. Может быть None, если doublequote=True.**
+* **`'doublequote'` - Удваивать ли кавычки внутри полей вместо экранирования.**
+* **`'quoting'` - Режим кавычек: 0: по необходимости, 1: все, 2: все кроме чисел, 3: без кавычек.**
+* **`'skipinitialspace'` - Игнорировать ли пробел сразу после разделителя.**
 
 ### Dialects
 ```text
@@ -1872,45 +1877,45 @@ def write_to_csv_file(filename, rows, mode='w', **csv_params):
 
 SQLite
 ------
-**A server-less database engine that stores each database into its own file.**
+**Встраиваемый бессерверный движок реляционных баз данных, хранящий каждую БД в отдельном файле.**
 
 ```python
 import sqlite3
-<con> = sqlite3.connect(<path>)        # Opens existing or new file. Also ':memory:'.
-<con>.close()                          # Closes connection. Discards uncommitted data.
+<con> = sqlite3.connect(<path>)        # Открывает файл БД или создаёт новый. Также ':memory:'.
+<con>.close()                          # Закрывает соединение. Сбрасывает незафиксированные данные.
 ```
 
 ### Read
 ```python
-<cursor> = <con>.execute('SELECT …')   # Can raise a subclass of the `sqlite3.Error`.
-<tuple>  = <cursor>.fetchone()         # Returns the next row. Same as next(<cursor>).
-<list>   = <cursor>.fetchall()         # Returns remaining rows. Also list(<cursor>).
+<cursor> = <con>.execute('SELECT …')   # Может вызвать исключение из иерархии `sqlite3.Error`.
+<tuple>  = <cursor>.fetchone()         # Возвращает следующую строку. То же, что `next(<cursor>)`.
+<list>   = <cursor>.fetchall()         # Возвращает оставшиеся строки списком. Также `list(<cursor>)`.
 ```
 
 ### Write
 ```python
-<con>.execute('INSERT …')              # Can raise a subclass of the `sqlite3.Error`.
-<con>.commit()                         # Saves all the changes since the last commit.
-<con>.rollback()                       # Discards all changes since the last commit.
+<con>.execute('INSERT …')              # Может вызвать исключение из иерархии `sqlite3.Error`.
+<con>.commit()                         # Фиксирует все изменения с момента прошлого коммита.
+<con>.rollback()                       # Откатывает изменения с момента последнего коммита.
 ```
 
-#### Or:
+#### Или через контекстный менеджер:
 ```python
-with <con>:                            # Exits the block with commit() or rollback(),
-    <con>.execute('INSERT …')          # depending on whether any exception occurred.
+with <con>:                            # Выходит из блока с commit() или rollback()
+    <con>.execute('INSERT …')          # в зависимости от наличия исключений.
 ```
 
 ### Params
 ```python
-<con>.execute(<sql>, <list/tuple>)     # Replaces every '?' with corresponding item.
-<con>.execute(<sql>, <dict/namedtup>)  # Replaces every ':<key>' with matching value.
-<con>.executemany(<sql>, <colls>)      # Executes statement once for each collection.
+<con>.execute(<sql>, <list/tuple>)     # Подставляет элементы вместо знаков '?'.
+<con>.execute(<sql>, <dict/namedtup>)  # Подставляет значения по ключам `:<key>`.
+<con>.executemany(<sql>, <colls>)      # Выполняет SQL-запрос для каждого набора параметров.
 ```
-* **Accepts strings, ints, floats, bytes, None objects, and bools (stored as 1 or 0).**
-* **Columns are not restricted to any specific type unless table is declared strict.**
+* **Поддерживает типы str, int, float, bytes, None и bool (хранятся как 1 или 0).**
+* **Колонки не привязаны к конкретному типу данных, если таблица не создана в режиме STRICT.**
 
 ### Example
-**Values are not actually saved in this example because `'con.commit()'` is omitted!**
+**Изменения в этом примере не сохранятся на диске, так как пропущен `'con.commit()'`!**
 ```python
 >>> con = sqlite3.connect('test.db')
 >>> con.execute('CREATE TABLE person (name TEXT, height INTEGER) STRICT')
@@ -1920,19 +1925,19 @@ with <con>:                            # Exits the block with commit() or rollba
 ```
 
 ### SQLAlchemy
-**Library for interacting with various DB systems via SQL, [method chaining](https://docs.sqlalchemy.org/en/latest/tutorial/data_select.html#the-select-sql-expression-construct) or [ORM](https://docs.sqlalchemy.org/en/latest/orm/quickstart.html#simple-select).**
+**Популярная библиотека для работы с реляционными СУБД через сырой SQL, [построитель запросов](https://docs.sqlalchemy.org/en/latest/tutorial/data_select.html#the-select-sql-expression-construct) или [ORM](https://docs.sqlalchemy.org/en/latest/orm/quickstart.html#simple-select).**
 ```python
 # $ pip3 install sqlalchemy
 import sqlalchemy as sa
-<eng> = sa.create_engine(<url>)        # Url: 'dialect://user:password@host/dbname'.
-<con> = <eng>.connect()                # Creates new connection. Also <con>.close().
-<cur> = <con>.execute(sa.text(<sql>))  # Add dict to execute() to replace ':<key>'s.
-with <con>.begin(): ...                # Exits the block with a commit or rollback.
+<eng> = sa.create_engine(<url>)        # URL: 'dialect://user:password@host/dbname'.
+<con> = <eng>.connect()                # Создаёт новое соединение. Также `<con>.close()`.
+<cur> = <con>.execute(sa.text(<sql>))  # Передайте dict в execute() для подстановки `:<key>`.
+with <con>.begin(): ...                # Завершает блок транзакции автоматическим commit или rollback.
 ```
 
 ```text
 +-----------------+--------------+----------------------------------+
-| Dialect         | pip3 install |           Dependencies           |
+| Драйвер/СУБД    | pip3 install |           Зависимости            |
 +-----------------+--------------+----------------------------------+
 | mysql           | mysqlclient  | www.pypi.org/project/mysqlclient |
 | postgresql      | psycopg2     | www.pypi.org/project/psycopg2    |
@@ -1944,31 +1949,30 @@ with <con>.begin(): ...                # Exits the block with a commit or rollba
 
 Bytes
 -----
-**An immutable sequence of single bytes. Mutable version is called bytearray.**
+**Неизменяемая последовательность отдельных байтов. Изменяемая версия называется bytearray.**
 
 ```python
-<bytes> = b'<str>'                   # Accepts ASCII characters and \x00 to \xff.
-<int>   = <bytes>[index]             # Returns the byte as int between 0 and 255.
-<bytes> = <bytes>[<slice>]           # Returns bytes even if it has one element.
-<bytes> = <bytes>.join(<coll>)       # Joins bytes objects using bytes as a sep.
+<bytes> = b'<str>'                   # Принимает символы ASCII и шестнадцатеричные `\x00`..\xff.
+<int>   = <bytes>[index]             # Возвращает байт в виде целого числа от 0 до 255.
+<bytes> = <bytes>[<slice>]           # Возвращает срез bytes (даже если он из одного байта).
+<bytes> = <bytes>.join(<coll>)       # Склеивает объекты bytes через байт-разделитель.
 ```
 
 ### Encode
 ```python
-<bytes> = bytes(<ints>)              # Accepts coll of integers between 0 and 255.
-<bytes> = bytes(<str>, 'utf-8')      # Encodes the string. Same as <str>.encode().
-<bytes> = bytes.fromhex('<hex>')     # Hex pairs can be separated by whitespaces.
-<bytes> = <int>.to_bytes(n_bytes)    # Accepts `byteorder='little', signed=True`.
+<bytes> = bytes(<ints>)              # Принимает коллекцию целых чисел от 0 до 255.
+<bytes> = bytes(<str>, 'utf-8')      # Кодирует строку. То же, что `<str>.encode()`.
+<bytes> = bytes.fromhex('<hex>')     # Шестнадцатеричные пары могут разделяться пробелами.
+<bytes> = <int>.to_bytes(n_bytes)    # Принимает `byteorder='little', signed=True`.
 ```
 
 ### Decode
 ```python
-<list>  = list(<bytes>)              # Returns a list of ints between 0 and 255.
-<str>   = str(<bytes>, 'utf-8')      # Returns a string. Same as <bytes>.decode().
-<str>   = <bytes>.hex()              # Returns hex pairs separated by `sep=<str>`.
-<int>   = int.from_bytes(<bytes>)    # Accepts `byteorder='little', signed=True`.
+<list>  = list(<bytes>)              # Возвращает список целых чисел от 0 до 255.
+<str>   = str(<bytes>, 'utf-8')      # Возвращает строку. То же, что `<bytes>.decode()`.
+<str>   = <bytes>.hex()              # Возвращает hex-пары, разделяемые `sep=<str>`.
+<int>   = int.from_bytes(<bytes>)    # Принимает `byteorder='little', signed=True`.
 ```
-
 
 ### Read Bytes from File
 ```python
@@ -1987,14 +1991,14 @@ def write_bytes(filename, bytes_obj):
 
 Struct
 ------
-* **Performs conversions between a sequence of numbers and a bytes object.**
-* **System’s type sizes, byte order, and alignment rules are used by default.**
+* **Выполняет преобразование между последовательностями чисел и упакованными бинарными данными bytes.**
+* **По умолчанию используются системные размеры типов, порядок байтов и выравнивание.**
 
 ```python
 from struct import pack, unpack
 
-<bytes> = pack('<format>', <num>, ...)  # Packs numbers according to format.
-<tuple> = unpack('<format>', <bytes>)   # Use `iter_unpack()` to get tuples.
+<bytes> = pack('<format>', <num>, ...)  # Упаковывает числа согласно формату.
+<tuple> = unpack('<format>', <bytes>)   # Используйте `iter_unpack()` для поточной распаковки.
 ```
 
 ```python
@@ -2005,107 +2009,107 @@ b'\x00\x01\x00\x02\x00\x00\x00\x03'
 ```
 
 ### Format
-#### For standard type sizes and manual alignment (padding) start format string with:
-* **`'='` - System's byte order (usually little-endian).**
-* **`'<'` - Little-endian (i.e. least significant byte first).**
-* **`'>'` - Big-endian (also `'!'`).**
+#### Для стандартных размеров типов и ручного выравнивания строка формата начинается с:
+* **`'='` - Системный порядок байтов (обычно little-endian).**
+* **`'<'` - Прямой порядок байтов (little-endian, младший байт первый).**
+* **`'>'` - Обратный порядок байтов (big-endian, также `'!'`).**
 
-#### Besides numbers, pack() and unpack() also support bytes objects as part of the sequence:
-* **`'c'` - A bytes object with a single element. For pad byte use `'x'`.**
-* **`'<n>s'` - A bytes object with n elements (not effected by byte order).**
+#### Помимо чисел, pack() и unpack() поддерживают байтовые строки (bytes):
+* **`'c'` - Байт из одного символа. Для байта выравнивания используется `'x'`.**
+* **`'<n>s'` - Байт-строка из n символов (порядок байтов не влияет).**
 
-#### Integers. Unsigned types use capital letters. Minimum and standard sizes are in brackets:
+#### Целые числа. Беззнаковые типы пишутся заглавными буквами. Размеры (мин/стандарт в байтах) указаны в скобках:
 * **`'b'` - char (1/1)**
 * **`'h'` - short (2/2)**
 * **`'i'` - int (2/4)**
 * **`'l'` - long (4/4)**
 * **`'q'` - long long (8/8)**
 
-#### Floating point types (struct always uses standard sizes):
+#### Числа с плавающей точкой (struct всегда использует стандартные размеры IEEE):
 * **`'f'` - float (4/4)**
 * **`'d'` - double (8/8)**
 
 
 Array
 -----
-**List that can only hold numbers that fit into selected C type. Available types and their min&shy;imum sizes in bytes are listed above. Type sizes and byte order are always determined by the system, however bytes of each element can be reversed by calling the byteswap() method.**
+**Список, который может содержать только числа выбранного C-типа (минимальный оверхед памяти). Доступные типы и их размеры перечислены выше. Порядок байтов зависит от платформы, но байты элементов можно инвертировать методом `byteswap()`.**
 
 ```python
 from array import array
 ```
 
 ```python
-<array> = array('<ctype>' [, <coll>])  # Creates array. Accepts collection of numbers.
-<array> = array('<ctype>', <bytes>)    # Copies passed bytes into the array's memory.
-<array> = array('<ctype>', <array>)    # Treats passed array as a sequence of numbers.
-<array>.fromfile(<file>, n_items)      # Appends file contents to the array's memory.
+<array> = array('<ctype>' [, <coll>])  # Создаёт массив. Принимает коллекцию чисел.
+<array> = array('<ctype>', <bytes>)    # Копирует переданные байты напрямую в память массива.
+<array> = array('<ctype>', <array>)    # Воспринимает переданный массив как последовательность чисел.
+<array>.fromfile(<file>, n_items)      # Дописывает содержимое файла в память массива.
 ```
 
 ```python
-<bytes> = bytes(<array>)               # Returns copy of the memory as a bytes object.
-<file>.write(<array>)                  # Appends the array's memory to a binary file.
+<bytes> = bytes(<array>)               # Возвращает копию памяти массива в виде объекта bytes.
+<file>.write(<array>)                  # Записывает память массива напрямую в бинарный файл.
 ```
 
 
 Memory View
 -----------
-**A sequence object that points to the memory of another bytes-like object. Each element can reference a single or multiple consecutive bytes, depending on format. Order and number of elements can be changed with slicing.**
+**Объект-последовательность, ссылающийся на буфер памяти другого байтоподобного объекта без копирования. Порядок и число элементов можно менять срезами.**
 
 ```python
-<mview> = memoryview(<bytes/array>)  # Returns mutable memoryview if array is passed.
-<obj>   = <mview>[index]             # Returns an int/float. Bytes if format is 'c'.
-<mview> = <mview>[<slice>]           # Returns a memoryview with rearranged elements.
-<mview> = <mview>.cast('<ctype>')    # Only works between B/b/c and the other types.
-<mview>.release()                    # Releases the memory buffer of the base object.
+<mview> = memoryview(<bytes/array>)  # Возвращает изменяемый memoryview, если передан array.
+<obj>   = <mview>[index]             # Возвращает int/float. Объект bytes, если формат 'c'.
+<mview> = <mview>[<slice>]           # Возвращает memoryview с переупорядоченными элементами.
+<mview> = <mview>.cast('<ctype>')    # Работает только между B/b/c и остальными типами.
+<mview>.release()                    # Освобождает буфер памяти базового объекта.
 ```
 
 ```python
-<bytes> = bytes(<mview>)             # Returns a new bytes object. Also bytearray().
-<bytes> = <bytes>.join(<coll>)       # Joins memoryviews using bytes as a separator.
-<array> = array('<ctype>', <mview>)  # Treats passed mview as a sequence of numbers.
-<file>.write(<mview>)                # Appends `bytes(<mview>)` to the binary file.
+<bytes> = bytes(<mview>)             # Создаёт новый объект bytes. Также `bytearray()`.
+<bytes> = <bytes>.join(<coll>)       # Склеивает memoryviews через байт-разделитель.
+<array> = array('<ctype>', <mview>)  # Считывает mview как последовательность чисел.
+<file>.write(<mview>)                # Записывает `bytes(<mview>)` в бинарный файл.
 ```
 
 ```python
-<list>  = list(<mview>)              # Returns list of ints, floats or bytes objects.
-<str>   = str(<mview>, 'utf-8')      # Treats passed memoryview as `bytes(<mview>)`.
-<str>   = <mview>.hex()              # Returns hex pairs separated with `sep=<str>`.
+<list>  = list(<mview>)              # Возвращает список int, float или объектов bytes.
+<str>   = str(<mview>, 'utf-8')      # Воспринимает переданный memoryview как `bytes(<mview>)`.
+<str>   = <mview>.hex()              # Возвращает hex-пары с разделителем `sep=<str>`.
 ```
 
 
 Deque
 -----
-**List with efficient appends and pops from either side.**
+**Двусторонняя очередь с эффективным добавлением и удалением элементов с обоих концов за O(1).**
 
 ```python
 from collections import deque
 ```
 
 ```python
-<deque> = deque(<coll>)           # Pass `maxlen=<int>` to set the size limit.
-<deque>.appendleft(<el>)          # Drops last element if maxlen is exceeded.
-<deque>.extendleft(<coll>)        # Prepends reversed collection to the deque.
-<deque>.rotate(n=1)               # Moves last element to the start of deque.
-<el> = <deque>.popleft()          # Removes and returns deque's first element.
+<deque> = deque(<coll>)           # Передайте `maxlen=<int>` для ограничения размера.
+<deque>.appendleft(<el>)          # Вытесняет последний элемент, если превышен maxlen.
+<deque>.extendleft(<coll>)        # Добавляет элементы коллекции слева в обратном порядке.
+<deque>.rotate(n=1)               # Сдвигает циклически элементы вправо (n шагов).
+<el> = <deque>.popleft()          # Удаляет и возвращает первый (левый) элемент.
 ```
 
 
 Operator
 --------
-**Module of functions that provide the functionality of operators. Functions are grouped by operator precedence, from least to most binding. Functions/operators in first and third line are also ordered by precedence within a line.**
+**Модуль функций, реализующих операторы Python. Функции сгруппированы по возрастанию приоритета связывания.**
 ```python
 import operator as op
 ```
 
 ```python
-<bool> = op.not_(<obj>)                                    # or, and, not (or/and missing).
+<bool> = op.not_(<obj>)                                    # or, and, not (or/and функций нет).
 <bool> = op.eq/ne/lt/ge/is_/is_not/contains(<obj>, <obj>)  # ==, !=, <, >=, is, is not, in.
-<obj>  = op.or_/xor/and_(<int/set>, <int/set>)             # |, ^, & (sorted by precedence).
-<int>  = op.lshift/rshift(<int>, <int>)                    # <<, >> (i.e. <int> << n_bits).
-<obj>  = op.add/sub(<obj>, <obj>)                          # +, - (e.g. 'a' + 'b' == 'ab').
-<obj>  = op.mul/truediv/floordiv/mod(<obj>, <obj>)         # *, /, //, % (evaluated l to r).
-<num>  = op.neg/invert(<num>)                              # -, ~ (negate and bitwise not).
-<num>  = op.pow(<num>, <num>)                              # ** (pow() accepts 3 arguments).
+<obj>  = op.or_/xor/and_(<int/set>, <int/set>)             # |, ^, & (отсортированы по приоритету).
+<int>  = op.lshift/rshift(<int>, <int>)                    # <<, >> (битовые сдвиги).
+<obj>  = op.add/sub(<obj>, <obj>)                          # +, - (например, 'a' + 'b' == 'ab').
+<obj>  = op.mul/truediv/floordiv/mod(<obj>, <obj>)         # *, /, //, % (вычисляются слева направо).
+<num>  = op.neg/invert(<num>)                              # -, ~ (унарный минус и побитовое НЕ).
+<num>  = op.pow(<num>, <num>)                              # ** (pow() принимает 3 аргумента).
 <func> = op.itemgetter/attrgetter/methodcaller(<obj>, …)   # [i/key], .attr_name, .name(…).
 ```
 
@@ -2114,14 +2118,14 @@ elementwise_sum  = map(op.add, list_a, list_b)
 sorted_by_second = sorted(<coll>, key=op.itemgetter(1))
 sorted_by_both   = sorted(<coll>, key=op.itemgetter(1, 0))
 ```
-* **Most operators call the object's special method that is named after them (second object is passed as an argument), while logical operators call their own code that relies on bool().**
-* **`'and/or'` can't be emulated by a function because they might not evaluate all operands.**
-* **Comparisons can be chained: `'x < y < z'` gets converted to `'(x < y) and (y < z)'`.**
+* **Большинство операторов вызывают одноимённый специальный метод объекта, а логические операторы опираются на функцию bool().**
+* **Операторы `'and/or'` нельзя представить обычной функцией из-за механизма ленивого вычисления (short-circuiting).**
+* **Сравнения можно объединять в цепочки: выражение `'x < y < z'` преобразуется в `'(x < y) and (y < z)'`.**
 
 
 Match Statement
 ---------------
-**Executes the first block with matching pattern.**
+**Выполняет первый блок с совпавшим шаблоном (сопоставление с образцом / pattern matching, Python 3.10+).**
 
 ```python
 match <obj/expr>:
@@ -2132,20 +2136,20 @@ match <obj/expr>:
 
 ### Patterns
 ```python
-<val_patt> = 1/'a'/True/None/math.pi     # Matches the literal or attribute's value.
-<cls_patt> = <type>()                    # Matches any object of that type (or ABC).
-<wildcard> = _                           # Matches any object. Useful in last case.
-<capture>  = <name>                      # Matches any object and binds it to name.
-<as_patt>  = <pattern> as <name>         # Binds match to name. Also <type>(<name>).
-<or_patt>  = <pattern> | ...             # Matches if any of listed patterns match.
-<seq_patt> = [<pattern>, ...]            # Matches a sequence. All items must match.
-<map_patt> = {<val_patt>: <patt>, ...}   # Matches a dict if it has matching items.
-<cls_patt> = <type>(<name>=<patt>, ...)  # Matches object with matching attributes.
+<val_patt> = 1/'a'/True/None/math.pi     # Сопоставляет литерал или значение атрибута.
+<cls_patt> = <type>()                    # Сопоставляет любой объект указанного типа (или ABC).
+<wildcard> = _                           # Сопоставляет любой объект (универсальный шаблон case _).
+<capture>  = <name>                      # Сопоставляет любой объект и связывает его с переменной name.
+<as_patt>  = <pattern> as <name>         # Связывает совпадение с именем name. Также `<type>(<name>)`.
+<or_patt>  = <pattern> | ...             # Совпадает, если подошёл любой из указанных шаблонов.
+<seq_patt> = [<pattern>, ...]            # Сопоставляет последовательность. Все элементы должны подойти.
+<map_patt> = {<val_patt>: <patt>, ...}   # Сопоставляет словарь при наличии соответствующих ключей.
+<cls_patt> = <type>(<name>=<patt>, ...)  # Сопоставляет объект с совпадающими значениями атрибутов.
 ```
-* **The sequence pattern can also be written as a tuple, either with or without the brackets.**
-* **Use `'*<name>'` and `'**<name>'` in sequence/mapping patterns to bind remaining items.**
-* **Patterns can be surrounded with brackets to override their precedence: `'|'` > `'as'` > `','`. For example, `'[1, 2]'` is matched by expression `'case 1|2, 2|3 as y if y == 2:'`.**
-* **All names that are bound in the matching case, as well as variables initialized in its body, are visible after the match statement (only function block delimits scope).**
+* **Шаблон последовательности может быть записан как список или как кортеж (в скобках или без).**
+* **Используйте `'*<name>'` и `'**<name>'` в шаблонах последовательностей и словарей для сбора оставшихся элементов.**
+* **Приоритет операторов: `'|'` > `'as'` > `','`. Например, `'[1, 2]'` сопоставляется выражением `'case 1|2, 2|3 as y if y == 2:'`.**
+* **Все имена, связанные в сработавшем блоке case, а также переменные внутри его тела, видны и после инструкции match (только функция изолирует область видимости).**
 
 ### Example
 ```python
@@ -2166,41 +2170,41 @@ import logging as log
 ```
 
 ```python
-log.basicConfig(filename=<path>)                # Configures the root logger (see Setup).
-log.debug/info/warning/error/critical(<str>)    # Sends passed message to the root logger.
-<Logger> = log.getLogger(__name__)              # Returns a logger named after the module.
-<Logger>.<level>(<str>)                         # Sends the message. Same levels as above.
-<Logger>.exception(<str>)                       # `error()` that appends caught exception.
+log.basicConfig(filename=<path>)                # Настраивает корневой логгер (см. Setup).
+log.debug/info/warning/error/critical(<str>)    # Отправляет сообщение в корневой логгер.
+<Logger> = log.getLogger(__name__)              # Возвращает логгер с именем текущего модуля.
+<Logger>.<level>(<str>)                         # Отправляет сообщение на выбранном уровне.
+<Logger>.exception(<str>)                       # Метод `error()`, прикрепляющий стектрейс исключения.
 ```
 
 ### Setup
 ```python
 log.basicConfig(
-  filename=None,                                # Prints to stderr when filename is None.
-  filemode='a',                                 # Use mode 'w' to overwrite existing file.
-  format='%(levelname)s:%(name)s:%(message)s',  # Using '%(asctime)s' adds local datetime.
-  level=log.WARNING,                            # Drops messages that have lower priority.
-  handlers=[log.StreamHandler(sys.stderr)]      # Uses FileHandler when 'filename' is set.
+  filename=None,                                # При None выводит сообщения в stderr.
+  filemode='a',                                 # Режим 'w' перезаписывает файл при старте.
+  format='%(levelname)s:%(name)s:%(message)s',  # Параметр '%(asctime)s' добавляет дату/время.
+  level=log.WARNING,                            # Игнорирует сообщения с более низким приоритетом.
+  handlers=[log.StreamHandler(sys.stderr)]      # При указании 'filename' использует FileHandler.
 )
 ```
 
 ```python
-<Formatr> = log.Formatter('<format>')           # Formats messages using the format str.
-<Handler> = log.FileHandler(<path>, mode='a')   # Appends to file. Also `encoding=None`.
-<Handler>.setFormatter(<Formatter>)             # Only outputs bare messages by default.
-<Handler>.setLevel(<str/int>)                   # Prints/saves every message by default.
-<Logger>.addHandler(<Handler>)                  # Loggers can have more than one handler.
-<Logger>.setLevel(<str/int>)                    # What's sent to its/ancestors' handlers.
-<Logger>.propagate = <bool>                     # Cuts off ancestors' handlers if False.
+<Formatr> = log.Formatter('<format>')           # Форматирует сообщения по строке шаблона.
+<Handler> = log.FileHandler(<path>, mode='a')   # Дописывает в файл логов. Также `encoding=None`.
+<Handler>.setFormatter(<Formatter>)             # По умолчанию выводит «сырые» сообщения.
+<Handler>.setLevel(<str/int>)                   # По умолчанию логирует все сообщения.
+<Logger>.addHandler(<Handler>)                  # У логгера может быть несколько обработчиков.
+<Logger>.setLevel(<str/int>)                    # Фильтр сообщений, отправляемых в обработчики.
+<Logger>.propagate = <bool>                     # При False отключает передачу логов родителям.
 ```
-* **Parent logger can be specified by naming the child logger `'<parent_name>.<name>'`.**
-* **Logger will inherit the level from its parent if you don't set it via the setLevel() method.**
-* **Format string can contain: pathname, filename, funcName, lineno, thread and process.**
-* **RotatingFileHandler rotates files according to 'maxBytes' and 'backupCount' arguments.**
-* **An object with `'filter(<LogRecord>)'` method (or the method itself) can be added to loggers and handlers via addFilter(). Message is dropped if filter() returns a false value.**
-* **Logging messages generated by libraries are passed to the root's handlers. Level of the library's logger can be set with `'log.getLogger("<library>").setLevel(<str>)'`.**
+* **Родительский логгер указывается в имени дочернего через точку: `'<parent_name>.<name>'`.**
+* **Логгер наследует уровень от родителя, если он не переопределён через setLevel().**
+* **В строке формата доступны: pathname, filename, funcName, lineno, thread и process.**
+* **RotatingFileHandler выполняет ротацию файлов по параметрам 'maxBytes' и 'backupCount'.**
+* **Объект с методом `'filter(<LogRecord>)'` можно подключить через addFilter(). При False сообщение отбрасывается.**
+* **Сообщения из внешних библиотек передаются в корневые обработчики. Уровень логгера библиотеки задаётся через `'log.getLogger("<library>").setLevel(<str>)'`.**
 
-#### Logger that writes messages to a file and sends them to the root's handler that prints warnings or higher:
+#### Пример логгера, пишущего сообщения в файл и передающего их корневому обработчику:
 ```python
 >>> logger = log.getLogger('my_module')
 >>> handler = log.FileHandler('test.log', encoding='utf-8')
@@ -2221,24 +2225,24 @@ CRITICAL:my_module:Missing config file.
 Introspection
 -------------
 ```python
-<list> = dir()                       # Local names of objects, incl. functions/classes.
-<dict> = vars()                      # Local names and their objects. Same as locals().
-<dict> = globals()                   # Global names and their objects. E.g. __builtin__.
+<list> = dir()                       # Локальные имена объектов (включая функции и классы).
+<dict> = vars()                      # Словарь локальных имён и их объектов. То же, что locals().
+<dict> = globals()                   # Глобальные имена и их объекты. Например, __builtin__.
 ```
 
 ```python
-<list> = dir(<obj>)                  # Names of object's attributes, including methods.
-<dict> = vars(<obj>)                 # Dict of writable attributes. Or <obj>.__dict__.
-<bool> = hasattr(<obj>, '<name>')    # Checks if object possesses attr. of passed name.
-value  = getattr(<obj>, '<name>')    # Returns object's attr. or raises AttributeError.
-setattr(<obj>, '<name>', value)      # Only works on objects with `__dict__` attribute.
-delattr(<obj>, '<name>')             # Deletes from __dict__. Also `del <obj>.<name>`.
+<list> = dir(<obj>)                  # Имена атрибутов и методов объекта.
+<dict> = vars(<obj>)                 # Словарь изменяемых атрибутов или `<obj>.__dict__`.
+<bool> = hasattr(<obj>, '<name>')    # Проверяет наличие атрибута с указанным именем.
+value  = getattr(<obj>, '<name>')    # Возвращает атрибут или вызывает AttributeError.
+setattr(<obj>, '<name>', value)      # Устанавливает атрибут (только для объектов с `__dict__`).
+delattr(<obj>, '<name>')             # Удаляет из `__dict__`. Также `del <obj>.<name>`.
 ```
 
 
 Threading
 ---------
-**Threads are functions that run concurrently. Things can get messy when they share objects. `'$ uv init --python 3.15t'` installs interpreter that can run threads on multiple cores.**
+**Потоки — это функции, выполняющиеся конкурентно в одном адресном пространстве. Совместное изменение объектов требует синхронизации. Команда `'$ uv init --python 3.15t'` устанавливает интерпретатор без GIL (free-threaded), способный параллельно запускать потоки на нескольких ядрах процессора.**
 
 ```python
 import threading as th, queue as qu
@@ -2247,96 +2251,96 @@ import concurrent.futures as cf
 
 ### Thread
 ```python
-<Thread> = th.Thread(target=<func>)     # Use `args=<coll>` to set function's arguments.
-<Thread>.start()                        # Runs function in background. Also is_alive().
-<Thread>.join()                         # Waits until the function finishes executing.
+<Thread> = th.Thread(target=<func>)     # Используйте `args=<coll>` для позиционных аргументов.
+<Thread>.start()                        # Запускает поток в фоновом режиме. Также `is_alive()`.
+<Thread>.join()                         # Блокирует выполнение до завершения работы потока.
 ```
-* **Use `'kwargs=<dict>'` to pass keyword arguments to the function, i.e. thread.**
-* **Use `'daemon=True'`, or the program won't be able to exit while thread is alive.**
+* **Используйте `'kwargs=<dict>'` для передачи именованных аргументов потоку.**
+* **Используйте `'daemon=True'`, иначе процесс не завершится, пока поток активен.**
 
 ### Lock
 ```python
-<lock> = th.Lock/RLock()                # RLock can only be released by acquirer thread.
-<lock>.acquire()                        # Waits/blocks until the lock becomes available.
-<lock>.release()                        # Releases the lock so it can be acquired again.
+<lock> = th.Lock/RLock()                # RLock может повторно захватываться тем же потоком.
+<lock>.acquire()                        # Ожидает/блокирует поток, пока блокировка не освободится.
+<lock>.release()                        # Освобождает блокировку для других потоков.
 ```
 
-#### Or:
+#### Или через контекстный менеджер:
 ```python
-with <lock>:                            # Enters the block by calling method acquire().
-    ...                                 # Exits it by calling release(), even on error.
+with <lock>:                            # Захватывает блокировку вызовом метода acquire().
+    ...                                 # Автоматически вызывает release(), даже при ошибке.
 ```
 
 ### Sync Objects
 ```python
-<Semaphr> = th.Semaphore(value=1)       # A lock that can be acquired by value threads.
-<Event>   = th.Event()                  # `<Event>.wait()` blocks until set() is called.
-<Barrier> = th.Barrier(parties)         # Wait() blocks until it's called parties times.
+<Semaphr> = th.Semaphore(value=1)       # Блокировка со счётчиком для `value` потоков.
+<Event>   = th.Event()                  # Метод `<Event>.wait()` блокирует поток до вызова set().
+<Barrier> = th.Barrier(parties)         # Wait() блокирует поток, пока его не вызовут parties раз.
 ```
 
 ### Queue
 ```python
-<Queue> = qu.Queue(maxsize=0)           # A first-in-first-out queue. It's thread safe.
-<Queue>.put(<obj>)                      # The call blocks until queue stops being full.
-<Queue>.put_nowait(<obj>)               # Raises the qu.Full exception if queue is full.
-<obj> = <Queue>.get()                   # The call blocks until queue stops being empty.
-<obj> = <Queue>.get_nowait()            # Raises the qu.Empty exception if it is empty.
+<Queue> = qu.Queue(maxsize=0)           # Потокобезопасная очередь FIFO (первым зашёл — первым вышел).
+<Queue>.put(<obj>)                      # Блокирует выполнение, если очередь заполнена (maxsize).
+<Queue>.put_nowait(<obj>)               # Вызывает исключение `qu.Full`, если очередь полна.
+<obj> = <Queue>.get()                   # Блокирует выполнение, пока очередь пуста.
+<obj> = <Queue>.get_nowait()            # Вызывает исключение `qu.Empty`, если очередь пуста.
 ```
 
 ### Thread Executor
 ```python
-<Exec> = cf.ThreadPoolExecutor()        # Or use `with ThreadPoolExecutor() as <name>:`.
-<iter> = <Exec>.map(<fn>, <args>, …)    # Multithreaded and non-lazy map(). Keeps order.
-<Futr> = <Exec>.submit(<fn>, <arg>, …)  # Queues function for execution. Returns Future.
-<Exec>.shutdown()                       # Waits until all submitted tasks are completed.
+<Exec> = cf.ThreadPoolExecutor()        # Или через менеджер контекста `with ThreadPoolExecutor() as <name>:`.
+<iter> = <Exec>.map(<fn>, <args>, …)    # Многопоточный жадный map(). Сохраняет исходный порядок элементов.
+<Futr> = <Exec>.submit(<fn>, <arg>, …)  # Ставит задачу в очередь на исполнение. Возвращает объект Future.
+<Exec>.shutdown()                       # Ожидает завершения всех поставленных задач.
 ```
 
 ```python
-<iter> = cf.as_completed(<Futrs>)       # `next(<iter>)` returns next completed Future.
-<obj>  = <Future>.result()              # Raises TimeoutError if `timeout=<fl>` is used.
-<bool> = <Future>.done()                # Returns True if function has finished running.
-<bool> = <Future>.cancel()              # Just returns False if func is already running.
+<iter> = cf.as_completed(<Futrs>)       # `next(<iter>)` возвращает следующий завершившийся Future.
+<obj>  = <Future>.result()              # Вызывает TimeoutError при указании `timeout=<fl>`.
+<bool> = <Future>.done()                # Возвращает True, если функция завершила выполнение.
+<bool> = <Future>.cancel()              # Возвращает False, если функция уже начала выполняться.
 ```
-* **Map() and as\_completed() also accept 'timeout' arg. It causes _futures.TimeoutError_ when next() is called or blocking. Map() times from original call and as_completed() from first call to next(). As\_completed() fails if next() is called too late, even if all tasks are done.**
-* **Exceptions that happen inside threads are raised when map's next() or Future's result() method is called. Future's exception() method returns caught exception object or None.**
-* **ProcessPoolExecutor provides true parallelism but: everything sent to and from workers must be [pickable](#pickle), queues must be sent using executor's 'initargs' and 'initializer' param&shy;eters, and executor should only be reachable via `'if __name__ == "__main__": …'`.**
+* **Map() и as\_completed() также принимают аргумент 'timeout'. Он вызывает _futures.TimeoutError_.**
+* **Исключения, возникшие внутри потока, пробрасываются при вызове next() или Future.result(). Метод Future.exception() возвращает объект исключения или None.**
+* **ProcessPoolExecutor обеспечивает настоящий параллелизм процессов, но: аргументы должны быть [сериализуемы через pickle](#pickle), очереди передаются через initargs/initializer, а точка запуска должна быть защищена блоком `'if __name__ == "__main__": …'`.**
 
 
 Asyncio
 -------
-* **Coroutines have a lot in common with threads, but unlike threads, they only give up control when they call another coroutine and they don’t consume as much memory.**
-* **Coroutine definition starts with `'async'` keyword and its call with `'await'` keyword.**
-* **Execute `'asyncio.run(<coroutine>)'` to start running the first/main coroutine.**
+* **Корутины во многом похожи на потоки, но в отличие от потоков, они отдают управление только явно при вызове других корутин и потребляют значительно меньше памяти.**
+* **Определение корутины начинается со слова `'async def'`, а её вызов — со слова `'await'`.**
+* **Функция `'asyncio.run(<coroutine>)'` создаёт цикл событий и запускает главную корутину.**
 
 ```python
 import asyncio as ac
 ```
 
 ```python
-<coro> = <async_function>(<args>)        # Creates a coroutine by calling async func.
-<obj>  = await <coroutine>               # Starts coroutine. Returns result or None.
-<task> = ac.create_task(<coroutine>)     # Schedules coroutine. Always keep the task.
-<obj>  = await <task>                    # Returns the result. Also <task>.cancel().
+<coro> = <async_function>(<args>)        # Создаёт объект корутины при вызове async-функции.
+<obj>  = await <coroutine>               # Запускает корутину. Возвращает результат или None.
+<task> = ac.create_task(<coroutine>)     # Ставит корутину в планировщик. Обязательно сохраняйте задачу.
+<obj>  = await <task>                    # Возвращает результат. Также `<task>.cancel()`.
 ```
 
 ```python
-<coro> = ac.gather(<coro/task>, ...)     # Schedules coros. Returns list of results.
-<iter> = ac.as_completed(<coros/tasks>)  # `await next(<iter>)` returns next result.
-<coro> = ac.wait(<tasks>)                # Accepts `return_when=ac.FIRST_COMPLETED`.
+<coro> = ac.gather(<coro/task>, ...)     # Конкурентно запускает корутины. Возвращает список результатов.
+<iter> = ac.as_completed(<coros/tasks>)  # `await next(<iter>)` возвращает очередной готовый результат.
+<coro> = ac.wait(<tasks>)                # Принимает параметр `return_when=ac.FIRST_COMPLETED`.
 ```
 
-#### Runs a terminal game where you control an asterisk that must avoid numbers:
+#### Пример консольной игры: управление звёздочкой, избегающей приближающихся чисел:
 ```python
 import asyncio as ac, collections as co, curses, curses.textpad, enum, random
 
-P = co.namedtuple('P', 'x y')            # Position (x and y coordinates).
-D = enum.Enum('D', 'n e s w')            # Direction (north, east, etc.).
-W, H = 15, 7                             # Width and height of the field.
+P = co.namedtuple('P', 'x y')            # Позиция (координаты x и y).
+D = enum.Enum('D', 'n e s w')            # Направление (север, восток, юг, запад).
+W, H = 15, 7                             # Ширина и высота игрового поля.
 
 def main(screen):
-    curses.curs_set(0)                   # Makes the cursor invisible.
-    screen.nodelay(True)                 # Makes getch() non-blocking.
-    ac.run(main_coroutine(screen))       # Starts running asyncio code.
+    curses.curs_set(0)                   # Скрывает курсор терминала.
+    screen.nodelay(True)                 # Делает вызов getch() неблокирующим.
+    ac.run(main_coroutine(screen))       # Запуск асинхронного цикла событий.
 
 async def main_coroutine(scr):
     moves = ac.Queue()
@@ -2390,9 +2394,9 @@ Progress Bar
 ```python
 # $ pip3 install tqdm
 >>> import tqdm, time
->>> for el in tqdm.tqdm([1, 2, 3], desc='Processing'):
+>>> for el in tqdm.tqdm([1, 2, 3], desc='Обработка'):
 ...     time.sleep(1)
-Processing: 100%|████████████████████| 3/3 [00:03<00:00,  1.00s/it]
+Обработка: 100%|████████████████████| 3/3 [00:03<00:00,  1.00s/it]
 ```
 
 
@@ -2402,17 +2406,17 @@ Plot
 # $ pip3 install matplotlib
 import matplotlib.pyplot as plt
 
-plt.plot/bar/scatter(x_data, y_data, label=None)  # Accepts plt.plot(y_data).
-plt.legend()                                      # Adds a legend of labels.
-plt.title/xlabel/ylabel(<str>)                    # Adds title or axis label.
-plt.show()                                        # Also plt.savefig(<path>).
-plt.clf()                                         # Clears the plot (figure).
+plt.plot/bar/scatter(x_data, y_data, label=None)  # Также принимает `plt.plot(y_data)`.
+plt.legend()                                      # Добавляет легенду с метками данных.
+plt.title/xlabel/ylabel(<str>)                    # Добавляет заголовок или подписи осей.
+plt.show()                                        # Отображает график. Также `plt.savefig(<path>)`.
+plt.clf()                                         # Очищает текущую фигуру (график).
 ```
 
 
 Table
 -----
-#### Prints a CSV spreadsheet to the console:
+#### Выводит CSV-таблицу в консоль:
 ```python
 # $ pip3 install tabulate
 import csv, tabulate
@@ -2424,7 +2428,7 @@ print(tabulate.tabulate(rows, headers='firstrow'))
 
 Console App
 -----------
-#### Runs a basic file explorer in the console:
+#### Консольный файловый менеджер:
 ```python
 # $ pip3 install windows-curses
 import curses, os
@@ -2456,7 +2460,7 @@ if __name__ == '__main__':
 
 GUI App
 -------
-#### Runs a desktop app for converting metric weights into pounds:
+#### Настольное приложение для конвертации массы в фунты:
 
 ```python
 # $ pip3 install FreeSimpleGUI
@@ -2484,7 +2488,7 @@ win.close()
 
 Scraping
 --------
-#### Scrapes Python's URL and logo from its Wikipedia page:
+#### Парсинг ссылки и логотипа Python со страницы Wikipedia:
 ```python
 # $ pip3 install requests beautifulsoup4
 import requests, bs4, os
@@ -2502,49 +2506,49 @@ print(f'URL: {python_url}, logo: file://{os.path.abspath(filename)}')
 ```
 
 ### Selenium
-**Library for scraping websites with dynamic content.**
+**Библиотека для скрапинга веб-сайтов с динамическим JS-контентом.**
 ```python
 # $ pip3 install selenium
 from selenium import webdriver
 ```
 
 ```python
-<Drv> = webdriver.Chrome/Firefox/Safari()      # Opens the browser. Also `<Driver>.quit()`.
-<Drv>.implicitly_wait(seconds)                 # Sets timeout for find_element/s() methods.
-<Drv>.get('<url>')                             # Blocks until browser fires the load event.
-<str> = <Drv>.page_source                      # Returns HTML of the page's current state.
-<El>  = <Drv/El>.find_element('xpath', <str>)  # Accepts '//<tag>[@<attr_name>="<val>"]…'.
-<str> = <El>.get_attribute('<name>')           # Returns attribute or a property if exists.
-<El>.click/clear()                             # Also <El>.text and <El>.send_keys(<str>).
+<Drv> = webdriver.Chrome/Firefox/Safari()      # Открывает браузер. Также `<Driver>.quit()`.
+<Drv>.implicitly_wait(seconds)                 # Таймаут неявного ожидания для find_element/s().
+<Drv>.get('<url>')                             # Блокирует до срабатывания события загрузки страницы.
+<str> = <Drv>.page_source                      # Возвращает текущий HTML-код веб-страницы.
+<El>  = <Drv/El>.find_element('xpath', <str>)  # Принимает '//<tag>[@<attr_name>="<val>"]…'.
+<str> = <El>.get_attribute('<name>')           # Возвращает значение атрибута или свойства элемента.
+<El>.click/clear()                             # Клик/очистка. Также `<El>.text` и `<El>.send_keys(<str>)`.
 ```
 
-#### XPath — available in browser's console via `'$x("<xpath>")'`:
+#### XPath — доступен в консоли браузера через `'$x("<xpath>")'`:
 ```python
-<xpath>   = //<element>[/ or // <element>]     # E.g. …/child, …//descendant, …/../sibling.
-<xpath>   = //<el>/following-sibling::<el>     # Looks under first element. Also parent::.
-<element> = <tag><conditions><index>           # Tag accepts */a/…. Use [1/2/…] for index.
-<condit.> = [<sub_con> [and/or <sub_con>]]     # Use not(<sub_con>) to negate subcondition.
-<sub_con> = @<attr>[="<val>"]                  # `text()=` and `.=` match (complete) text.
-<sub_con> = contains(@<attr>, "<val>")         # Is <val> a substring of attribute's value?
-<sub_con> = <element>                          # Has matching child? Descendant if //<el>.
+<xpath>   = //<element>[/ or // <element>]     # Например: …/child, …//descendant, …/../sibling.
+<xpath>   = //<el>/following-sibling::<el>     # Поиск соседнего элемента снизу. Также parent::.
+<element> = <tag><conditions><index>           # Тег принимает */a/…. Для индекса [1/2/…].
+<condit.> = [<sub_con> [and/or <sub_con>]]     # Для отрицания условия используйте not(<sub_con>).
+<sub_con> = @<attr>[="<val>"]                  # `text()=` и `.=` соответствуют полному тексту.
+<sub_con> = contains(@<attr>, "<val>")         # Содержит ли атрибут подстроку <val>?
+<sub_con> = <element>                          # Содержит ли дочерний элемент? (или // для потомка).
 ```
 
 
 Web App
 -------
-**Flask is a micro web framework that also includes a simple WSGI/HTTP server. If you just want to open a HTML file in a web browser use `'webbrowser.open(<path>)'` instead.**
+**Flask — минималистичный веб-фреймворк со встроенным WSGI/HTTP сервером. Если вам нужно просто открыть локальный HTML-файл в браузере, используйте `'webbrowser.open(<path>)'`.**
 ```python
 # $ pip3 install flask
 import flask as fl
 ```
 
 ```python
-app = fl.Flask(__name__)                   # Returns app object. Put at the top.
-app.run(host=None, port=None, debug=None)  # Or `$ flask --app FILE run --ARG=…`.
+app = fl.Flask(__name__)                   # Создаёт объект веб-приложения.
+app.run(host=None, port=None, debug=None)  # Либо консольная команда `$ flask --app FILE run`.
 ```
-* **Starts the app at `'http://localhost:5000'`. Use `'host="0.0.0.0"'` to run externally.**
-* **Install a [WSGI](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface) server like [Waitress](https://flask.palletsprojects.com/en/latest/deploying/waitress/) and a HTTP server such as [Nginx](https://flask.palletsprojects.com/en/latest/deploying/nginx/) to get better security.**
-* **Debug mode restarts the app whenever script changes and displays errors in the browser.**
+* **Запускает приложение на `'http://localhost:5000'`. Используйте `'host="0.0.0.0"'` для доступа из локальной сети.**
+* **Для production используйте [WSGI-сервер](https://en.wikipedia.org/wiki/Web_Server_Gateway_Interface), например [Waitress](https://flask.palletsprojects.com/en/latest/deploying/waitress/) или Gunicorn, и HTTP-сервер [Nginx](https://flask.palletsprojects.com/en/latest/deploying/nginx/).**
+* **Режим отладки (debug=True) автоматически перезагружает приложение при сохранении изменений и показывает трассировку ошибок прямо в браузере.**
 
 ### Serving Files
 ```python
@@ -2559,10 +2563,10 @@ def serve_file(filename):
 def serve_html(sport):
     return fl.render_template_string('<h1>{{t}}</h1>', t=sport)
 ```
-* **`'fl.render_template(filename, <kwargs>)'` renders a file located in 'templates' dir.**
-* **`'fl.abort(<int>)'` returns error code and `'return fl.redirect(<url>)'` redirects.**
-* **`'fl.request.args[<str>]'` returns parameter from query string (URL part right of '?').**
-* **`'fl.session[<str>] = <obj>'` stores session data and `'fl.session.clear()'` clears it. A session cookie key needs to be set at the startup with `'app.secret_key = <str>'`.**
+* **`'fl.render_template(filename, <kwargs>)'` рендерит шаблон из папки `'templates'`.**
+* **`'fl.abort(<int>)'` возвращает код HTTP-ошибки, а `'return fl.redirect(<url>)'` выполняет редирект.**
+* **`'fl.request.args[<str>]'` получает параметры из строки запроса (query string после знака '?').**
+* **`'fl.session[<str>] = <obj>'` сохраняет данные сессии, а `'fl.session.clear()'` очищает их. Секретный ключ подписи сессионных cookie задаётся через `'app.secret_key = <str>'`.**
 
 ### Serving JSON
 ```python
@@ -2572,7 +2576,7 @@ def serve_json(sport):
     return {'team': team, 'odds': [2.09, 3.74, 3.68]}
 ```
 
-#### Starts the app in its own thread and queries its REST API:
+#### Запуск приложения в отдельном потоке и отправка запроса к его REST API:
 ```python
 # $ pip3 install requests
 >>> import threading, requests
@@ -2620,30 +2624,30 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
 
 ### Visualizations
 ```bash
-$ apt install graphviz && pip3 install gprof2dot snakeviz  # Or install graphviz.exe.
-$ tail -n +2 test.py > test.tmp && mv test.tmp test.py     # Removes the first line.
-$ python3 -m cProfile -o test.prof test.py                 # Runs a tracing profiler.
-$ gprof2dot -f pstats test.prof | dot -T png -o test.png   # Generates a call graph.
-$ xdg-open test.png                                        # Displays the call graph.
-$ snakeviz test.prof                                       # Displays a flame graph.
+$ apt install graphviz && pip3 install gprof2dot snakeviz  # На Windows установите graphviz.exe.
+$ tail -n +2 test.py > test.tmp && mv test.tmp test.py     # Удаляет первую строку с @profile.
+$ python3 -m cProfile -o test.prof test.py                 # Запуск трейсинг-профилировщика cProfile.
+$ gprof2dot -f pstats test.prof | dot -T png -o test.png   # Генерирует граф вызовов (call graph).
+$ xdg-open test.png                                        # Открывает сгенерированное изображение.
+$ snakeviz test.prof                                       # Запускает интерактивный flame-граф в браузере.
 ```
 
 ### Sampling Profilers
 ```text
-+--------------+-----------+-------------------------------+-------+------+
-| pip3 install |  Profiles |          How to run           | Lines | Live |
-+--------------+-----------+-------------------------------+-------+------+
-| pyinstrument |    CPU    | pyinstrument test.py          |  No   | No   |
-| py-spy       |    CPU    | py-spy top -- python3 test.py |  No   | Yes  |
-| scalene      | CPU & RAM | scalene test.py               |  Yes  | No   |
-| memray       |    RAM    | memray run --live test.py     |  Yes  | Yes  |
-+--------------+-----------+-------------------------------+-------+------+
++--------------+-----------+-------------------------------+-----------+---------+
+| pip3 install | Профиль   | Как запустить                 | Построчно | Вживую  |
++--------------+-----------+-------------------------------+-----------+---------+
+| pyinstrument |    CPU    | pyinstrument test.py          |    Нет    |   Нет   |
+| py-spy       |    CPU    | py-spy top -- python3 test.py |    Нет    |   Да    |
+| scalene      | CPU & RAM | scalene test.py               |    Да     |   Нет   |
+| memray       |    RAM    | memray run --live test.py     |    Да     |   Да    |
++--------------+-----------+-------------------------------+-----------+---------+
 ```
 
 
 NumPy
 -----
-**Array manipulation library. Can run hundred times faster than equivalent Python code.**
+**Библиотека для эффективной работы с многомерными массивами. Может выполняться в сотни раз быстрее чистого кода Python.**
 
 ```python
 # $ pip3 install numpy
@@ -2651,86 +2655,86 @@ import numpy as np
 ```
 
 ```python
-<array> = np.array(<list/list_of_lists/…>)          # NumPy array. Accepts `dtype=np.int64`.
-<array> = np.load(<path/file>)                      # Save array with np.save(<path>, <arr>).
+<array> = np.array(<list/list_of_lists/…>)          # Массив NumPy. Принимает `dtype=np.int64`.
+<array> = np.load(<path/file>)                      # Сохранение массива через np.save(<path>, <arr>).
 ```
 
 ```python
-<array> = np.zeros/ones/empty(shape)                # Pass a tuple of ints (dimension sizes).
-<array> = np.arange(from, to_exc, ±step)            # Also np.linspace(start, stop, length).
-<array> = np.random.randint(from, to_exc, shape)    # Also random.uniform(low, high, shape).
+<array> = np.zeros/ones/empty(shape)                # shape: кортеж целых чисел (размеры осей).
+<array> = np.arange(from, to_exc, ±step)            # Также np.linspace(start, stop, length).
+<array> = np.random.randint(from, to_exc, shape)    # Также random.uniform(low, high, shape).
 ```
 
 ```python
-<view>  = <array>.reshape(shape)                    # Also `<array>.shape = (<int>, [...])`.
-<array> = <array>.flatten()                         # Returns 1d copy. Also <array>.ravel().
+<view>  = <array>.reshape(shape)                    # Также `<array>.shape = (<int>, [...])`.
+<array> = <array>.flatten()                         # Возвращает одномерную копию. Также `<array>.ravel()`.
 ```
 
 ```python
-<array> = np.abs/sqrt/log/copy(<array>)             # Returns a new array of the same shape.
-<array> = <array>.sum/max/mean/argmax(axis)         # Aggregates dimension with passed index.
-<array> = np.apply_along_axis(<func>, axis, <arr>)  # Func. can return a scalar or an array.
+<array> = np.abs/sqrt/log/copy(<array>)             # Возвращает новый массив той же формы.
+<array> = <array>.sum/max/mean/argmax(axis)         # Агрегирует измерение по переданной оси.
+<array> = np.apply_along_axis(<func>, axis, <arr>)  # Функция может возвращать скаляр или массив.
 ```
 
 ```python
-<array> = np.concat(<arrays>, axis=0)               # Links arrays along first axis (rows).
-<array> = np.vstack/column_stack(<arrays>)          # A 1d array is treated as a row/column.
-<array> = np.tile/repeat(<arr>, <int/s> [, axis])   # Tiles whole array or repeats elements.
+<array> = np.concat(<arrays>, axis=0)               # Объединяет массивы вдоль первой оси (строк).
+<array> = np.vstack/column_stack(<arrays>)          # 1D-массив рассматривается как строка/колонка.
+<array> = np.tile/repeat(<arr>, <int/s> [, axis])   # Дублирует весь массив или повторяет элементы.
 ```
-* **Shape is a tuple of dimension sizes. A 100x50 RGB image has shape (50, 100, 3).**
-* **Axis is an index of a dimension. Leftmost dimension has index 0. Summing the RGB&nbsp;image along axis 2 will return a greyscale image with shape (50, 100).**
+* **Shape (форма) — это кортеж размеров измерений. Изображение RGB 100x50 имеет форму `(50, 100, 3)`.**
+* **Axis (ось) — индекс измерения. Самое левое измерение имеет индекс 0. Суммирование RGB-изображения по оси 2 вернёт полутоновое изображение формы `(50, 100)`.**
 
 ### Indexing
 ```perl
-<object>   = <2d>[row_index, col_index]             # Or <3d>[<int>, <int>, <int>].
-<1d_view>  = <2d>[row_index]                        # Or <3d>[<int>, <int>, <slice>].
-<1d_view>  = <2d>[:, col_index]                     # Or <3d>[<int>, <slice>, <int>].
-<2d_view>  = <2d>[row_i:to_exc, col_i:to_exc]       # Or <3d>[<int>, <slice>, <slice>].
+<object>   = <2d>[row_index, col_index]             # Или <3d>[<int>, <int>, <int>].
+<1d_view>  = <2d>[row_index]                        # Или <3d>[<int>, <int>, <slice>].
+<1d_view>  = <2d>[:, col_index]                     # Или <3d>[<int>, <slice>, <int>].
+<2d_view>  = <2d>[row_i:to_exc, col_i:to_exc]       # Или <3d>[<int>, <slice>, <slice>].
 ```
 
 ```perl
-<1d_array> = <2d>[row_indices, col_indices]         # Or <3d>[<int/1d>, <1d>, <1d>].
-<2d_array> = <2d>[row_indices]                      # Or <3d>[<int/1d>, <1d>, <slice>].
-<2d_array> = <2d>[:, col_indices]                   # Or <3d>[<int/1d>, <slice>, <1d>].
-<2d_array> = <2d>[np.ix_(row_is, col_is)]           # Or <3d>[<int/1d/2d>, <2d>, <2d>].
+<1d_array> = <2d>[row_indices, col_indices]         # Или <3d>[<int/1d>, <1d>, <1d>].
+<2d_array> = <2d>[row_indices]                      # Или <3d>[<int/1d>, <1d>, <slice>].
+<2d_array> = <2d>[:, col_indices]                   # Или <3d>[<int/1d>, <slice>, <1d>].
+<2d_array> = <2d>[np.ix_(row_is, col_is)]           # Или <3d>[<int/1d/2d>, <2d>, <2d>].
 ```
 
 ```perl
-<2d_bools> = <2d> > <el/1d/2d>                      # A 1d object must be size of row.
-<1/2d_arr> = <2d>[<2d/1d_bools>]                    # A 1d object must be size of col.
+<2d_bools> = <2d> > <el/1d/2d>                      # 1D-объект должен быть размером со строку.
+<1/2d_arr> = <2d>[<2d/1d_bools>]                    # 1D-объект должен быть размером с колонку.
 ```
-* **`':'` returns a slice of all dimension's indices. If dimension is omitted, it defaults to `':'`.**
-* **Passing two slices (line 4) works the same as when a slice and 1d array are passed (line 7).**
-* **Python converts `'obj[i, j]'` to `'obj[(i, j)]'`. This makes `'<2d>[row_i, col_i]'` and `'<2d>[row_indices]'` indistinguishable to NumPy if tuple of two indices is passed.**
-* **`'ix_([1, 2], [3, 4])'` returns `'[[1], [2]]'` and `'[[3, 4]]'`. Due to broadcasting rules, this is the same as indexing via `'[[1, 1], [2, 2]]'` and `'[[3, 4], [3, 4]]'`.**
-* **Any value that is broadcastable to the indexed shape can be assigned to the selection.**
+* **Символ `':'` возвращает срез всех индексов измерения. Если измерение пропущено, по умолчанию используется `':'`.**
+* **Передача двух срезов (строка 4) работает так же, как передача среза и 1D-массива (строка 7).**
+* **Python преобразует `'obj[i, j]'` в `'obj[(i, j)]'`. Это делает `'<2d>[row_i, col_i]'` и `'<2d>[row_indices]'` неотличимыми для NumPy, если передан кортеж из двух индексов.**
+* **Вызов `'ix_([1, 2], [3, 4])'` возвращает `'[[1], [2]]'` и `'[[3, 4]]'`. Из-за правил broadcasting это эквивалентно индексации `'[[1, 1], [2, 2]]'` и `'[[3, 4], [3, 4]]'`.**
+* **Любое значение, транслируемое (broadcastable) в форму выборки, может быть присвоено срезу.**
 
 ### Broadcasting
-**Array reshaping procedure used by arithmetic operations, etc.**
+**Механизм автоматического выравнивания форм массивов при арифметических операциях.**
 ```python
-array_a = np.array([0.1,  0.6,  0.8])               # I.e. `array_a.shape == (3,)`.
-array_b = np.array([[0.1], [0.6], [0.8]])           # I.e. `array_b.shape == (3, 1)`.
+array_a = np.array([0.1,  0.6,  0.8])               # Т.е. `array_a.shape == (3,)`.
+array_b = np.array([[0.1], [0.6], [0.8]])           # Т.е. `array_b.shape == (3, 1)`.
 ```
 
-#### 1. If array shapes differ in length, left-pad the shorter shape with ones:
+#### 1. Если размерности массивов различаются по длине, более короткая форма дополняется единицами слева:
 ```python
-array_a = np.array([[0.1,  0.6,  0.8]])             # I.e. `array_a.shape == (1, 3)`.
-array_b = np.array([[0.1], [0.6], [0.8]])           # I.e. `array_b.shape == (3, 1)`.
+array_a = np.array([[0.1,  0.6,  0.8]])             # Т.е. `array_a.shape == (1, 3)`.
+array_b = np.array([[0.1], [0.6], [0.8]])           # Т.е. `array_b.shape == (3, 1)`.
 ```
 
-#### 2. Expand dimensions with size 1 by duplicating their elements/arrays:
+#### 2. Измерения размером 1 растягиваются дублированием элементов:
 ```python
-array_a = np.array([[0.1,  0.6,  0.8],              # I.e. `array_a.shape == (3, 3)`.
+array_a = np.array([[0.1,  0.6,  0.8],              # Т.е. `array_a.shape == (3, 3)`.
                     [0.1,  0.6,  0.8],
                     [0.1,  0.6,  0.8]])
 
-array_b = np.array([[0.1,  0.1,  0.1],              # I.e. `array_b.shape == (3, 3)`.
+array_b = np.array([[0.1,  0.1,  0.1],              # Т.е. `array_b.shape == (3, 3)`.
                     [0.6,  0.6,  0.6],
                     [0.8,  0.8,  0.8]])
 ```
 
 ### Example
-#### For each point returns index of its nearest point (`[0.1, 0.6, 0.8] => [1, 2, 1]`):
+#### Для каждой точки возвращает индекс её ближайшего соседа (`[0.1, 0.6, 0.8] => [1, 2, 1]`):
 
 ```python
 >>> print(points := np.array([0.1, 0.6, 0.8]))
@@ -2761,40 +2765,39 @@ from PIL import Image
 ```
 
 ```python
-<Image> = Image.new('RGB', (width, heig))  # Creates an image. Also `color=<tuple_of_ints>`.
-<Image> = Image.open(<path>)               # Identifies format based on the file's contents.
-<Image> = <Image>.convert('<mode>')        # Converts the image to the new mode (see Modes).
-<Image>.save(<path>)                       # Also `quality=<int>` if extension is jpg/jpeg.
-<Image>.show()                             # Displays image in system's default preview app.
+<Image> = Image.new('RGB', (width, heig))  # Создаёт холст. Также `color=<tuple_of_ints>`.
+<Image> = Image.open(<path>)               # Автоматически определяет формат по содержимому.
+<Image> = <Image>.convert('<mode>')        # Преобразует изображение в новый цветовой режим (см. Modes).
+<Image>.save(<path>)                       # Качество для jpg: `quality=<int>`.
+<Image>.show()                             # Открывает изображение в системной программе просмотра.
 ```
 
 ```python
-<int/tup> = <Image>.getpixel((x, y))       # Returns the pixel's value, that is, its color.
-<ImgCore> = <Image>.getdata()              # Returns a flattened view of the pixel values.
-<Image>.putpixel((x, y), <int/tuple>)      # Updates pixel's value. Clips passed integer/s.
-<Image>.putdata(<list/ImgCore>)            # Updates pixels with a copy of passed sequence.
-<Image>.paste(<Image>, (x, y))             # Draws passed image at the specified location.
+<int/tup> = <Image>.getpixel((x, y))       # Возвращает цвет пикселя по координатам.
+<ImgCore> = <Image>.getdata()              # Возвращает плоское представление значений пикселей.
+<Image>.putpixel((x, y), <int/tuple>)      # Устанавливает цвет пикселя.
+<Image>.putdata(<list/ImgCore>)            # Заполняет пиксели переданной последовательностью.
+<Image>.paste(<Image>, (x, y))             # Вставляет другое изображение по координатам (x, y).
 ```
 
 ```python
-<Image> = <Image>.filter(<Filter>)         # Accepts ImageFilter.BLUR/SHARPEN/FIND_EDGES/….
-<Image> = <Enhance>.enhance(<float>)       # E.g. `ImageEnhance.Contrast/Color/…(<Image>)`.
+<Image> = <Image>.filter(<Filter>)         # Принимает ImageFilter.BLUR/SHARPEN/FIND_EDGES/….
+<Image> = <Enhance>.enhance(<float>)       # Например: `ImageEnhance.Contrast/Color/…(<Image>)`.
 ```
 
 ```python
-<array> = numpy.array(<Image>)             # Creates a 2d or 3d NumPy array from the image.
-<Image> = Image.fromarray(<array>)         # Clip values with np.uint8(<arr>.clip(0, 255)).
+<array> = numpy.array(<Image>)             # Преобразует изображение в 2D/3D-массив NumPy.
+<Image> = Image.fromarray(<array>)         # Нормализация: np.uint8(<arr>.clip(0, 255)).
 ```
 
 ### Modes
-* **`'L'` - Lightness (greyscale image). Each pixel is stored as an int between 0 and 255.**
-* **`'RGB'` - Red, green, blue (true color image). Each pixel is a tuple of three integers.**
-* **`'RGBA'` - RGB with alpha. Low alpha (i.e. fourth int) makes pixel more transparent.**
-* **`'HSV'` - Hue, saturation, value. Three ints representing color in HSV color space.**
-
+* **`'L'` - Оттенки серого (8 бит). Каждый пиксель — целое число от 0 до 255.**
+* **`'RGB'` - True color (24 бит). Каждый пиксель — кортеж из трёх чисел (R, G, B).**
+* **`'RGBA'` - RGB с альфа-каналом прозрачности (четвёртое число кортежа).**
+* **`'HSV'` - Hue, saturation, value (оттенок, насыщенность, яркость).**
 
 ### Examples
-#### Creates a PNG image of a rainbow gradient:
+#### Создаёт PNG-изображение с градиентом спектра:
 ```python
 W, H = 100, 100
 n_pixels = W * H
@@ -2804,7 +2807,7 @@ img.putdata([(int(h), 255, 255) for h in hues])
 img.convert('RGB').save('test.png')
 ```
 
-#### Adds noise to the PNG image and displays it:
+#### Добавляет шум к изображению PNG и отображает его:
 ```python
 from random import randint
 add_noise = lambda i: max(0, min(255, i + randint(-20, 20)))
@@ -2816,30 +2819,30 @@ img.show()
 ### Image Draw
 ```python
 from PIL import ImageDraw
-<Draw> = ImageDraw.Draw(<Image>)           # An object for adding 2D graphics to the image.
-<Draw>.point((x, y))                       # Draws a point. Accepts `fill=<int/tuple/str>`.
-<Draw>.line((x1, y1, x2, y2 [, ...]))      # To get anti-aliasing use <Img>.resize((w, h)).
-<Draw>.arc((x1, y1, x2, y2), deg1, deg2)   # Draws arc of an ellipse in clockwise direction.
-<Draw>.rectangle((x1, y1, x2, y2))         # Also rounded_rectangle() and regular_polygon().
-<Draw>.polygon((x1, y1, x2, y2, ...))      # The last point gets connected to the first one.
-<Draw>.ellipse((x1, y1, x2, y2))           # To rotate it use <Image>.rotate(anticlock_deg).
-<Draw>.text((x, y), <str>)                 # Accepts `font=ImageFont.truetype(path, size)`.
+<Draw> = ImageDraw.Draw(<Image>)           # Объект для рисования 2D-графики на изображении.
+<Draw>.point((x, y))                       # Рисует точку. Принимает `fill=<int/tuple/str>`.
+<Draw>.line((x1, y1, x2, y2 [, ...]))      # Для сглаживания используйте `<Img>.resize((w, h))`.
+<Draw>.arc((x1, y1, x2, y2), deg1, deg2)   # Рисует дугу эллипса по часовой стрелке.
+<Draw>.rectangle((x1, y1, x2, y2))         # Также rounded_rectangle() и regular_polygon().
+<Draw>.polygon((x1, y1, x2, y2, ...))      # Последняя точка автоматически замыкается с первой.
+<Draw>.ellipse((x1, y1, x2, y2))           # Для вращения используйте `<Image>.rotate(deg)`.
+<Draw>.text((x, y), <str>)                 # Принимает `font=ImageFont.truetype(path, size)`.
 ```
-* **Pass `'fill=<color>'` to set primary color of the figure.**
-* **Pass `'width=<int>'` to set the width of lines or contours.**
-* **Pass `'outline=<color>'` to set the color of the contours.**
-* **Color can be an int, tuple, `'#rrggbb[aa]'` or color name.**
+* **`'fill=<color>'` — основной цвет заливки фигуры.**
+* **`'width=<int>'` — толщина линий или контура.**
+* **`'outline=<color>'` — цвет контура фигуры.**
+* **Цвет может быть числом, кортежем, `'#rrggbb[aa]'` или строковым именем цвета.**
 
 
 Animation
 ---------
-#### Creates a GIF of a bouncing ball:
+#### Создаёт GIF-анимацию прыгающего мяча:
 ```python
 # $ pip3 install imageio
 from PIL import Image, ImageDraw
 import imageio
 
-W, H, R = 126, 126, 10  # Width, Height, Radius.
+W, H, R = 126, 126, 10  # Ширина, высота, радиус.
 frames = []
 for velocity in range(1, 16):
     y = sum(range(velocity))
@@ -2859,26 +2862,26 @@ import wave
 ```
 
 ```python
-<Wave>  = wave.open('<path>')               # Opens specified WAV file for reading.
-<int>   = <Wave>.getframerate()             # Returns number of frames per second.
-<int>   = <Wave>.getnchannels()             # Returns number of samples per frame.
-<int>   = <Wave>.getsampwidth()             # Returns how many bytes are in sample.
-<tuple> = <Wave>.getparams()                # Returns namedtuple of all parameters.
-<bytes> = <Wave>.readframes(<int>)          # Returns all frames if `-1` is passed.
+<Wave>  = wave.open('<path>')               # Открывает указанный WAV-файл для чтения.
+<int>   = <Wave>.getframerate()             # Частота дискретизации (фреймов/сэмплов в секунду).
+<int>   = <Wave>.getnchannels()             # Количество каналов (1 — моно, 2 — стерео).
+<int>   = <Wave>.getsampwidth()             # Глубина сэмпла в байтах (1, 2, 3 или 4).
+<tuple> = <Wave>.getparams()                # Возвращает namedtuple со всеми параметрами.
+<bytes> = <Wave>.readframes(<int>)          # Считывает фреймы (передайте -1 для чтения всех).
 ```
 
 ```python
-<Wave> = wave.open('<path>', 'wb')          # Creates/truncates a file for writing.
-<Wave>.setframerate(<int>)                  # Pass 44100, or 48000 for video track.
-<Wave>.setnchannels(<int>)                  # Pass 1 for mono, 2 for stereo signal.
-<Wave>.setsampwidth(<int>)                  # Pass 2 for CD, 3 for hi-res quality.
-<Wave>.setparams(<tuple>)                   # Passed tuple must contain all params.
-<Wave>.writeframes(<bytes>)                 # Appends passed frames to audio file.
+<Wave> = wave.open('<path>', 'wb')          # Создаёт/перезаписывает WAV-файл для записи.
+<Wave>.setframerate(<int>)                  # 44100 (CD) или 48000 (видео).
+<Wave>.setnchannels(<int>)                  # 1 — моно, 2 — стерео.
+<Wave>.setsampwidth(<int>)                  # 2 байта (16 бит, CD) или 3 байта (24 бит, Hi-Res).
+<Wave>.setparams(<tuple>)                   # Передаёт кортеж всех параметров аудиопотока.
+<Wave>.writeframes(<bytes>)                 # Записывает сэмплы в аудиофайл.
 ```
-* **The bytes object contains a sequence of frames, each consisting of one or more samples.**
-* **In stereo signal, first sample of a frame belongs to the left channel (second to the right).**
-* **Each sample consists of one or more bytes (depending on sample width) that, when con&shy;verted to an integer, indicate the displacement of a speaker membrane at that moment.**
-* **Integers should be encoded unsigned if sample width is one byte. For other sample sizes they should be encoded signed with little-endian byte order (least significant byte first).**
+* **Объект bytes содержит последовательность фреймов, каждый состоит из одного или нескольких сэмплов.**
+* **В стереосигнале первый сэмпл фрейма относится к левому каналу, второй — к правому.**
+* **Каждый сэмпл состоит из одного или нескольких байтов, числовое значение которых задаёт отклонение мембраны динамика в данный момент времени.**
+* **При ширине в 1 байт числа беззнаковые (unsigned 0..255). При других размерах — знаковые (signed) с прямым порядком байтов (little-endian).**
 
 ### Sample Values
 ```text
@@ -2919,14 +2922,14 @@ def write_to_wav_file(filename, samples_f, p=None, nchannels=1, sampwidth=2, fs=
 ```
 
 ### Examples
-#### Saves a 440 Hz sine wave to a mono WAV file:
+#### Сохраняет синусоидальный сигнал частотой 440 Гц в моно-WAV файл:
 ```python
 from math import sin, pi
 get_sin = lambda i: sin(440 * pi*2 * i/44100) * 0.2
 write_to_wav_file('test.wav', (get_sin(i) for i in range(100_000)))
 ```
 
-#### Adds noise to the WAV file:
+#### Добавляет шум к WAV-файлу:
 ```python
 from random import uniform
 samples_f, prms = read_wav_file('test.wav')
@@ -2956,7 +2959,7 @@ sounddevice.wait()
 
 Synthesizer
 -----------
-#### Plays Popcorn by Gershon Kingsley:
+#### Воспроизведение мелодии Popcorn Гершона Кингсли:
 
 ```python
 # $ pip3 install numpy sounddevice
@@ -2980,7 +2983,7 @@ play_notes('83♩,81♪,,83♪,,78♪,,74♪,,78♪,,71♪,,,,83♪,,81♪,,83�
 
 Pygame
 ------
-#### Opens a window and draws a square that can be moved with arrow keys:
+#### Открывает окно и рисует квадрат, перемещаемый стрелками клавиатуры:
 ```python
 # $ pip3 install pygame
 import pygame as pg
@@ -2999,68 +3002,69 @@ while not pg.event.get(pg.QUIT):
 pg.quit()
 ```
 
+
 ### Rect
-**Stores top-left corner, width and height.**
+**Хранит координаты верхнего левого угла, ширину и высоту прямоугольника.**
 ```python
-<Rect> = pg.Rect(x, y, width, height)        # Creates Rect object. Truncates passed floats.
-<int>  = <Rect>.x/y/centerx/centery          # Also `top`, `right`, etc. Allows assignments.
-<tup.> = <Rect>.topleft/center               # Also `topright/bottomright/bottomleft/size`.
-<Rect> = <Rect>.move((dx, dy))               # Use move_ip() to move the rectangle in-place.
+<Rect> = pg.Rect(x, y, width, height)        # Создаёт Rect. Отсекает дробную часть float.
+<int>  = <Rect>.x/y/centerx/centery          # Также `top`, `right` и др. Допускает присваивание.
+<tup.> = <Rect>.topleft/center               # Также `topright/bottomright/bottomleft/size`.
+<Rect> = <Rect>.move((dx, dy))               # Метод move_ip() сдвигает прямоугольник на месте.
 ```
 
 ```python
-<bool> = <Rect>.collidepoint((x, y))         # Returns True if rectangle contains the point.
-<bool> = <Rect>.colliderect(<Rect>)          # Returns True if the rectangles are colliding.
-<int>  = <Rect>.collidelist(<Rects>)         # Returns index of first colliding Rect or -1.
-<list> = <Rect>.collidelistall(<Rects>)      # Returns indices of all colliding rectangles.
+<bool> = <Rect>.collidepoint((x, y))         # Возвращает True, если точка лежит внутри прямоугольника.
+<bool> = <Rect>.colliderect(<Rect>)          # Возвращает True, если прямоугольники пересекаются.
+<int>  = <Rect>.collidelist(<Rects>)         # Индекс первого пересекающегося Rect или -1.
+<list> = <Rect>.collidelistall(<Rects>)      # Список индексов всех пересекающихся прямоугольников.
 ```
 
 ### Surface
-**Stores image or main window's surface.**
+**Хранит изображение или экранную поверхность окна.**
 
 ```python
-<Surf> = pg.Surface((w, h))                  # New RGB surface. RGBA if `flags=pg.SRCALPHA`.
-<Surf> = pg.display.set_mode((w, h))         # Opens new window and returns surface object.
-<Surf> = pg.image.load(<path/file>)          # Loads the image. Also get_width/get_height().
-<Surf> = <Surf>.subsurface(<Rect>)           # Creates a new surface object from the cutout.
-<view> = <Surf>.get_view()                   # Use <view>.write(<array>) to write to image.
+<Surf> = pg.Surface((w, h))                  # Новая RGB-поверхность. RGBA при `flags=pg.SRCALPHA`.
+<Surf> = pg.display.set_mode((w, h))         # Создаёт главное окно и возвращает его Surface.
+<Surf> = pg.image.load(<path/file>)          # Загружает изображение. Также get_width/get_height().
+<Surf> = <Surf>.subsurface(<Rect>)           # Создаёт новую поверхность из вырезанной области.
+<view> = <Surf>.get_view()                   # Прямая запись в пиксели: `<view>.write(<array>)`.
 ```
 
 ```python
-<Surf>.fill(color)                           # Pass tuple of ints or pg.Color('<name/hex>').
-<Surf>.set_at((x, y), color)                 # Updates a pixel. Also <Surf>.get_at((x, y)).
-<Surf>.blit(<Surf>, (x, y))                  # Draws passed surface at a specified location.
+<Surf>.fill(color)                           # Кортеж RGB или объект pg.Color('<name/hex>').
+<Surf>.set_at((x, y), color)                 # Устанавливает цвет пикселя. Чтение: `<Surf>.get_at()`.
+<Surf>.blit(<Surf>, (x, y))                  # Отрисовывает переданную поверхность по координатам (x, y).
 ```
 
 ```python
-<Surf> = tr.scale(<Surf>, (w, h))            # Import with `import pygame.transform as tr`.
-<Surf> = tr.rotate(<Surf>, degrees)          # Rotates the surface for counterclock degrees.
-<Surf> = tr.flip(<Surf>, flip_x=True)        # Mirrors over the y axis. Also `flip_y=True`.
+<Surf> = tr.scale(<Surf>, (w, h))            # Масштабирование: `import pygame.transform as tr`.
+<Surf> = tr.rotate(<Surf>, degrees)          # Поворачивает поверхность против часовой стрелки.
+<Surf> = tr.flip(<Surf>, flip_x=True)        # Зеркальное отражение по оси Y. Также `flip_y=True`.
 ```
 
 ```python
-line(<Surf>, color, (x1, y1), (x2, y2))      # Also aaline. Run `from pygame.draw import *`.
-arc(<Surf>, color, <Rect>, rad1, rad2)       # Draws an arc of an ellipse counterclockwise.
-rect(<Surf>, color, <Rect>, width=0)         # Also polygon(<Surf>, color, points, width=0).
-circle(<Surf>, color, (x, y), radius)        # Also ellipse(<Surf>, color, <Rect>, width=0).
+line(<Surf>, color, (x1, y1), (x2, y2))      # Отрезок. Для рисования: `from pygame.draw import *`.
+arc(<Surf>, color, <Rect>, rad1, rad2)       # Рисует дугу эллипса против часовой стрелки.
+rect(<Surf>, color, <Rect>, width=0)         # Прямоугольник (width=0 — заливка). Также polygon().
+circle(<Surf>, color, (x, y), radius)        # Окружность. Также ellipse(<Surf>, color, <Rect>).
 ```
 
 ```python
-<Font> = pg.font.Font(<path/file>, size)     # Loads a TTF file. Pass None for default font.
-<Surf> = <Font>.render(<str>, True, color)   # Accepts background color via fourth argument.
+<Font> = pg.font.Font(<path/file>, size)     # Загружает TTF-шрифт. Pass None для системного шрифта.
+<Surf> = <Font>.render(<str>, True, color)   # 4-м аргументом можно передать цвет фона.
 ```
 
 ### Sound
 ```python
-<Sound> = pg.mixer.Sound(<path/file>)        # Accepts WAV file or array of short integers.
-<Sound>.play/stop()                          # Accepts `loops=-1`. Also set_volume(<float>).
+<Sound> = pg.mixer.Sound(<path/file>)        # Принимает WAV-файл или массив целых чисел.
+<Sound>.play/stop()                          # Воспроизведение/стоп. Зацикливание: `loops=-1`.
 ```
 
 ### Basic Mario Brothers Example
 ```python
 import pygame as pg, dataclasses as dc, enum, io, itertools, random as r, urllib.request
 
-W, H, D = 50, 50, enum.Enum('D', 'n e s w')  # Width, Height, Direction.
+W, H, D = 50, 50, enum.Enum('D', 'n e s w')  # Ширина, высота, направления (север, восток, юг, запад).
 
 def main():
     def get_window():
@@ -3136,7 +3140,7 @@ if __name__ == '__main__':
 
 Pandas
 ------
-**Data analysis library. For examples see [Plotly](#plotly).**
+**Библиотека для анализа и обработки структурированных данных. Примеры визуализации см. в разделе [Plotly](#plotly).**
 
 ```python
 # $ pip3 install pandas matplotlib
@@ -3144,7 +3148,7 @@ import pandas as pd, matplotlib.pyplot as plt
 ```
 
 ### Series
-**Ordered dictionary with a name.**
+**Именованный упорядоченный одномерный массив с индексами (ключами).**
 
 ```python
 >>> s = pd.Series([1, 2], index=['x', 'y'], name='a'); s
@@ -3154,48 +3158,48 @@ Name: a, dtype: int64
 ```
 
 ```python
-<S>  = pd.Series(<list>)                       # Returns a series. Uses indices for 'index'.
-<S>  = pd.Series(<dict>)                       # Returns a series. Uses keys for 'index'.
+<S>  = pd.Series(<list>)                       # Возвращает Series. Индексы по умолчанию 0..N-1.
+<S>  = pd.Series(<dict>)                       # Ключи словаря используются в качестве 'index'.
 ```
 
 ```python
-<el> = <S>.loc[key]                            # Or: <S>.iloc[i]
-<S>  = <S>.loc[coll_of_keys]                   # Or: <S>.iloc[coll_of_i]
-<S>  = <S>.loc[from_key : to_key_inc]          # Or: <S>.iloc[from_i : to_i_exc]
+<el> = <S>.loc[key]                            # Доступ по ключу/метке. Либо `<S>.iloc[i]` по номеру.
+<S>  = <S>.loc[coll_of_keys]                   # Выборка по коллекции ключей. Или `<S>.iloc[coll_of_i]`.
+<S>  = <S>.loc[from_key : to_key_inc]          # Срез по меткам включительно! Либо `<S>.iloc[...]`.
 ```
 
 ```python
-<el> = <S>[key/i]                              # Or: <S>.<key>
-<S>  = <S>[coll_of_keys/coll_of_i]             # Or: <S>[key/i : key/i]
-<S>  = <S>[<S_of_bools>]                       # Or: <S>.loc/iloc[<S_of_bools>]
+<el> = <S>[key/i]                              # Или `<S>.<key>`.
+<S>  = <S>[coll_of_keys/coll_of_i]             # Или `<S>[key/i : key/i]`.
+<S>  = <S>[<S_of_bools>]                       # Или `<S>.loc/iloc[<S_of_bools>]`.
 ```
 
 ```python
-<S>  = <S> > <el/S>                            # Returns S of bools. For logic use &, |, ~.
-<S>  = <S> + <el/S>                            # Items with non-matching keys get value NaN.
+<S>  = <S> > <el/S>                            # Возвращает Series булевых значений. Логика: &, |, ~.
+<S>  = <S> + <el/S>                            # Элементы с несовпадающими ключами получают NaN.
 ```
 
 ```python
-<S>  = <S>.head/describe/sort_values()         # Also <S>.unique/value_counts/round/dropna().
-<S>  = <S>.str.strip/lower/contains/replace()  # Also split().str[i] and split(expand=True).
-<S>  = <S>.dt.year/month/day/hour              # Use pd.to_datetime(<S>) to get S of datetimes.
-<S>  = <S>.dt.to_period('y/m/d/h')             # Quantizes datetimes into S of Period objects.
+<S>  = <S>.head/describe/sort_values()         # Также `<S>.unique/value_counts/round/dropna()`.
+<S>  = <S>.str.strip/lower/contains/replace()  # Векторизованные строковые операции.
+<S>  = <S>.dt.year/month/day/hour              # pd.to_datetime(<S>) преобразует Series в даты.
+<S>  = <S>.dt.to_period('y/m/d/h')             # Квантует даты в объекты Period.
 ```
 
 ```python
-<S>.plot.line/area/bar/pie/hist()              # Generates a plot. Accepts `title=<str>` arg.
-plt.show()                                     # Displays the plot. Also plt.savefig(<path>).
+<S>.plot.line/area/bar/pie/hist()              # Генерирует график. Принимает аргумент `title=<str>`.
+plt.show()                                     # Отображает график. Также `plt.savefig(<path>)`.
 ```
-* **Use `'print(<S>.to_string())'` to print a Series that contains more than sixty items.**
-* **Use `'<S>.index'` to get collection of keys and `'<S>.index = <coll>'` to update them.**
-* **Only pass a list or Series to loc/iloc because `'obj[x, y]'` is converted to `'obj[(x, y)]'` and `'<S>.loc[key_1, key_2]'` is how you retrieve a value from a multi-indexed Series.**
-* **Pandas uses NumPy types like `'np.int64'`. Series is converted to `'float64'` if np.nan is assigned to any item. Use `'<S>.astype(<str/type>)'` to get converted Series.**
+* **Используйте `'print(<S>.to_string())'` для полного вывода Series длиннее 60 строк.**
+* **Используйте `'<S>.index'` для получения коллекции ключей и `'<S>.index = <coll>'` для их обновления.**
+* **Передавайте в loc/iloc список или Series: `'<S>.loc[key_1, key_2]'` зарезервировано для MultiIndex.**
+* **Pandas использует типы NumPy (например, `'np.int64'`). Если какому-либо элементу присвоено значение np.nan, тип Series автоматически повышается до `'float64'`. Для явной смены типа: `'<S>.astype(<str/type>)'`.**
 
-#### Series — Aggregate, Transform, Map:
+#### Series — Агрегация, Трансформация, Отображение (Aggregate, Transform, Map):
 ```python
-<el> = <S>.sum/max/mean/std/idxmax/count()     # Or: <S>.agg(lambda <S>: <el>)
-<S>  = <S>.rank/diff/cumsum/ffill/interpol…()  # Or: <S>.agg/transform(lambda <S>: <S>)
-<S>  = <S>.isna/fillna/isin([<el/coll>])       # Or: <S>.agg/transform/map(lambda <el>: <el>)
+<el> = <S>.sum/max/mean/std/idxmax/count()     # Или: `<S>.agg(lambda <S>: <el>)`
+<S>  = <S>.rank/diff/cumsum/ffill/interpol…()  # Или: `<S>.agg/transform(lambda <S>: <S>)`
+<S>  = <S>.isna/fillna/isin([<el/coll>])       # Или: `<S>.agg/transform/map(lambda <el>: <el>)`
 ```
 
 ```text
@@ -3218,7 +3222,7 @@ plt.show()                                     # Displays the plot. Also plt.sav
 ```
 
 ### DataFrame
-**Table with labeled rows and columns.**
+**Двумерная таблица с именованными строками (индексами) и столбцами (колонками).**
 
 ```python
 >>> df = pd.DataFrame([[1, 2], [3, 4]], index=['a', 'b'], columns=['x', 'y']); df
@@ -3228,47 +3232,47 @@ b  3  4
 ```
 
 ```python
-<DF>   = pd.DataFrame(<list_of_rows>)          # Rows can be either lists, dicts or series.
-<DF>   = pd.DataFrame(<dict_of_columns>)       # Columns can be either lists, dicts or series.
+<DF>   = pd.DataFrame(<list_of_rows>)          # Строки могут быть списками, словарями или Series.
+<DF>   = pd.DataFrame(<dict_of_columns>)       # Столбцы могут быть списками, словарями или Series.
 ```
 
 ```python
-<el>   = <DF>.loc[row_key, col_key]            # Or: <DF>.iloc[row_i, col_i]
-<S/DF> = <DF>.loc[row_key/s]                   # Or: <DF>.iloc[row_i/s]
-<S/DF> = <DF>.loc[:, col_key/s]                # Or: <DF>.iloc[:, col_i/s]
-<DF>   = <DF>.loc[row_bools, col_bools]        # Or: <DF>.iloc[row_bools, col_bools]
+<el>   = <DF>.loc[row_key, col_key]            # Либо: `<DF>.iloc[row_i, col_i]`
+<S/DF> = <DF>.loc[row_key/s]                   # Либо: `<DF>.iloc[row_i/s]`
+<S/DF> = <DF>.loc[:, col_key/s]                # Либо: `<DF>.iloc[:, col_i/s]`
+<DF>   = <DF>.loc[row_bools, col_bools]        # Либо: `<DF>.iloc[row_bools, col_bools]`
 ```
 
 ```python
-<S/DF> = <DF>[col_key/s]                       # Or: <DF>.<col_key>
-<DF>   = <DF>[<S_of_bools>]                    # Filters rows. For example `df[df.x > 1]`.
-<DF>   = <DF>[<DF_of_bools>]                   # Assigns NaN to items that are False in bools.
+<S/DF> = <DF>[col_key/s]                       # Либо: `<DF>.<col_key>`
+<DF>   = <DF>[<S_of_bools>]                    # Фильтрация строк: например, `df[df.x > 1]`.
+<DF>   = <DF>[<DF_of_bools>]                   # Заменяет на NaN ячейки, где условие False.
 ```
 
 ```python
-<DF>   = <DF> > <el/S/DF>                      # Returns DF of bools. Treats series as a row.
-<DF>   = <DF> + <el/S/DF>                      # Items with non-matching keys get value NaN.
+<DF>   = <DF> > <el/S/DF>                      # Возвращает DF булевых значений. Series трактуется как строка.
+<DF>   = <DF> + <el/S/DF>                      # Ячейки с несовпадающими метками получают значение NaN.
 ```
 
 ```python
-<DF>   = <DF>.set_index(col_key)               # Replaces row keys with column's values.
-<DF>   = <DF>.reset_index(drop=False)          # Drops or moves row keys to column named index.
-<DF>   = <DF>.sort_index(ascending=True)       # Sorts rows by row keys. Use `axis=1` for cols.
-<DF>   = <DF>.sort_values(col_key/s)           # Sorts rows by passed column/s. Also `axis=1`.
+<DF>   = <DF>.set_index(col_key)               # Заменяет индексы строк значениями колонки.
+<DF>   = <DF>.reset_index(drop=False)          # Сбрасывает индексы в отдельную колонку `index`.
+<DF>   = <DF>.sort_index(ascending=True)       # Сортирует строки по индексам. Для колонок: `axis=1`.
+<DF>   = <DF>.sort_values(col_key/s)           # Сортирует строки по значению колонки/колонок.
 ```
 
 ```python
-<DF>   = <DF>.head/tail/sample(<int>)          # Returns first, last, or random n rows.
-<DF>   = <DF>.describe()                       # Describes columns. Also info(), corr(), shape.
-<DF>   = <DF>.query('<query>')                 # Filters rows. For example `df.query('x > 1')`.
+<DF>   = <DF>.head/tail/sample(<int>)          # Возвращает первые, последние или случайные n строк.
+<DF>   = <DF>.describe()                       # Статистика колонок. Также info(), corr(), shape.
+<DF>   = <DF>.query('<query>')                 # Фильтрация строк запросом: `df.query('x > 1')`.
 ```
 
 ```python
-<DF>.plot.line/area/bar/scatter(x=col_key, …)  # `y=col_key/s`. Also hist/box(column/by=col_k).
-plt.show()                                     # Displays the plot. Also plt.savefig(<path>).
+<DF>.plot.line/area/bar/scatter(x=col_key, …)  # `y=col_key/s`. Также hist/box(column/by=col_k).
+plt.show()                                     # Отображает график. Также `plt.savefig(<path>)`.
 ```
 
-#### DataFrame — Merge, Join, Concat:
+#### DataFrame — Слияние, Соединение, Конкатенация (Merge, Join, Concat):
 ```python
 >>> df_2 = pd.DataFrame([[4, 5], [6, 7]], index=['b', 'c'], columns=['y', 'z']); df_2
    y  z
@@ -3277,37 +3281,37 @@ c  6  7
 ```
 
 ```text
-+-----------------------+---------------+------------+------------+---------------------------+
-|                       |    'outer'    |   'inner'  |   'left'   |       Description         |
-+-----------------------+---------------+------------+------------+---------------------------+
-| df.merge(df_2,        |    x   y   z  | x   y   z  | x   y   z  | Merges on column if 'on'  |
-|          on='y',      | 0  1   2   .  | 3   4   5  | 1   2   .  | or 'left_on/right_on' are |
-|          how=…)       | 1  3   4   5  |            | 3   4   5  | set, else on shared cols. |
-|                       | 2  .   6   7  |            |            | Uses 'inner' by default.  |
-+-----------------------+---------------+------------+------------+---------------------------+
-| df.join(df_2,         |    x yl yr  z |            | x yl yr  z | Merges on row keys.       |
-|         lsuffix='l',  | a  1  2  .  . | x yl yr  z | 1  2  .  . | Uses 'left' by default.   |
-|         rsuffix='r',  | b  3  4  4  5 | 3  4  4  5 | 3  4  4  5 | If Series is passed, it   |
-|         how=…)        | c  .  .  6  7 |            |            | is treated as a column.   |
-+-----------------------+---------------+------------+------------+---------------------------+
-| pd.concat([df, df_2], |    x   y   z  |     y      |            | Adds rows at the bottom.  |
-|           axis=0,     | a  1   2   .  |     2      |            | Uses 'outer' by default.  |
-|           join=…)     | b  3   4   .  |     4      |            | A Series is treated as a  |
-|                       | b  .   4   5  |     4      |            | column. To add a row use  |
-|                       | c  .   6   7  |     6      |            | pd.concat([df, DF([s])]). |
-+-----------------------+---------------+------------+------------+---------------------------+
-| pd.concat([df, df_2], |    x  y  y  z |            |            | Adds columns at the       |
-|           axis=1,     | a  1  2  .  . | x  y  y  z |            | right end. Uses 'outer'   |
-|           join=…)     | b  3  4  4  5 | 3  4  4  5 |            | by default. A Series is   |
-|                       | c  .  .  6  7 |            |            | treated as a column.      |
-+-----------------------+---------------+------------+------------+---------------------------+
++-----------------------+---------------+------------+------------+------------------------------------+
+|                       |    'outer'    |   'inner'  |   'left'   |              Описание              |
++-----------------------+---------------+------------+------------+------------------------------------+
+| df.merge(df_2,        |    x   y   z  | x   y   z  | x   y   z  | Слияние по колонке 'on' или        |
+|          on='y',      | 0  1   2   .  | 3   4   5  | 1   2   .  | 'left_on/right_on', либо по общим  |
+|          how=…)       | 1  3   4   5  |            | 3   4   5  | колонкам. По умолчанию 'inner'.   |
+|                       | 2  .   6   7  |            |            |                                    |
++-----------------------+---------------+------------+------------+------------------------------------+
+| df.join(df_2,         |    x yl yr  z |            | x yl yr  z | Соединение по индексам строк.      |
+|         lsuffix='l',  | a  1  2  .  . | x yl yr  z | 1  2  .  . | По умолчанию 'left'.               |
+|         rsuffix='r',  | b  3  4  4  5 | 3  4  4  5 | 3  4  4  5 | Если передан Series, он            |
+|         how=…)        | c  .  .  6  7 |            |            | воспринимается как колонка.        |
++-----------------------+---------------+------------+------------+------------------------------------+
+| pd.concat([df, df_2], |    x   y   z  |     y      |            | Добавляет строки снизу.            |
+|           axis=0,     | a  1   2   .  |     2      |            | По умолчанию 'outer'.              |
+|           join=…)     | b  3   4   .  |     4      |            | Series воспринимается как колонка. |
+|                       | b  .   4   5  |     4      |            | Добавление строки:                 |
+|                       | c  .   6   7  |     6      |            | pd.concat([df, DF([s])]).          |
++-----------------------+---------------+------------+------------+------------------------------------+
+| pd.concat([df, df_2], |    x  y  y  z |            |            | Добавляет колонки справа.          |
+|           axis=1,     | a  1  2  .  . | x  y  y  z |            | По умолчанию 'outer'.              |
+|           join=…)     | b  3  4  4  5 | 3  4  4  5 |            | Series воспринимается как колонка. |
+|                       | c  .  .  6  7 |            |            |                                    |
++-----------------------+---------------+------------+------------+------------------------------------+
 ```
 
-#### DataFrame — Aggregate, Transform, Map:
+#### DataFrame — Агрегация, Трансформация, Отображение:
 ```python
-<S>  = <DF>.sum/max/mean/std/idxmax/count()    # Or: <DF>.apply/agg(lambda <S>: <el>)
-<DF> = <DF>.rank/diff/cumsum/ffill/interpo…()  # Or: <DF>.apply/agg/transform(lambda <S>: <S>)
-<DF> = <DF>.isna/fillna/isin([<el/coll>])      # Or: <DF>.applymap(lambda <el>: <el>)
+<S>  = <DF>.sum/max/mean/std/idxmax/count()    # Или: `<DF>.apply/agg(lambda <S>: <el>)`
+<DF> = <DF>.rank/diff/cumsum/ffill/interpo…()  # Или: `<DF>.apply/agg/transform(lambda <S>: <S>)`
+<DF> = <DF>.isna/fillna/isin([<el/coll>])      # Или: `<DF>.applymap(lambda <el>: <el>)`
 ```
 
 ```text
@@ -3329,55 +3333,55 @@ c  6  7
 |                 |  b  2.0  2.0  |  b  2.0  2.0  |    b  2.0     |
 +-----------------+---------------+---------------+---------------+
 ```
-* **Listed methods process the columns unless they receive `'axis=1'`. Exceptions to this rule are `'<DF>.dropna()'`, `'<DF>.drop(row_key/s)'` and `'<DF>.rename(<dict/func>)'`.**
-* **Fifth result's columns are indexed with a multi-index. This means we need a tuple of column keys to specify a column: `'<DF>.loc[row_key, (col_key_1, col_key_2)]'`.**
+* **Перечисленные методы обрабатывают колонки, если не передан аргумент `'axis=1'`. Исключения: `'<DF>.dropna()'`, `'<DF>.drop(row_key/s)'` и `'<DF>.rename(<dict/func>)'`.**
+* **Колонки с мультииндексом требуют кортеж меток для обращения: `'<DF>.loc[row_key, (col_key_1, col_key_2)]'`.**
 
 ### Multi-Index
 ```python
-<DF> = <DF>.loc[row_key_1]                     # Also <DF>.loc[(slice(None), row_key_2), :].
-<DF> = <DF>.loc[:, col_key_1]                  # Same as <DF>.xs(col_key_1, axis=1, level=0).
-<DF> = <DF>.set_index(col_key/s)               # Moves column/s to index. Also `append=True`.
-<DF> = <DF>.pivot_table(index=col_key/s)       # `columns=key/s, values=k/s, aggfunc='mean'`.
-<S>  = <DF>.stack/unstack(level=-1)            # Combines col. keys with index or vice versa.
+<DF> = <DF>.loc[row_key_1]                     # Также `<DF>.loc[(slice(None), row_key_2), :]`.
+<DF> = <DF>.loc[:, col_key_1]                  # То же, что `<DF>.xs(col_key_1, axis=1, level=0)`.
+<DF> = <DF>.set_index(col_key/s)               # Перемещает колонку/колонки в индекс. Также `append=True`.
+<DF> = <DF>.pivot_table(index=col_key/s)       # Сводная таблица: `columns=k/s, values=k/s, aggfunc='mean'`.
+<S>  = <DF>.stack/unstack(level=-1)            # Переносит ключи колонок в индекс строк и наоборот.
 ```
 
 ### File Formats
 ```python
-<S/DF> = pd.read_json/pickle(<path/url/file>)  # Also io.StringIO(<str>), io.BytesIO(<bytes>).
-<DF>   = pd.read_csv/excel(<path/url/file>)    # Also `header/index_col/dtype/usecols/…=<obj>`.
-<list> = pd.read_html(<path/url/file>)         # Raises ImportError if webpage has zero tables.
-<S/DF> = pd.read_parquet/feather/hdf(<path…>)  # Function read_hdf() accepts `key=<s/df_name>`.
-<DF>   = pd.read_sql('<table/query>', <conn>)  # Pass SQLite3/Alchemy connection. See #SQLite.
+<S/DF> = pd.read_json/pickle(<path/url/file>)  # Также io.StringIO(<str>), io.BytesIO(<bytes>).
+<DF>   = pd.read_csv/excel(<path/url/file>)    # Также `header/index_col/dtype/usecols/…=<obj>`.
+<list> = pd.read_html(<path/url/file>)         # Вызывает ImportError, если на странице нет таблиц.
+<S/DF> = pd.read_parquet/feather/hdf(<path…>)  # Функция read_hdf() принимает `key=<s/df_name>`.
+<DF>   = pd.read_sql('<table/query>', <conn>)  # Соединение SQLite3 или SQLAlchemy. См. #SQLite.
 ```
 
 ```python
-<DF>.to_json/csv/html/latex/parquet(<path>)    # Returns a string/bytes if path is omitted.
-<DF>.to_pickle/excel/feather/hdf(<path>)       # Method to_hdf() requires `key=<s/df_name>`.
-<DF>.to_sql('<table_name>', <connection>)      # Also `if_exists='fail/replace/append'`.
+<DF>.to_json/csv/html/latex/parquet(<path>)    # Возвращает строку/байты, если путь опущен.
+<DF>.to_pickle/excel/feather/hdf(<path>)       # Метод to_hdf() требует `key=<s/df_name>`.
+<DF>.to_sql('<table_name>', <connection>)      # Режим перезаписи/дозаписи: `if_exists='fail/replace/append'`.
 ```
-* **`'$ pip3 install "pandas[excel]" odfpy lxml pyarrow'` installs dependencies.**
-* **Csv functions use the same dialect as standard library's csv module (e.g. `'sep=","'`).**
-* **Read\_csv() only parses dates of columns that are listed in 'parse\_dates'. It automatically tries to detect the format, but it can be helped with 'date\_format' or 'dayfirst' arguments.**
-* **We get a dataframe with DatetimeIndex if 'parse_dates' argument includes 'index\_col'. Its `'resample("y/m/d/h")'` method returns Resampler object that is similar to GroupBy.**
+* **Зависимости: `'$ pip3 install "pandas[excel]" odfpy lxml pyarrow'`.**
+* **Функции CSV используют те же диалекты, что и встроенный модуль csv (например, `'sep=","'`).**
+* **Функция read\_csv() парсит даты только для колонок из списка `'parse_dates'`.**
+* **Если аргумент 'parse_dates' содержит 'index\_col', создаётся DataFrame с DatetimeIndex. Его метод `'resample("y/m/d/h")'` позволяет выполнять временную передискретизацию.**
 
 ### GroupBy
-**Object that groups together rows of a dataframe based on the value of the passed column.**
+**Объект для разделения строк датафрейма на группы по значению указанной колонки (split-apply-combine).**
 
 ```python
-<GB> = <DF>.groupby(col_key/s)                 # Splits DF into groups based on passed col.
-<DF> = <GB>.apply/filter(<func>)               # Filter drops a group if func returns False.
-<DF> = <GB>.get_group(<el>)                    # Selects a group by grouping column's value.
-<S>  = <GB>.size()                             # S of group sizes. Same keys as get_group().
-<GB> = <GB>[col_key]                           # Single column GB. All operations return S.
+<GB> = <DF>.groupby(col_key/s)                 # Разбивает DF на группы по переданной колонке.
+<DF> = <GB>.apply/filter(<func>)               # filter() отбрасывает группу, если func вернула False.
+<DF> = <GB>.get_group(<el>)                    # Извлекает отдельную группу по значению ключа группировки.
+<S>  = <GB>.size()                             # Количество элементов в каждой группе (Series).
+<GB> = <GB>[col_key]                           # Группировка одной колонки. Все операции возвращают Series.
 ```
 
 ```python
-<DF> = <GB>.sum/max/mean/std/idxmax/count()    # Or: <GB>.agg(lambda <S>: <el>)
-<DF> = <GB>.rank/diff/cumsum/ffill()           # Or: <GB>.transform(lambda <S>: <S>)
-<DF> = <GB>.fillna(<el>)                       # Or: <GB>.transform(lambda <S>: <S>)
+<DF> = <GB>.sum/max/mean/std/idxmax/count()    # Или: `<GB>.agg(lambda <S>: <el>)`
+<DF> = <GB>.rank/diff/cumsum/ffill()           # Или: `<GB>.transform(lambda <S>: <S>)`
+<DF> = <GB>.fillna(<el>)                       # Или: `<GB>.transform(lambda <S>: <S>)`
 ```
 
-#### Divides rows into groups and sums their columns. Result has a named index that creates column `'z'` on reset_index():
+#### Группирует строки и вычисляет суммы по колонкам:
 ```python
 >>> df = pd.DataFrame([[1, 2, 3], [4, 5, 6], [7, 8, 6]], list('abc'), list('xyz'))
 >>> gb = df.groupby('z'); gb.apply(print)
@@ -3394,12 +3398,12 @@ z
 ```
 
 ### Rolling
-**Object for rolling window calculations.**
+**Объект для расчётов в скользящем окне (rolling window).**
 
 ```python
-<RS/RDF/RGB> = <S/DF/GB>.rolling(win_size)     # Also `min_periods=None, center=False`.
-<RS/RDF/RGB> = <RDF/RGB>[col_key/s]            # Also <RDF/RGB>.<col_key> if key is str.
-<S/DF>       = <R>.mean/sum/max()              # Or: <R>.apply/agg(lambda <S>: <el>)
+<RS/RDF/RGB> = <S/DF/GB>.rolling(win_size)     # Также `min_periods=None, center=False`.
+<RS/RDF/RGB> = <RDF/RGB>[col_key/s]            # Также `<RDF/RGB>.<col_key>`, если ключ — строка.
+<S/DF>       = <R>.mean/sum/max()              # Или: `<R>.apply/agg(lambda <S>: <el>)`
 ```
 
 
@@ -3411,19 +3415,19 @@ import plotly.express as px, pandas as pd
 ```
 
 ```python
-<Fig> = px.line(<DF> [, y=col_key/s [, x=col_key]])   # Also px.line(y=<list> [, x=<list>]).
-<Fig>.update_layout(paper_bgcolor='#rrggbb')          # Also `margin=dict(t=0, r=0, b=0, l=0)`.
-<Fig>.write_html/json/image('<path>')                 # Use <Fig>.show() to display the plot.
+<Fig> = px.line(<DF> [, y=col_key/s [, x=col_key]])   # Также `px.line(y=<list> [, x=<list>])`.
+<Fig>.update_layout(paper_bgcolor='#rrggbb')          # Также `margin=dict(t=0, r=0, b=0, l=0)`.
+<Fig>.write_html/json/image('<path>')                 # Вызов `<Fig>.show()` открывает интерактивный график.
 ```
 
 ```python
-<Fig> = px.area/bar/box(<DF>, x=col_key, y=col_keys)  # Also `color=col_key`. All are optional.
-<Fig> = px.scatter(<DF>, x=col_key, y=col_keys)       # Also `color/size/symbol=col_key`. Same.
-<Fig> = px.scatter_3d(<DF>, x=col_key, y=col_key, …)  # `z=col_key`. Also color, size, symbol.
-<Fig> = px.histogram(<DF>, x=col_keys, y=col_key)     # Also color, nbins. All are optional.
+<Fig> = px.area/bar/box(<DF>, x=col_key, y=col_keys)  # Также `color=col_key`. Все параметры опциональны.
+<Fig> = px.scatter(<DF>, x=col_key, y=col_keys)       # Также `color/size/symbol=col_key`.
+<Fig> = px.scatter_3d(<DF>, x=col_key, y=col_key, …)  # `z=col_key`. Также color, size, symbol.
+<Fig> = px.histogram(<DF>, x=col_keys, y=col_key)     # Также color, nbins. Все параметры опциональны.
 ```
 
-#### Displays a line chart of total COVID-19 deaths per million grouped by continent:
+#### Линейный график смертности от COVID-19 на миллион человек по континентам:
 
 ![Covid Deaths](web/covid_deaths.png)
 <div id="2a950764-39fc-416d-97fe-0a6226a3095f" class="plotly-graph-div" style="height:312px; width:914px;"></div>
@@ -3442,7 +3446,7 @@ df = df.rename({'date': 'Date', 'Continent_Name': 'Continent'}, axis='columns')
 px.line(df, x='Date', y='Total Deaths per Million', color='Continent')
 ```
 
-#### Displays a multi-axis line chart of total COVID-19 cases and changes in prices of Bitcoin, Dow Jones and gold:
+#### Многоосевой линейный график случаев COVID-19 и динамики цен Bitcoin, Dow Jones и золота:
 
 ![Covid Cases](web/covid_cases.png)
 <div id="e23ccacc-a456-478b-b467-7282a2165921" class="plotly-graph-div" style="height:285px; width:935px;"></div>
@@ -3480,12 +3484,12 @@ def get_ticker(driver, name, symbol):
     return s.rename(name)
 
 def wrangle_data(covid, bitcoin, gold, dow):
-    df = pd.concat([bitcoin, gold, dow], axis=1)  # Creates DF by joining columns on dates.
-    df = df.sort_index().interpolate()            # Sorts rows by date, interpolates NaN-s.
-    df = df.loc['2020-02-23':'2021-12-20']        # Keeps rows between the specified dates.
-    df = (df / df.iloc[0]) * 100                  # Divides all cells by first day's value.
-    df = df.join(covid)                           # Adds column that contains covid cases.
-    return df.sort_values(df.index[-1], axis=1)   # Sorts columns by the last day's value.
+    df = pd.concat([bitcoin, gold, dow], axis=1)  # Создаёт DF объединением колонок по датам.
+    df = df.sort_index().interpolate()            # Сортирует по датам, интерполирует пропуски NaN.
+    df = df.loc['2020-02-23':'2021-12-20']        # Оставляет срез строк за указанный период.
+    df = (df / df.iloc[0]) * 100                  # Нормализует значения к первому дню в процентах.
+    df = df.join(covid)                           # Добавляет колонку с количеством случаев COVID.
+    return df.sort_values(df.index[-1], axis=1)   # Сортирует колонки по значению последнего дня.
 
 def display_data(df):
     figure = go.Figure()
@@ -3511,46 +3515,46 @@ if __name__ == '__main__':
 Appendix
 --------
 ### Cython
-**Library that compiles Python-like code into C.**
+**Библиотека, транслирующая и компилирующая Python-подобный код в C.**
 
 ```python
 # $ pip3 install cython
-import pyximport; pyximport.install()                # Module that runs Cython scripts.
-import <cython_script>                               # Script must have '.pyx' extension.
+import pyximport; pyximport.install()                # Модуль для прямого запуска Cython-скриптов.
+import <cython_script>                               # Скрипт должен иметь расширение '.pyx'.
 ```
 
-#### All `'cdef'` definitions are optional, but they contribute to the speed-up:
+#### Все объявления `'cdef'` опциональны, но именно они обеспечивают кратное ускорение:
 ```python
-cdef <type> <var_name> [= <obj/var>]                 # Either Python or C type variable.
-cdef <ctype> *<pointer_name> [= &<var>]              # Use <pointer>[0] to get the value.
-cdef <ctype>[size] <array_name> [= <coll/array>]     # Also `<ctype>[:] <mview> = <array>`.
-cdef <ctype> *<array_name> [= <coll/array/pointer>]  # E.g. `<<ctype> *> malloc(n_bytes)`.
-```
-
-```python
-cdef <type> <func_name>(<type> [*]<arg_name>): ...   # Omitted types default to `object`.
+cdef <type> <var_name> [= <obj/var>]                 # Переменная типа Python или C.
+cdef <ctype> *<pointer_name> [= &<var>]              # Разыменование через `<pointer>[0]`.
+cdef <ctype>[size] <array_name> [= <coll/array>]     # Также `<ctype>[:] <mview> = <array>`.
+cdef <ctype> *<array_name> [= <coll/array/pointer>]  # Например: `<<ctype> *> malloc(n_bytes)`.
 ```
 
 ```python
-cdef class <class_name>:                             # Also `cdef struct <struct_name>:`.
-    cdef public <type> [*]<attr_name>                # Also `... <ctype> [*]<field_name>`.
-    def __init__(self, <type> <arg_name>):           # Also `cdef __dealloc__(self):`.
-        self.<attr_name> = <arg_name>                # Also `... free(<array/pointer>)`.
+cdef <type> <func_name>(<type> [*]<arg_name>): ...   # Без указания типа по умолчанию `object`.
+```
+
+```python
+cdef class <class_name>:                             # Также `cdef struct <struct_name>:`.
+    cdef public <type> [*]<attr_name>                # Также `... <ctype> [*]<field_name>`.
+    def __init__(self, <type> <arg_name>):           # Также `cdef __dealloc__(self):`.
+        self.<attr_name> = <arg_name>                # Также `... free(<array/pointer>)`.
 ```
 
 ### Virtual Environments
-**System for installing libraries directly into project's directory.**
+**Система изоляции зависимостей и библиотек под конкретный проект.**
 
 ```perl
-$ python3 -m venv NAME         # Creates virtual environment in the current directory.
-$ source NAME/bin/activate     # Activates it. On Windows run `NAME\Scripts\activate`.
-$ pip3 install LIBRARY         # Installs the library into active virtual environment.
-$ python3 FILE                 # Runs the script in active environment. Also `./FILE`.
-$ deactivate                   # Deactivates the currently active virtual environment.
+$ python3 -m venv NAME         # Создаёт виртуальное окружение в текущей папке.
+$ source NAME/bin/activate     # Активация в Linux/macOS. В Windows: `NAME\Scripts\activate`.
+$ pip3 install LIBRARY         # Устанавливает библиотеку в активное виртуальное окружение.
+$ python3 FILE                 # Запуск скрипта в активном виртуальном окружении.
+$ deactivate                   # Деактивирует текущее виртуальное окружение.
 ```
 
 ### Basic Script Template
-**Run the script with `'$ python3 FILE'` or `'$ chmod u+x FILE; ./FILE'`. To automatically start the debugger when uncaught exception occurs run `'$ python3 -m pdb -cc FILE'`.**
+**Запуск скрипта: `'$ python3 FILE'` или `'$ chmod u+x FILE; ./FILE'`. Для автоматического входа в отладчик при необработанном исключении: `'$ python3 -m pdb -cc FILE'`.**
 ```python
 #!/usr/bin/env python3
 #
@@ -3584,6 +3588,6 @@ if __name__ == '__main__':
 
 Index
 -----
-* **Ctrl+F / ⌘F is usually sufficient.**
-* **Searching `'#<title>'` on the [webpage](https://gto76.github.io/python-cheatsheet/) will limit the search to the titles.**
-* **Click on the title's `'🔗'` to get a link to its section.**
+* **Обычно достаточно стандартного поиска по странице: Ctrl+F / ⌘F.**
+* **Поиск `'#<заголовок>'` на [веб-странице](https://gto76.github.io/python-cheatsheet/) ограничивает выборку только названиями разделов.**
+* **Нажмите на символ `'🔗'` рядом с заголовком, чтобы скопировать прямую ссылку на раздел.**
